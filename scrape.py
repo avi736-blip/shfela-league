@@ -43,7 +43,14 @@ FIND_ROWS = r"""
     if (found.length === 2) hits.push({el, text: t, order: found.sort((a,b)=>a[1]-b[1]).map(x=>x[0])});
   }
   // משאירים רק את המינימליים (בלי צאצא שגם הוא שורת משחק)
-  return hits.filter(h => !hits.some(o => o !== h && h.el.contains(o.el))).map(h => ({text: h.text, order: h.order}));
+  const minimal = hits.filter(h => !hits.some(o => o !== h && h.el.contains(o.el)));
+  // מטפסים לשורה המלאה: ההורה הגבוה ביותר שעדיין מכיל רק את שתי הקבוצות האלה
+  const count = t => { const nt = n(t); return teams.filter(name => nt.includes(name)).length; };
+  return minimal.map(h => {
+    let el = h.el;
+    while (el.parentElement && el.parentElement !== document.body && count(el.parentElement.innerText || '') === 2) el = el.parentElement;
+    return {text: el.innerText, order: h.order};
+  });
 }
 """
 
@@ -69,6 +76,9 @@ CLICK_ONE = r"""
 }
 """
 
+LABELS = {"תאריך": "date", "שעה": "time", "שעת משחק": "time", "מגרש": "venue",
+          "אצטדיון": "venue", "איצטדיון": "venue", "תוצאה": "score"}
+
 def parse_row(text, order):
     a, b = order
     if (a, b) in GAME_ID:
@@ -77,35 +87,48 @@ def parse_row(text, order):
         gid, swap = GAME_ID[(b, a)], True
     else:
         return None, None
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    # 1) לפי תוויות ("שעה" ואחריה הערך)
+    raw = {}
+    for i, line in enumerate(lines):
+        key = LABELS.get(line.rstrip(":").strip())
+        if key and i + 1 < len(lines) and lines[i + 1].rstrip(":") not in LABELS and key not in raw:
+            raw[key] = lines[i + 1]
+    # שורות שאינן שמות קבוצות – לחיפוש לפי תבנית
+    other = [l for l in lines if l.rstrip(":").strip() not in LABELS and l != "משחק"
+             and not any(tn and tn in norm(l) for tn in TEAMS)]
+    other_txt = "\n".join(other)
     g = {}
-    work = text
-    d = DATE_RE.search(work)
+    d = DATE_RE.search(raw.get("date", "") or other_txt)
     if d:
         dd, mm, yy = d.groups()
         yy = yy if len(yy) == 4 else "20" + yy
         g["date"] = f"{int(dd):02d}/{int(mm):02d}/{yy}"
-        work = work.replace(d.group(0), " ")
-    t = TIME_RE.search(work)
+    t_src = raw.get("time", "") or DATE_RE.sub(" ", other_txt)
+    t = TIME_RE.search(t_src)
     if t:
         g["time"] = f"{t.group(1)}:{t.group(2)}"
-        work = work.replace(t.group(0), " ")
-    sc = SCORE_RE.search(work)
+    s_src = raw.get("score")
+    if s_src is None:
+        s_src = TIME_RE.sub(" ", DATE_RE.sub(" ", other_txt))
+    sc = SCORE_RE.search(s_src)
     if sc:
         x, y = int(sc.group(1)), int(sc.group(2))
         g["score"] = [y, x] if swap else [x, y]
-    for line in text.splitlines():
-        line = line.strip()
-        if line and VENUE_WORDS.search(line) and not any(tn and tn in norm(line) for tn in TEAMS):
-            v = re.sub(r"^(מגרש|אצטדיון|איצטדיון)\s*[:：]\s*", "", line).strip()
-            if 2 < len(v) < 120:
-                g["venue"] = v
+    v = raw.get("venue", "")
+    if not v:
+        for line in other:
+            if VENUE_WORDS.search(line):
+                v = re.sub(r"^(מגרש|אצטדיון|איצטדיון)\s*[:：]\s*", "", line).strip()
                 break
+    if v and 1 < len(v) < 120 and not TIME_RE.fullmatch(v):
+        g["venue"] = v
     return gid, g
 
 async def main():
     from playwright.async_api import async_playwright
     DEBUG.mkdir(exist_ok=True)
-    games, xhr_log = {}, []
+    games, xhr_log, all_rows = {}, [], []
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page(locale="he-IL", user_agent=(
@@ -132,8 +155,10 @@ async def main():
             except Exception as e:
                 print("טעינה נכשלה:", url, e)
                 continue
-            await page.wait_for_timeout(3000)
-            collect(await page.evaluate(FIND_ROWS, TEAMS))
+            await page.wait_for_timeout(6000)
+            first = await page.evaluate(FIND_ROWS, TEAMS)
+            collect(first)
+            all_rows.extend(first)
             (DEBUG / f"page{n}.txt").write_text(await page.inner_text("body"), encoding="utf-8")
             for label in await page.evaluate(CLICK_ROUNDS):
                 if await page.evaluate(CLICK_ONE, label):
@@ -144,12 +169,14 @@ async def main():
                     await page.wait_for_timeout(1500)
                     rows = await page.evaluate(FIND_ROWS, TEAMS)
                     collect(rows)
+                    all_rows.extend(rows)
                     if n == 0 and label.endswith(" 1"):
                         (DEBUG / "round1.txt").write_text(
                             "\n\n=====\n\n".join(r["text"] for r in rows) or await page.inner_text("body"),
                             encoding="utf-8")
         await browser.close()
 
+    (DEBUG / "rows.txt").write_text("\n\n=====\n\n".join(r["text"] for r in all_rows[:40]), encoding="utf-8")
     (DEBUG / "xhr.json").write_text(json.dumps(xhr_log[:40], ensure_ascii=False, indent=1), encoding="utf-8")
     out_path = ROOT / "data.json"
     old = json.loads(out_path.read_text(encoding="utf-8")) if out_path.exists() else {}
