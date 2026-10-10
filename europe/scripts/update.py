@@ -19,8 +19,15 @@ from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "games.json"
-API = "https://site.api.espn.com/apis/site/v2/sports/soccer/{lg}/scoreboard?dates={a}-{b}&limit=1000"
-PAST_DAYS, AHEAD_DAYS, CHUNK = 10, 75, 15
+BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/{lg}/scoreboard"
+# URL styles, tried in order until one answers; the working one is reused for every league
+STYLES = [
+    ("range", "?dates={a}-{b}&limit=300", 15),
+    ("range-nolimit", "?dates={a}-{b}", 15),
+    ("day", "?dates={a}", 1),
+]
+PAST_DAYS, AHEAD_DAYS = 10, 75
+DAY_PAST, DAY_AHEAD = 4, 24  # narrower window when only day-by-day requests work
 
 
 STATS = {"requests": 0, "failed": 0, "errors": []}
@@ -33,6 +40,14 @@ def fetch(url, tries=2):
             req = urllib.request.Request(url, headers={"User-Agent": "europe-football-updater/1.0"})
             with urllib.request.urlopen(req, timeout=15) as r:
                 return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or i == tries - 1:
+                body = e.read()[:160].decode("utf-8", "replace")
+                STATS["failed"] += 1
+                if len(STATS["errors"]) < 5:
+                    STATS["errors"].append(f"{url.split('/soccer/')[-1][:60]}: HTTP {e.code} {body}")
+                return None
+            time.sleep(2 + 3 * i)
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
             if i == tries - 1:
                 print("  ! failed", url, e)
@@ -88,16 +103,25 @@ def main():
     doc = json.loads(DATA.read_text(encoding="utf-8"))
     countries = doc["countries"]
     now = datetime.now(timezone.utc)
-    start, end = (now - timedelta(days=PAST_DAYS)).date(), (now + timedelta(days=AHEAD_DAYS)).date()
+    style = pick_style(list(doc["leagues"])[0], now)
+    STATS["style"] = style[0] if style else None
+    if not style:
+        print("ESPN did not answer any URL style; nothing updated")
+    else:
+        q, chunk = style[1], style[2]
+        if style[0] == "day":
+            start, end = (now - timedelta(days=DAY_PAST)).date(), (now + timedelta(days=DAY_AHEAD)).date()
+        else:
+            start, end = (now - timedelta(days=PAST_DAYS)).date(), (now + timedelta(days=AHEAD_DAYS)).date()
     games = doc["games"]
     by_id = {g["id"]: g for g in games}
     changes = {"results": 0, "moved": 0, "timed": 0, "postponed": 0, "live": 0}
 
-    for lg in doc["leagues"]:
+    for lg in (doc["leagues"] if style else []):
         events, d = [], start
         while d <= end:
-            e2 = min(end, d + timedelta(days=CHUNK - 1))
-            js = fetch(API.format(lg=lg, a=d.strftime("%Y%m%d"), b=e2.strftime("%Y%m%d")))
+            e2 = min(end, d + timedelta(days=chunk - 1))
+            js = fetch(BASE.format(lg=lg) + q.format(a=d.strftime("%Y%m%d"), b=e2.strftime("%Y%m%d")))
             events += (js or {}).get("events", [])
             d = e2 + timedelta(days=1)
         evs = [e for e in map(parse_event, events) if e]
@@ -118,12 +142,24 @@ def main():
             apply(g, ev, countries, changes)
 
     games.sort(key=lambda g: (g["t"], g["h"]))
-    doc["updated"] = iso_z(now)
+    if sum(EVENTS.values()):
+        doc["updated"] = iso_z(now)
     DATA.write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print("changes:", changes)
     (ROOT / "data" / "update-status.json").write_text(json.dumps(
         {"ran": iso_z(now), "changes": changes, "events_per_league": EVENTS, **STATS},
         ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def pick_style(lg, now):
+    a = (now - timedelta(days=3)).strftime("%Y%m%d")
+    b = (now + timedelta(days=3)).strftime("%Y%m%d")
+    for st in STYLES:
+        js = fetch(BASE.format(lg=lg) + st[1].format(a=a, b=b))
+        if js is not None and "events" in js:
+            print("using URL style", st[0])
+            return st
+    return None
 
 
 def apply(g, ev, countries, ch):
