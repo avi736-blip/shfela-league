@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>כדורגל באירופה • איפה משחקים</title>
+<meta name="description" content="בוחרים מדינה באירופה ורואים את כל משחקי הכדורגל בה — ליגות, ליגת האלופות, הליגה האירופית והקונפרנס.">
+<meta name="theme-color" content="#0b1410">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a href="#/" class="brand" aria-label="מסך הבית"><span class="ball">⚽</span><span>כדורגל<b>באירופה</b></span></a>
+  <div class="topActions">
+    <button id="favBtn" class="pill" aria-label="המשחקים שסימנתי">♥ <span id="favCount">0</span></button>
+  </div>
+</header>
+
+<main id="app" aria-live="polite"><div class="loading">טוען לוח משחקים…</div></main>
+
+<aside id="favDrawer" class="drawer" aria-hidden="true">
+  <div class="drawerHead"><h2>המשחקים שסימנתי</h2><button class="iconBtn" data-close aria-label="סגירה">✕</button></div>
+  <div id="favList" class="favList"></div>
+  <div class="drawerFoot">
+    <button id="favShare" class="btn primary">שיתוף</button>
+    <button id="favIcs" class="btn">הורדה ליומן (‎.ics)</button>
+    <button id="favClear" class="btn ghost">ניקוי</button>
+  </div>
+</aside>
+<div id="scrim" class="scrim"></div>
+<div id="toast" class="toast" role="status"></div>
+
+<footer class="foot" id="foot"></footer>
+<script src="app.js"></script>
+</body>
+</html>
