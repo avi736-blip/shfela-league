@@ -3,40 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>כדורגל באירופה • איפה משחקים</title>
-<meta name="description" content="בוחרים מדינה באירופה ורואים את כל משחקי הכדורגל בה — ליגות, ליגת האלופות, הליגה האירופית והקונפרנס.">
-<meta name="theme-color" content="#0b1410">
+<title>כדורגל באירופה</title>
+<meta name="description" content="בוחרים תאריכים ורואים איפה משחקים באירופה: לפי מדינה או על המפה.">
+<meta name="theme-color" content="#0f1b2d">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&family=Karantina:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <a href="#/" class="brand" aria-label="מסך הבית"><span class="ball">⚽</span><span>כדורגל<b>באירופה</b></span></a>
-  <div class="topActions">
-    <button id="favBtn" class="pill" aria-label="המשחקים שסימנתי">♥ <span id="favCount">0</span></button>
-  </div>
+<header class="bar">
+  <a href="#/" class="brand" aria-label="כדורגל באירופה, מסך הבית">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0b6e4f"/><circle cx="16" cy="16" r="9" fill="none" stroke="#fff" stroke-width="2"/><path d="M16 4v24" stroke="#fff" stroke-width="2" opacity=".5"/><circle cx="16" cy="16" r="3" fill="#ffc72c"/></svg>
+    <span>כדורגל באירופה</span>
+  </a>
+  <nav class="views" aria-label="תצוגה">
+    <a href="#/" data-view="home">מדינות</a>
+    <a href="#/map" data-view="map">מפה</a>
+  </nav>
+  <button id="favBtn" class="favBtn" aria-label="המשחקים ששמרתי"><span aria-hidden="true">♥</span> <b id="favCount">0</b></button>
 </header>
 
-<main id="app" aria-live="polite"><div class="loading">טוען לוח משחקים…</div></main>
+<section class="trip" id="trip" aria-label="תאריכי הנסיעה">
+  <button class="ticket" id="rangeBtn" aria-haspopup="dialog" aria-expanded="false">
+    <span class="tLabel">תאריכי הנסיעה</span>
+    <span class="tRange" id="rangeText">—</span>
+    <span class="tSub" id="rangeSub"></span>
+  </button>
+  <div class="quick" id="quick"></div>
+</section>
 
-<aside id="favDrawer" class="drawer" aria-hidden="true">
-  <div class="drawerHead"><h2>המשחקים שסימנתי</h2><button class="iconBtn" data-close aria-label="סגירה">✕</button></div>
+<div class="cal" id="cal" role="dialog" aria-label="בחירת תאריכים" hidden>
+  <div class="calHead">
+    <button class="calNav" id="calPrev" aria-label="החודש הקודם">›</button>
+    <p id="calHint">בוחרים יום יציאה</p>
+    <button class="calNav" id="calNext" aria-label="החודש הבא">‹</button>
+  </div>
+  <div class="calMonths" id="calMonths"></div>
+  <div class="calFoot"><span class="calLegend"><i></i> כמות משחקים באותו יום</span><button class="link" id="calClose">סגירה</button></div>
+</div>
+
+<main id="app"><p class="loading">טוען את לוח המשחקים…</p></main>
+
+<aside id="favDrawer" class="drawer" aria-hidden="true" aria-label="המשחקים ששמרתי">
+  <div class="drawerHead"><h2>המשחקים ששמרתי</h2><button class="x" data-close aria-label="סגירה">✕</button></div>
   <div id="favList" class="favList"></div>
   <div class="drawerFoot">
-    <button id="favShare" class="btn primary">שיתוף</button>
-    <button id="favIcs" class="btn">הורדה ליומן (‎.ics)</button>
-    <button id="favClear" class="btn ghost">ניקוי</button>
+    <button id="favShare" class="btn solid">שיתוף</button>
+    <button id="favIcs" class="btn">הוספה ליומן</button>
+    <button id="favClear" class="btn plain">ניקוי הרשימה</button>
   </div>
 </aside>
 <div id="scrim" class="scrim"></div>
 <div id="toast" class="toast" role="status"></div>
-
 <footer class="foot" id="foot"></footer>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/markercluster.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

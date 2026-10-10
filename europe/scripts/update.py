@@ -23,15 +23,22 @@ API = "https://site.api.espn.com/apis/site/v2/sports/soccer/{lg}/scoreboard?date
 PAST_DAYS, AHEAD_DAYS, CHUNK = 10, 75, 15
 
 
-def fetch(url, tries=3):
+STATS = {"requests": 0, "failed": 0, "errors": []}
+
+
+def fetch(url, tries=2):
+    STATS["requests"] += 1
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "europe-football-updater/1.0"})
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=15) as r:
                 return json.load(r)
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
             if i == tries - 1:
                 print("  ! failed", url, e)
+                STATS["failed"] += 1
+                if len(STATS["errors"]) < 5:
+                    STATS["errors"].append(f"{url.split('/soccer/')[-1][:40]}: {e}")
                 return None
             time.sleep(2 + 3 * i)
 
@@ -74,6 +81,9 @@ def iso_z(dt):
     return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
 
 
+EVENTS = {}
+
+
 def main():
     doc = json.loads(DATA.read_text(encoding="utf-8"))
     countries = doc["countries"]
@@ -92,6 +102,7 @@ def main():
             d = e2 + timedelta(days=1)
         evs = [e for e in map(parse_event, events) if e]
         print(f"{lg}: {len(evs)} events")
+        EVENTS[lg] = len(evs)
         pool = [g for g in games if g["lg"] == lg]
         for ev in evs:
             g = by_id.get(ev["id"])
@@ -110,6 +121,9 @@ def main():
     doc["updated"] = iso_z(now)
     DATA.write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print("changes:", changes)
+    (ROOT / "data" / "update-status.json").write_text(json.dumps(
+        {"ran": iso_z(now), "changes": changes, "events_per_league": EVENTS, **STATS},
+        ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def apply(g, ev, countries, ch):

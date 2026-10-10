@@ -1,5 +1,5 @@
 // Offline support: app shell cached, schedule data network-first.
-const CACHE = 'ef-v1';
+const CACHE = 'ef-v2';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL))); self.skipWaiting(); });
 self.addEventListener('activate', e => {

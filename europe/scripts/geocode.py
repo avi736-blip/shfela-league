@@ -48,7 +48,9 @@ def main():
         v, city, c = k.split("|")
         cc = CC.get(c, "")
         city_q = city.strip(" ,")
-        pt = (search(f"{v}, {city_q}", cc) if v and city_q else None) or (search(city_q, cc) if city_q else None)
+        v = v.strip(" '\"")
+        pt = (search(f"{v}, {city_q}", cc) if v and city_q else None) or (search(city_q, cc) if city_q else None) \
+            or (search(f"{v}, {city_q}".strip(", "), "") if v or city_q else None)
         if pt:
             coords[k] = pt
         print(f"[{i + 1}/{len(todo)}] {k} -> {pt}")
