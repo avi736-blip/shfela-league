@@ -1,0 +1,52 @@
+{
+ "ran": "2026-10-10T21:52Z",
+ "changes": {
+  "results": 0,
+  "moved": 0,
+  "timed": 0,
+  "postponed": 0,
+  "live": 0
+ },
+ "events_per_league": {
+  "uefa.champions": 0,
+  "uefa.europa": 0,
+  "uefa.europa.conf": 0,
+  "uefa.nations": 0,
+  "ger.dfb_pokal": 0,
+  "ita.coppa_italia": 0,
+  "ger.1": 0,
+  "ned.1": 0,
+  "aut.1": 0,
+  "bel.1": 0,
+  "ita.1": 0,
+  "por.1": 0,
+  "eng.1": 0,
+  "esp.1": 0,
+  "fra.1": 0,
+  "gre.1": 0,
+  "sco.1": 0,
+  "den.1": 0,
+  "nor.1": 0,
+  "swe.1": 0,
+  "eng.2": 0,
+  "ger.2": 0,
+  "ita.2": 0,
+  "cyp.1": 0,
+  "bul.1": 0,
+  "pol.1": 0,
+  "hun.1": 0,
+  "geo.1": 0,
+  "sui.1": 0,
+  "rou.1": 0,
+  "cro.1": 0
+ },
+ "requests": 186,
+ "failed": 186,
+ "errors": [
+  "uefa.champions/scoreboard?dates=20260930: HTTP Error 400: Bad Request",
+  "uefa.champions/scoreboard?dates=20261015: HTTP Error 400: Bad Request",
+  "uefa.champions/scoreboard?dates=20261030: HTTP Error 400: Bad Request",
+  "uefa.champions/scoreboard?dates=20261114: HTTP Error 400: Bad Request",
+  "uefa.champions/scoreboard?dates=20261129: HTTP Error 400: Bad Request"
+ ]
+}
