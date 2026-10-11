@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-11T05:34Z",
+ "ran": "2026-10-11T11:24Z",
  "changes": {
   "results": 0,
-  "moved": 0,
-  "timed": 0,
+  "moved": 2,
+  "timed": 26,
   "postponed": 0,
-  "live": 1
+  "live": 5
  },
  "official": {
   "eng.1": {
@@ -100,23 +100,23 @@
   }
  },
  "espn_events_per_league": {
-  "uefa.champions": 54,
-  "uefa.europa": 36,
-  "uefa.europa.conf": 36,
-  "uefa.nations": 0,
+  "uefa.champions": 72,
+  "uefa.europa": 54,
+  "uefa.europa.conf": 54,
+  "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
-  "aut.1": 24,
-  "bel.1": 27,
-  "por.1": 28,
-  "fra.1": 36,
-  "gre.1": 28,
-  "sco.1": 28,
-  "den.1": 24,
-  "nor.1": 32,
-  "swe.1": 40,
-  "eng.2": 73,
-  "ita.2": 50,
+  "aut.1": 36,
+  "bel.1": 45,
+  "por.1": 37,
+  "fra.1": 54,
+  "gre.1": 42,
+  "sco.1": 42,
+  "den.1": 36,
+  "nor.1": 48,
+  "swe.1": 56,
+  "eng.2": 109,
+  "ita.2": 80,
   "cyp.1": 0,
   "bul.1": 0,
   "pol.1": 0,
@@ -126,8 +126,8 @@
   "rou.1": 0,
   "cro.1": 0
  },
- "requests": 728,
- "failed": 147,
+ "requests": 1253,
+ "failed": 252,
  "errors": [
   "uefa.champions/scoreboard?dates=20261008-20261014&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "uefa.champions/scoreboard?dates=20261008-20261014: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
