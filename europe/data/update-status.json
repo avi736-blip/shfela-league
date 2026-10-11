@@ -1,9 +1,9 @@
 {
- "ran": "2026-10-11T14:32Z",
+ "ran": "2026-10-11T14:40Z",
  "changes": {
-  "results": 0,
+  "results": 5,
   "moved": 0,
-  "timed": 252,
+  "timed": 0,
   "postponed": 1,
   "live": 29
  },
@@ -278,8 +278,16 @@
    "ours_not_found": []
   },
   "sui.1": {
-   "ok": false,
-   "error": "https://origins-webex-orchestrator.origins-digital.com/trpc/matchDays.getList?input=%7B%22: HTTP Error 401: Unauthorized"
+   "ok": true,
+   "fixtures": 132,
+   "matched": 75,
+   "added": 0,
+   "unmatched_sample": [
+    "FC Vaduz - FC Basel 1893 2026-10-11 14:30:00+00:00",
+    "FC Thun - FC St.Gallen 1879 2026-11-29 15:30:00+00:00",
+    "FC St.Gallen 1879 - BSC Young Boys 2027-01-24 15:30:00+00:00"
+   ],
+   "ours_not_found": []
   }
  },
  "espn_events_per_league": {
