@@ -64,7 +64,12 @@ STOP = {"fc", "cf", "sc", "ac", "afc", "ssc", "sk", "fk", "nk", "bk", "if", "kv"
         "sv", "spvgg", "bsc", "1.", "cs", "cfr", "pfc", "ofk", "gnk", "hnk"}
 
 
+TRANS = str.maketrans({"ø": "o", "Ø": "o", "æ": "ae", "Æ": "ae", "å": "a", "ß": "ss", "ł": "l", "Ł": "l", "đ": "d",
+                       "Đ": "d", "ı": "i", "ð": "d", "þ": "th"})
+
+
 def toks(name):
+    name = name.translate(TRANS).replace("Be'er", "Beer").replace("Be’er", "Beer")
     n = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
     t = {w for w in re.split(r"[^a-z0-9]+", n) if w and w not in STOP and not w.isdigit()}
     return t or {n}
@@ -185,7 +190,7 @@ def main():
 OFFICIAL = {}
 
 
-SYN = {"kobenhavn": "copenhagen", "zvezda": "star", "crvena": "red", "sheva": "beer", "beersheva": "beer",
+SYN = {"rennais": "rennes", "kobenhavn": "copenhagen", "zvezda": "star", "crvena": "red", "sheva": "beer", "beersheva": "beer",
        "praha": "prague", "plzen": "pilsen", "bodo": "bodo", "glimt": "glimt", "koln": "cologne", "munchen": "munich", "inter": "internazionale", "roma": "roma", "hamburger": "hamburg",
        "nurnberg": "nuremberg", "athletic": "athletic", "brighton": "brighton", "wolverhampton": "wolves",
        "nottm": "nottingham", "spurs": "tottenham", "deportivo": "deportivo", "coruna": "deportivo"}
@@ -228,12 +233,11 @@ def run_official(doc, now, ch):
             continue
         pool = [g for g in games if g["lg"] == lg]
         used, matched, unmatched, added = set(), 0, [], 0
-        for fx in fixtures:
+        # score every plausible (fixture, game) pair, then take the best pairs first
+        cands = []
+        for i, fx in enumerate(fixtures):
             ref = fx["utc"] or (datetime.fromisoformat(fx["day"] + "T12:00:00+00:00") if fx["day"] else None)
-            best, best_score = None, 0.0
             for g in pool:
-                if g["id"] in used:
-                    continue
                 gd = datetime.fromisoformat(g["t"].replace("Z", "+00:00"))
                 if ref and abs((gd - ref).days) > 21:
                     continue
@@ -241,19 +245,25 @@ def run_official(doc, now, ch):
                 sa = sim([fx["away"], *fx["alt_away"]], [g["a"]])
                 if sh == 0 or sa == 0:
                     continue
-                score = sh + sa - (abs((gd - ref).total_seconds()) / 86400 / 100 if ref else 0)
-                if score > best_score:
-                    best, best_score = g, score
-            if best is None:
-                new = add_fixture(doc, lg, fx, now)
-                if new:
-                    added += 1; used.add(new["id"]); pool.append(new)
-                    apply_official(new, fx, countries, label, url, stamp, ch)
-                elif len(unmatched) < 8:
-                    unmatched.append(f'{fx["home"]} - {fx["away"]} {fx["utc"] or fx["day"]}')
+                cands.append((sh + sa - (abs((gd - ref).total_seconds()) / 86400 * 0.03 if ref else 0), i, g["id"]))
+        cands.sort(reverse=True)
+        by_id = {g["id"]: g for g in pool}
+        taken = {}
+        for score, i, gid in cands:
+            if i in taken or gid in used:
                 continue
-            used.add(best["id"]); matched += 1
-            apply_official(best, fx, countries, label, url, stamp, ch)
+            taken[i] = gid; used.add(gid)
+        for i, fx in enumerate(fixtures):
+            if i in taken:
+                matched += 1
+                apply_official(by_id[taken[i]], fx, countries, label, url, stamp, ch)
+                continue
+            new = add_fixture(doc, lg, fx, now)
+            if new:
+                added += 1; used.add(new["id"]); pool.append(new)
+                apply_official(new, fx, countries, label, url, stamp, ch)
+            elif len(unmatched) < 8:
+                unmatched.append(f'{fx["home"]} - {fx["away"]} {fx["utc"] or fx["day"]}')
         ours_left = [f'{g["ld"]} {g["h"]} - {g["a"]}' for g in pool if g["id"] not in used and g["ld"] >= now.strftime("%Y-%m-%d")
                      and not g["id"].startswith("uefa-general")][:10]
         OFFICIAL[lg] = {"ok": True, "fixtures": len(fixtures), "matched": matched, "added": added,
