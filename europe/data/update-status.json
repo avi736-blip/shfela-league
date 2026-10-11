@@ -1,7 +1,7 @@
 {
- "ran": "2026-10-11T14:40Z",
+ "ran": "2026-10-11T14:47Z",
  "changes": {
-  "results": 5,
+  "results": 1,
   "moved": 0,
   "timed": 0,
   "postponed": 1,
@@ -239,22 +239,24 @@
   },
   "por.1": {
    "ok": true,
-   "fixtures": 9,
-   "matched": 0,
+   "fixtures": 306,
+   "matched": 216,
    "added": 0,
-   "unmatched_sample": [],
-   "ours_not_found": [
-    "2026-10-11 Rio Ave - C.D. Nacional",
-    "2026-10-11 Benfica - Vitória de Guimaraes",
-    "2026-10-11 Arouca - Estrela",
-    "2026-10-12 FC Famalicao - Alverca",
-    "2026-10-23 Vitória de Guimaraes - Maritimo",
-    "2026-10-24 Estrela - Casa Pia",
-    "2026-10-24 Alverca - Arouca",
-    "2026-10-24 Gil Vicente - FC Porto",
-    "2026-10-25 Estoril - Moreirense",
-    "2026-10-25 C.D. Nacional - Braga"
-   ]
+   "unmatched_sample": [
+    "SC Braga - Gil Vicente FC 2026-10-19 19:15:00+00:00",
+    "Estoril Praia - Sporting CP 2027-05-01",
+    "Casa Pia AC - FC Arouca 2027-05-01",
+    "Moreirense FC - CD Nacional 2027-05-01",
+    "SL Benfica - Rio Ave FC 2027-05-01",
+    "Académico - SC Braga 2027-05-01",
+    "Gil Vicente FC - FC Alverca 2027-05-01",
+    "FC Porto - FC Famalicão 2027-05-01",
+    "Marítimo M. - Estrela Amadora 2027-05-01",
+    "Vitória SC - Santa Clara 2027-05-01",
+    "CD Nacional - FC Porto 2027-05-08",
+    "Rio Ave FC - Vitória SC 2027-05-08"
+   ],
+   "ours_not_found": []
   },
   "eng.2": {
    "ok": true,
