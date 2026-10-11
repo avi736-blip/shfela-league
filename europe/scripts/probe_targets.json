@@ -1,0 +1,19 @@
+[
+ {"name":"pl_page","url":"https://www.premierleague.com/en/matches?competition=8&season=2026&matchweek=8"},
+ {"name":"pl_sdp_matches","url":"https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v2/matches?competition=8&season=2026&_limit=20","headers":{"Origin":"https://www.premierleague.com","Referer":"https://www.premierleague.com/"}},
+ {"name":"pl_sdp_v1","url":"https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v1/competitions/8/seasons/2026/matchweeks/8/matches","headers":{"Origin":"https://www.premierleague.com","Referer":"https://www.premierleague.com/"}},
+ {"name":"pl_pulse_compseasons","url":"https://footballapi.pulselive.com/football/competitions/1/compseasons?page=0&pageSize=3","headers":{"Origin":"https://www.premierleague.com","Referer":"https://www.premierleague.com/"}},
+ {"name":"laliga_page","url":"https://www.laliga.com/en-GB/laliga-easports/results"},
+ {"name":"laliga_api_subs","url":"https://apim.laliga.com/public-service/api/v1/subscriptions/laliga-easports-2026","headers":{"Ocp-Apim-Subscription-Key":"c13c3a8e2f6b46da9c5c425cf61fab3e","Origin":"https://www.laliga.com"}},
+ {"name":"laliga_api_matches","url":"https://apim.laliga.com/public-service/api/v1/matches?subscriptionSlug=laliga-easports-2026&week=9&limit=50&orderField=date&orderType=asc","headers":{"Ocp-Apim-Subscription-Key":"c13c3a8e2f6b46da9c5c425cf61fab3e","Origin":"https://www.laliga.com"}},
+ {"name":"bl_page","url":"https://www.bundesliga.com/en/bundesliga/matchday"},
+ {"name":"bl_page2","url":"https://www.bundesliga.com/en/2bundesliga/matchday"},
+ {"name":"bl_wapp","url":"https://wapp.bapi.bundesliga.com/fixtures/2026-2027/DFL-COM-000001?matchday=7"},
+ {"name":"seriea_page","url":"https://www.legaseriea.it/en/serie-a/fixture-and-results"},
+ {"name":"seriea_api_season","url":"https://www.legaseriea.it/api/season"},
+ {"name":"seriea_api_cal","url":"https://www.legaseriea.it/api/stats/live/match?extra_link&order=oldest&lang=en&season_id=&match_day_id="},
+ {"name":"ere_page","url":"https://eredivisie.nl/competitie/programma-uitslagen/"},
+ {"name":"ere_page_en","url":"https://eredivisie.eu/competition/fixtures/"},
+ {"name":"slgr_page","url":"https://www.slgr.gr/en/schedule/25/158/262706/"},
+ {"name":"slgr_root","url":"https://www.slgr.gr/en/schedule/"}
+]

@@ -1,0 +1,20 @@
+name: europe-probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python europe/scripts/probe.py
+      - run: |
+          git config user.name "games-bot"
+          git config user.email "games-bot@users.noreply.github.com"
+          git add europe/debug/probe
+          git commit -m "europe: probe samples" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
