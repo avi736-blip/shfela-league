@@ -1,6 +1,0 @@
-200	134494	4 json	swe	https://allsvenskan.se/matcher
-404	1287355	11 json	por	https://www.ligaportugal.pt/pt/liga/calendario/20262027/ligaportugalbetclic
-200	615633	7 json	efl	https://www.efl.com/competitions/sky-bet-championship/fixtures-results/
-200	329748	24 json	fra	https://ligue1.com/fr/competitions/ligue1mcdonalds/calendar
-404	49770	2 json	bel	https://www.proleague.be/fr/calendrier
-404	113151	4 json	sui	https://sfl.ch/fr/superleague/calendrier

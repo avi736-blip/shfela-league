@@ -264,6 +264,105 @@ def uecl(now): return _uefa(now, 2019)
 def unl(now): return _uefa(now, 2014)
 
 
+# ---------------- Ekstraklasa, Poland (ekstraklasa.org match centre) ----------------
+EKSTRAKLASA_SEASONS = {2026: "efed6802-8252-44a1-9d1b-943d224c4b50"}
+
+
+def ekstraklasa(now):
+    sid = EKSTRAKLASA_SEASONS[season_year(now)]
+    out = []
+    for week in range(1, 35):
+        js = get(f"https://api.centrum-meczowe.ekstraklasa.org/v1/matches?season_id={sid}&week={week}",
+                 {"Referer": "https://ekstraklasa.org/", "Origin": "https://ekstraklasa.org"})
+        for m in js.get("data", []):
+            st = (m.get("status") or "").lower()
+            if m.get("postponed"):
+                state = "pp"
+            else:
+                state = "post" if st == "played" else "live" if st in ("playing", "live", "in_play") else "pre"
+            dt = m.get("match_datetime")
+            utc = datetime.fromisoformat(dt).astimezone(timezone.utc) if dt else None
+            out.append(_fx(home=m.get("home_team_name", ""), away=m.get("away_team_name", ""),
+                           alt_home=[m.get("home_team_official_name", "")], alt_away=[m.get("away_team_official_name", "")],
+                           utc=utc, day=None if utc else m.get("date"), confirmed=bool(utc), state=state,
+                           score=[m.get("home_score"), m.get("away_score")] if state in ("post", "live") else None))
+        time.sleep(0.3)
+    return out
+
+
+# ---------------- Allsvenskan, Sweden (allsvenskan.se data service) ----------------
+SWE_QUERY = """query matchesForLeague($configLeagueName: String!, $configSeasonStartYear: Int!, $startDate: String, $endDate: String) {
+  matchesForLeague(configLeagueName: $configLeagueName, configSeasonStartYear: $configSeasonStartYear, startDate: $startDate, endDate: $endDate) {
+    matches { id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus round arenaName }
+  }
+}"""
+
+
+def allsvenskan(now):
+    yr = now.year
+    body = json.dumps({"query": SWE_QUERY, "operationName": "matchesForLeague",
+                       "variables": {"configLeagueName": "allsvenskan", "configSeasonStartYear": yr,
+                                     "startDate": f"{yr}-01-01", "endDate": f"{yr}-12-31"}}).encode()
+    req = urllib.request.Request("https://gql.sportomedia.se/graphql", data=body, method="POST",
+                                 headers={"User-Agent": UA, "Content-Type": "application/json", "Accept": "application/json",
+                                          "Origin": "https://allsvenskan.se", "Referer": "https://allsvenskan.se/"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        js = json.loads(r.read().decode("utf-8"))
+    out = []
+    for m in js["data"]["matchesForLeague"]["matches"]:
+        st = (m.get("extendedStatus") or m.get("status") or "").upper()
+        state = "post" if st == "FINISHED" else "pre" if st in ("UPCOMING", "NOT_STARTED", "") else \
+            "pp" if "POSTPON" in st or "CANCEL" in st else "live"
+        utc = datetime.fromisoformat(m["startDate"].replace("Z", "+00:00")) if m.get("startDate") else None
+        out.append(_fx(home=m.get("homeTeamName", ""), away=m.get("visitingTeamName", ""), utc=utc, confirmed=bool(utc),
+                       state=state, score=[m.get("homeTeamScore"), m.get("visitingTeamScore")] if state in ("post", "live") else None,
+                       venue=(m.get("arenaName") or "").strip()))
+    return out
+
+
+# ---------------- Eliteserien, Norway (eliteserien.no fixture list) ----------------
+NOR_ROW = re.compile(r'<tr class="[^"]*schedule__match[^"]*">(.*?)</tr>', re.S)
+
+
+def eliteserien(now):
+    page = get("https://www.eliteserien.no/terminliste", {"Accept": "text/html"}, as_json=False)
+    tz, out = ZoneInfo("Europe/Oslo"), []
+    for row in NOR_ROW.findall(page):
+        tm = re.search(r'--teams">\s*(.*?)\s+-\s+<span class="schedule__team--opponent">\s*(.*?)\s*</span>', row, re.S)
+        dt = re.search(r'<span>(\d{1,2})\.(\d{1,2})\.<span[^>]*>(\d{4})</span>', row)
+        if not tm or not dt:
+            continue
+        hm = re.search(r'schedule__time">\s*(\d{1,2}):(\d{2})', row)
+        venue = re.search(r'<br\s*/?>\s*([^<]+?)\s*</td>', row)
+        d, mth, y = int(dt.group(1)), int(dt.group(2)), int(dt.group(3))
+        utc = datetime(y, mth, d, int(hm.group(1)), int(hm.group(2)), tzinfo=tz).astimezone(timezone.utc) if hm else None
+        out.append(_fx(home=html.unescape(tm.group(1)).strip(), away=html.unescape(tm.group(2)).strip(), utc=utc,
+                       day=None if utc else f"{y}-{mth:02d}-{d:02d}", confirmed=bool(utc),
+                       venue=html.unescape(venue.group(1)).strip() if venue else ""))
+    return out
+
+
+# ---------------- Erovnuli Liga, Georgia (erovnuliliga.ge calendar) ----------------
+GEO_GAME = re.compile(r'<div class="e-game-teaser[^"]*"\s+data-id="\d+"\s+data-status="([a-z]+)">(.*?)class="col-auto gt-arrow"', re.S)
+
+
+def erovnuli(now):
+    page = get("https://erovnuliliga.ge/en/calendar", {"Accept": "text/html"}, as_json=False)
+    out = []
+    for status, blk in GEO_GAME.findall(page):
+        names = re.findall(r'class="grs-name normal[^"]*">([^<]+)<', blk)
+        if len(names) < 2:
+            continue
+        t = re.search(r'<time datetime="([^"]+)"', blk)
+        utc = datetime.fromisoformat(t.group(1).replace("Z", "+00:00")) if t else None
+        sc = re.findall(r'class="[^"]*score[^"]*"[^>]*>\s*(\d+)\s*<', blk)
+        state = "post" if status in ("finished", "ended") else "live" if status in ("live", "playing") else \
+            "pp" if "postpon" in status else "pre"
+        out.append(_fx(home=html.unescape(names[0]).strip(), away=html.unescape(names[1]).strip(), utc=utc, confirmed=bool(utc),
+                       state=state, score=[int(sc[0]), int(sc[1])] if state in ("post", "live") and len(sc) >= 2 else None))
+    return out
+
+
 SOURCES = {
     "uefa.champions": ("UEFA", "https://www.uefa.com/uefachampionsleague/fixtures-results/", ucl),
     "uefa.europa": ("UEFA", "https://www.uefa.com/uefaeuropaleague/fixtures-results/", uel),
@@ -275,4 +374,8 @@ SOURCES = {
     "ger.2": ("2. Bundesliga", "https://www.bundesliga.com/en/2bundesliga/matchday", bundesliga2),
     "ita.1": ("Lega Serie A", "https://en.legaseriea.it/serie-a/fixtures-results", serie_a),
     "ned.1": ("Eredivisie", "https://eredivisie.com/competition/fixtures/", eredivisie),
+    "pol.1": ("Ekstraklasa", "https://ekstraklasa.org/terminarz", ekstraklasa),
+    "swe.1": ("Allsvenskan", "https://allsvenskan.se/matcher", allsvenskan),
+    "nor.1": ("Eliteserien", "https://www.eliteserien.no/terminliste", eliteserien),
+    "geo.1": ("Erovnuli Liga", "https://erovnuliliga.ge/en/calendar", erovnuli),
 }

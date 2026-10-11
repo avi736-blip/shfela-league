@@ -151,8 +151,7 @@ def main():
     official_ok = run_official(doc, now, changes)
 
     for lg in (doc["leagues"] if style else []):
-        if lg in official_ok:
-            continue  # this league is updated from its own website only
+        results_only = lg in official_ok  # schedule comes from the league; ESPN may only add scores
         events, d = [], start
         while d <= end:
             e2 = min(end, d + timedelta(days=chunk - 1))
@@ -174,7 +173,7 @@ def main():
                         break
             if g is None:
                 continue
-            apply(g, ev, countries, changes)
+            apply(g, ev, countries, changes, results_only)
 
     games.sort(key=lambda g: (g["t"], g["h"]))
     if sum(EVENTS.values()) or official_ok:
@@ -363,8 +362,10 @@ def pick_style(lg, now):
     return None
 
 
-def apply(g, ev, countries, ch):
+def apply(g, ev, countries, ch, results_only=False):
     # results / live / postponed
+    if results_only and ev["state"] == "pre":
+        return  # the league decides about postponements and kickoff times
     if ev["name"] in ("STATUS_POSTPONED", "STATUS_CANCELED", "STATUS_ABANDONED"):
         if not g.get("pp"):
             g["pp"] = 1; ch["postponed"] += 1
@@ -382,7 +383,7 @@ def apply(g, ev, countries, ch):
             g["s"] = s; ch["results"] += 1
         return
     # schedule (only future games)
-    if ev["state"] != "pre" or not ev["date"]:
+    if results_only or ev["state"] != "pre" or not ev["date"]:
         return
     stamp = datetime.now(timezone.utc).strftime("%d.%m.%Y")
     if not ev["timeValid"]:
