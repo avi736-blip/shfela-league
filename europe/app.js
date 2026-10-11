@@ -294,7 +294,7 @@ function statusOf(g) {
   if (isPast(g)) return '';
   return (g.ok ? '<span class="st ok">מועד סופי</span>' : '<span class="st est">מועד משוער</span>') + sourceTag(g);
 }
-const SRC_LABEL = { league: 'לפי הליגה', espn: 'לפי ESPN', data: 'לפי אתר נתונים' };
+const SRC_LABEL = { league: 'לפי הליגה', espn: 'לפי ESPN', escore: 'לפי eScore', data: 'לפי הקובץ המקורי' };
 function sourceTag(g) {
   const label = g.by === 'league' && g.byn ? 'לפי ' + g.byn : SRC_LABEL[g.by] || SRC_LABEL.data;
   return `<span class="by by-${esc(g.by || 'data')}">${esc(label)}</span>`;
@@ -502,7 +502,7 @@ function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.ad
 function footer() {
   const up = new Date(DB.updated).toLocaleString('he-IL', { timeZone: IL_TZ, dateStyle: 'short', timeStyle: 'short' });
   $('#foot').innerHTML = `<b>מועד סופי</b>: התאריך והשעה פורסמו. <b>מועד משוער</b>: עלול להשתנות, כדאי לבדוק שוב לפני שמזמינים טיסה או כרטיס.
-    ליד כל משחק כתוב מאיפה המועד: <b>לפי הליגה</b> (האתר הרשמי של הליגה או של UEFA), <b>לפי ESPN</b>, או <b>לפי אתר נתונים</b> לליגות שאין להן עדיין מקור אוטומטי.
+    ליד כל משחק כתוב מאיפה המועד: <b>לפי הליגה</b> (האתר הרשמי של הליגה או של UEFA), <b>לפי ESPN</b> כשהאתר הרשמי חסום, או <b>לפי eScore</b> (המקור של הקובץ המקורי) לליגות ש-ESPN לא מכסה.
     השעה הגדולה היא לפי השעון המקומי, ומתחתיה שעון ישראל. הלוח מתעדכן פעמיים ביום, העדכון האחרון: ${up}.`;
 }
 saveFavs();

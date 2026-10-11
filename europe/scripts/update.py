@@ -102,7 +102,7 @@ EVENTS = {}
 
 def tag_source(g):
     """Where the date/time of a game comes from: the league itself, ESPN, or another data site."""
-    if g.get("by"):
+    if g.get("by") and g["by"] != "data":
         return
     note = g.get("note", "")
     if "ESPN" in note:
@@ -113,6 +113,12 @@ def tag_source(g):
         g["by"] = "league"
     elif g["id"].isdigit():
         g["by"] = "espn"
+    elif g["id"].startswith("es-"):
+        g["by"] = "escore"  # where the original file took it from
+    elif g["id"].startswith("of-"):
+        g["by"], g["byn"] = "league", "לוח העונה של הליגה"  # placeholder dates from the season fixture release
+    elif g["id"].startswith("uefa-"):
+        g["by"], g["byn"] = "league", "UEFA"
     else:
         g["by"] = "data"
 
