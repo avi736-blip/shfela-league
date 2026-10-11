@@ -1,9 +1,9 @@
 {
- "ran": "2026-10-11T14:20Z",
+ "ran": "2026-10-11T14:32Z",
  "changes": {
-  "results": 9,
-  "moved": 41,
-  "timed": 0,
+  "results": 0,
+  "moved": 0,
+  "timed": 252,
   "postponed": 1,
   "live": 29
  },
@@ -199,31 +199,13 @@
   },
   "nor.1": {
    "ok": true,
-   "fixtures": 68,
-   "matched": 59,
+   "fixtures": 67,
+   "matched": 67,
    "added": 0,
-   "unmatched_sample": [
-    "Start - HamKam 2026-10-11 15:00:00+00:00",
-    "HamKam - Bodø/Glimt 2026-10-17 12:00:00+00:00",
-    "HamKam - Rosenborg 2026-10-24 16:00:00+00:00",
-    "KFUM - HamKam 2026-11-01 16:00:00+00:00",
-    "HamKam - Sarpsborg 08 2026-11-08 16:00:00+00:00",
-    "HamKam - Fredrikstad 2026-11-21 15:00:00+00:00",
-    "Lillestrøm - HamKam 2026-11-30 18:00:00+00:00",
-    "HamKam - Sandefjord Fotball 2026-12-06 18:15:00+00:00",
-    "Viking - HamKam 2026-12-13 16:00:00+00:00"
-   ],
+   "unmatched_sample": [],
    "ours_not_found": [
     "2026-10-11 Fredrikstad - Tromso",
-    "2026-10-11 IK Start - Hamarkameratene",
-    "2026-10-17 Hamarkameratene - Bodo/Glimt",
-    "2026-10-24 Hamarkameratene - Rosenborg",
-    "2026-11-01 KFUM Oslo - Hamarkameratene",
-    "2026-11-08 Hamarkameratene - Sarpsborg FK",
-    "2026-11-21 Hamarkameratene - Fredrikstad",
-    "2026-11-30 Lillestrom - Hamarkameratene",
-    "2026-12-06 Hamarkameratene - Sandefjord",
-    "2026-12-13 Viking FK - Hamarkameratene"
+    "2026-10-11 Aalesund - Sarpsborg FK"
    ]
   },
   "geo.1": {
@@ -235,6 +217,69 @@
    "ours_not_found": [
     "2026-10-11 FC Samgurali Tskaltubo - FC Gagra"
    ]
+  },
+  "fra.1": {
+   "ok": true,
+   "fixtures": 126,
+   "matched": 126,
+   "added": 0,
+   "unmatched_sample": [],
+   "ours_not_found": [
+    "2027-02-13 AJ Auxerre - Strasbourg",
+    "2027-02-13 Brest - Stade Rennais",
+    "2027-02-13 Le Mans - Paris Saint-Germain",
+    "2027-02-13 Lille - Nice",
+    "2027-02-13 Lorient - Le Havre AC",
+    "2027-02-13 Lyon - Lens",
+    "2027-02-13 Marseille - Angers",
+    "2027-02-13 Paris FC - Troyes",
+    "2027-02-13 Toulouse - AS Monaco",
+    "2027-02-20 AS Monaco - Le Mans"
+   ]
+  },
+  "por.1": {
+   "ok": true,
+   "fixtures": 9,
+   "matched": 0,
+   "added": 0,
+   "unmatched_sample": [],
+   "ours_not_found": [
+    "2026-10-11 Rio Ave - C.D. Nacional",
+    "2026-10-11 Benfica - Vitória de Guimaraes",
+    "2026-10-11 Arouca - Estrela",
+    "2026-10-12 FC Famalicao - Alverca",
+    "2026-10-23 Vitória de Guimaraes - Maritimo",
+    "2026-10-24 Estrela - Casa Pia",
+    "2026-10-24 Alverca - Arouca",
+    "2026-10-24 Gil Vicente - FC Porto",
+    "2026-10-25 Estoril - Moreirense",
+    "2026-10-25 C.D. Nacional - Braga"
+   ]
+  },
+  "eng.2": {
+   "ok": true,
+   "fixtures": 552,
+   "matched": 445,
+   "added": 0,
+   "unmatched_sample": [
+    "Birmingham City - Burnley 2027-05-01 11:30:00+00:00",
+    "Blackburn Rovers - Watford 2027-05-01 11:30:00+00:00",
+    "Derby County - Wolverhampton Wanderers 2027-05-01 11:30:00+00:00",
+    "Lincoln City - Charlton Athletic 2027-05-01 11:30:00+00:00",
+    "Millwall - Stoke City 2027-05-01 11:30:00+00:00",
+    "Preston North End - Cardiff City 2027-05-01 11:30:00+00:00",
+    "Queens Park Rangers - Norwich City 2027-05-01 11:30:00+00:00",
+    "Southampton - Sheffield United 2027-05-01 11:30:00+00:00",
+    "Swansea City - Middlesbrough 2027-05-01 11:30:00+00:00",
+    "West Bromwich Albion - Bolton Wanderers 2027-05-01 11:30:00+00:00",
+    "West Ham United - Portsmouth 2027-05-01 11:30:00+00:00",
+    "Wrexham - Bristol City 2027-05-01 11:30:00+00:00"
+   ],
+   "ours_not_found": []
+  },
+  "sui.1": {
+   "ok": false,
+   "error": "https://origins-webex-orchestrator.origins-digital.com/trpc/matchDays.getList?input=%7B%22: HTTP Error 401: Unauthorized"
   }
  },
  "espn_events_per_league": {
