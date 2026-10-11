@@ -1,13 +1,13 @@
 [
  {
-  "url": "https://www.slgr.gr/cdn-cgi/challenge-platform/h/g/precursor/4df4a60fa397/0.47390937878972417:1791691514:1WlrB52qfUCznmeOj2Pm_eCRBSfrqbW0yHmCrFw1_Lw/a48b6a16e9ac163c",
+  "url": "https://www.slgr.gr/cdn-cgi/challenge-platform/h/g/precursor/4df4a60fa397/0.9298840465669768:1791695126:o0xj79Cycw_w5gcoH9rvu7LofZnhVatJb2BQdjdqzX4/a48b722acb54d0ed",
   "status": 200,
   "method": "POST",
   "req_headers": {
    "sec-ch-ua-platform": "\"Windows\"",
    "referer": "https://www.slgr.gr/en/schedule/",
    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
-   "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+   "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
    "content-type": "text/plain;charset=UTF-8",
    "sec-ch-ua-mobile": "?0",
    "accept-language": "en-GB"

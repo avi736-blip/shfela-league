@@ -1,2 +1,2 @@
 200	28987	1 json	slgr_md7	https://www.slgr.gr/en/schedule/25/158/262707/
-200	28987	1 json	slgr_md12	https://www.slgr.gr/en/schedule/25/158/262712/
+403	28924	0 json	slgr_md12	https://www.slgr.gr/en/schedule/
