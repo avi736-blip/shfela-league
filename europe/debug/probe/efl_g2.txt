@@ -1,0 +1,7 @@
+URL: https://multi-club-matches.webapi.gc.eflservices.co.uk/v2/fixtures?competitionID=10&seasonID=2026
+FINAL: https://multi-club-matches.webapi.gc.eflservices.co.uk/v2/fixtures?competitionID=10&seasonID=2026
+STATUS: 403
+TYPE: application/json
+BYTES: 42
+
+{"message":"Missing Authentication Token"}

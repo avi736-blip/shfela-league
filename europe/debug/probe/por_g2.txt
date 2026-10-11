@@ -1,0 +1,7 @@
+URL: https://www.ligaportugal.pt/api/v1/matches?season=20262027&competition=ligaportugalbetclic&round=8
+FINAL: https://www.ligaportugal.pt/api/v1/matches?season=20262027&competition=ligaportugalbetclic&round=8
+STATUS: 404
+TYPE: text/plain; charset=utf-8
+BYTES: 9
+
+Not Found

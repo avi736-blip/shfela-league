@@ -1,0 +1,16 @@
+URL: https://ma-api.ligue1.fr/championship-matches?ids=l1_championship_match_73875
+FINAL: https://ma-api.ligue1.fr/championship-matches?ids=l1_championship_match_73875
+STATUS: 404
+TYPE: text/html; charset=utf-8
+BYTES: 159
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /championship-matches</pre>
+</body>
+</html>
