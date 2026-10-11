@@ -1,5 +1,9 @@
 [
- {"name":"coppa_seasons","url":"https://api-sdp.legaseriea.it/v1/coppa-italia/football/seasons?locale=en-GB","headers":{"Origin":"https://en.legaseriea.it","Referer":"https://en.legaseriea.it/"}},
- {"name":"den_kp","url":"https://superliga.dk/kampprogram"},
- {"name":"cro_rr","url":"https://hnl.hr/supersport-hnl/raspored-i-rezultati/"}
+ {"name":"rou_e12","url":"https://lpf.ro/etape-liga-1/12"},
+ {"name":"hun_r12","url":"https://adatbank.mlsz.hu/league/25/0/31786/12.html"},
+ {"name":"dfb_pd","url":"https://www.dfb.de/page-data/maenner/wettbewerbe/dfb-pokal/page-data.json"},
+ {"name":"cyp_gr","url":"https://www.cfa.com.cy/Gr/fixtures"},
+ {"name":"cyp_home","url":"https://www.cfa.com.cy/Gr/"},
+ {"name":"bfu","url":"https://bfunion.bg/"},
+ {"name":"aut_r9","url":"https://www.bundesliga.at/de/spielplan?runde=9"}
 ]
