@@ -1,0 +1,18 @@
+[
+ {
+  "url": "https://fh-118116076e9a4c2a96a99fbb70bea2a0.ecs.us-west-2.on.aws/events?cee=no",
+  "status": 200,
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_category\\\":[{\\\"rid\\\":\\\"1770857797169667\\\",\\\"v\\\":[\\\"Футбол\\\",\\\"Новини\\\",\\\"Livescore\\\"]}],\\\"page_bread_crumbs\\\":[{\\\"rid\\\":\\\"1371858478263125\\\",\\\"v\\\":[\\\"Начало\\\\n›\\\\nСъстезания\\\\n›\\\\nefbet Лига\\\"]}],\\\"author_article_name\\\":[{\\\"rid\\\":\\\"3245386195631534\\\",\\\"v\\\":[\\\"efbet Лига | България | efbet News\\\"]}],\\\"media_primary_image_url\\\":[{\\\"rid\\\":\\\"1819457936070208\\\",\\\"v\\\":[\\\"https://uploads.rabonatech.com/83b82374-281e-48cb-a6bc-e8710623d97c-1920x1040.webp\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_35db7b13a8b865ebccf26d4fdc35287daae21bd61597ae885041497826bfa2d7\",\"fb.pixel_id\":\"2420124575112463\",\"website_context\":{\"location\":\"https://efbetnews.com/football/competitions/fb:c:1\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1791730754886.912306370912096389\",\"event_meta_info\":{\"cs_est\":true}}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://efbetnews.com/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "en-GB"
+  },
+  "body": ""
+ }
+]

@@ -1,0 +1,12 @@
+200	438921	18 json	sco	https://spfl.co.uk/league/premiership/fixtures
+200	198173	4 json	bel	https://www.proleague.be/jpl-kalender
+200	306270	7 json	den	https://superliga.dk/kampprogram
+200	212003	5 json	cro	https://hnl.hr/supersport-hnl/raspored-i-rezultati/
+200	140740	6 json	legab	https://www.legab.it/seriebkt/calendario
+200	58759	0 json	rou	https://lpf.ro/cluburi/fc-rapid/30/calendar
+200	402311	0 json	hun	https://ada1bank.mlsz.hu/league?evad=25&szervezet=0&verseny=31786&fordulo=12
+404	217	0 json	cyp	https://www.cfa.com.cy/En/competitions/52/1
+200	1761252	1 json	bul	https://efbetnews.com/football/competitions/fb:c:1
+200	309035	0 json	aut	https://www.bundesliga.at/de/spielplan
+404	295393	13 json	dfb	https://www.dfb.de/maenner/wettbewerbe/dfb-pokal/spielplan
+200	1740167	23 json	coppa	https://en.legaseriea.it/coppa-italia

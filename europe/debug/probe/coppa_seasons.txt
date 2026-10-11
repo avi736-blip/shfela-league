@@ -1,0 +1,6 @@
+URL: https://api-sdp.legaseriea.it/v1/coppa-italia/football/seasons?locale=en-GB
+FINAL: https://api-sdp.legaseriea.it/v1/coppa-italia/football/seasons?locale=en-GB
+STATUS: 404
+TYPE: 
+BYTES: 0
+

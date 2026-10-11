@@ -1,0 +1,3 @@
+404	0	coppa_seasons	https://api-sdp.legaseriea.it/v1/coppa-italia/football/seasons?locale=en-GB
+200	151847	den_kp	https://superliga.dk/kampprogram
+200	165300	cro_rr	https://hnl.hr/supersport-hnl/raspored-i-rezultati/
