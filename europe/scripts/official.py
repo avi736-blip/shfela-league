@@ -578,6 +578,37 @@ def hnl(now):
     return out
 
 
+# ---------------- Austrian Bundesliga (bundesliga.at Spielplan) ----------------
+def bundesliga_at(now):
+    page = get("https://www.bundesliga.at/de/spielplan", {"Accept": "text/html"}, as_json=False)
+    page = re.sub(r'\sclass="[^"]*"', "", page)
+    tz, rows = ZoneInfo("Europe/Vienna"), []
+    for tr in re.findall(r"<tr>(.*?)</tr>", page, re.S):
+        ps = [html.unescape(x).strip() for x in re.findall(r"<p>([^<]*)</p>", tr)]
+        dt = next((x for x in ps if re.fullmatch(r"\d{2}\.\d{2}\.\d{4}", x)), None)
+        if not dt or len(ps) < 8:
+            continue
+        i = ps.index(dt)
+        rnd = ps[i - 1] if i > 0 and ps[i - 1].isdigit() else ""
+        tm = ps[i + 1] if re.fullmatch(r"\d{1,2}:\d{2}", ps[i + 1]) else None
+        rest = ps[i + 2:] if tm else ps[i + 1:]
+        home, away, score = rest[1], rest[3], rest[4] if len(rest) > 4 else ""
+        d, mo, y = (int(x) for x in dt.split("."))
+        utc = datetime(y, mo, d, *(int(x) for x in tm.split(":")), tzinfo=tz).astimezone(timezone.utc) if tm else None
+        sc = re.fullmatch(r"(\d+)\s*:\s*(\d+)", score.replace("\xa0", " "))
+        rows.append((rnd, utc, f"{y}-{mo:02d}-{d:02d}", home, away, sc))
+    by_r = {}
+    for r in rows:
+        by_r.setdefault(r[0], []).append(r[1])
+    out = []
+    for rnd, utc, day, home, away, sc in rows:
+        state = "post" if sc else "pre"
+        conf = utc is not None and (_round_confirmed(by_r.get(rnd, [])) or state != "pre")
+        out.append(_fx(home=home, away=away, utc=utc if conf else None, day=None if conf else day, confirmed=conf, state=state,
+                       score=[int(sc.group(1)), int(sc.group(2))] if sc else None))
+    return out
+
+
 SOURCES = {
     "uefa.champions": ("UEFA", "https://www.uefa.com/uefachampionsleague/fixtures-results/", ucl),
     "uefa.europa": ("UEFA", "https://www.uefa.com/uefaeuropaleague/fixtures-results/", uel),
@@ -600,4 +631,5 @@ SOURCES = {
     "sco.1": ("SPFL", "https://spfl.co.uk/league/premiership/fixtures", spfl),
     "den.1": ("Superliga", "https://superliga.dk/kampprogram", superliga),
     "cro.1": ("HNL", "https://hnl.hr/supersport-hnl/raspored-i-rezultati/", hnl),
+    "aut.1": ("Österreichische Bundesliga", "https://www.bundesliga.at/de/spielplan", bundesliga_at),
 }
