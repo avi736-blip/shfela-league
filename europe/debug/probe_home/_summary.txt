@@ -1,0 +1,2 @@
+200	109185	1 json	slgr	https://www.slgr.gr/en/schedule/
+403	28945	0 json	slgr_round	https://www.slgr.gr/en/schedule/25/158/262706/
