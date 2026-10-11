@@ -11,6 +11,7 @@ jobs:
       PYTHONIOENCODING: utf-8
       PROBE_PAGES: probe_pages_home.json
       PROBE_OUT: probe_home
+      PROBE_CHANNEL: chrome
     defaults:
       run:
         shell: powershell

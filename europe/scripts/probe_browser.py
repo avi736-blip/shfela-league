@@ -9,9 +9,27 @@ OUT.mkdir(parents=True, exist_ok=True)
 PAGES = json.loads((pathlib.Path(__file__).parent / os.environ.get("PROBE_PAGES", "probe_pages.json")).read_text(encoding="utf-8"))
 
 
+async def wait_cf(page, limit=60):
+    for _ in range(limit // 3):
+        try:
+            if "Just a moment" not in (await page.title()):
+                return True
+        except Exception:
+            pass
+        await page.wait_for_timeout(3000)
+    return False
+
+
 async def main():
     async with async_playwright() as p:
-        b = await p.chromium.launch()
+        b = None
+        if os.environ.get("PROBE_CHANNEL"):
+            try:
+                b = await p.chromium.launch(channel=os.environ["PROBE_CHANNEL"], headless=os.environ.get("PROBE_HEADED") != "1")
+                print("using", os.environ["PROBE_CHANNEL"])
+            except Exception as e:
+                print("channel failed", e)
+        b = b or await p.chromium.launch()
         ctx = await b.new_context(locale="en-GB", timezone_id="UTC",
                                   user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36")
         summary = []
@@ -34,6 +52,7 @@ async def main():
             try:
                 resp = await page.goto(url, wait_until="domcontentloaded", timeout=60000)
                 await page.wait_for_timeout(9000)
+                await wait_cf(page)
                 for sel in t.get("click", []):
                     try:
                         await page.click(sel, timeout=4000); await page.wait_for_timeout(1500)
@@ -41,7 +60,7 @@ async def main():
                         pass
                 for js in t.get("js", []):
                     try:
-                        await page.evaluate(js); await page.wait_for_timeout(9000)
+                        await page.evaluate(js); await page.wait_for_timeout(6000); await wait_cf(page)
                     except Exception as e:
                         print("js failed", e)
                 html = await page.content()
