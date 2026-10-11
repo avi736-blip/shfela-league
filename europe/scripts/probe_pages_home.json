@@ -1,4 +1,4 @@
 [
- {"name":"slgr","url":"https://www.slgr.gr/en/schedule/","click":["#onetrust-accept-btn-handler","button:has-text('Accept')"]},
- {"name":"slgr_round","url":"https://www.slgr.gr/en/schedule/25/158/262706/"}
+ {"name":"slgr_md7","url":"https://www.slgr.gr/en/schedule/","js":["document.querySelector('a[href=\"/en/schedule/25/158/262707/\"]').click()"]},
+ {"name":"slgr_md12","url":"https://www.slgr.gr/en/schedule/","js":["(()=>{const a=[...document.querySelectorAll('a[href*=\"/en/schedule/25/158/\"]')].find(x=>x.textContent.trim()==='Matchday 12');a&&a.click()})()"]}
 ]

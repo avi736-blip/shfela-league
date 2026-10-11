@@ -39,6 +39,11 @@ async def main():
                         await page.click(sel, timeout=4000); await page.wait_for_timeout(1500)
                     except Exception:
                         pass
+                for js in t.get("js", []):
+                    try:
+                        await page.evaluate(js); await page.wait_for_timeout(9000)
+                    except Exception as e:
+                        print("js failed", e)
                 html = await page.content()
                 status = resp.status if resp else 0
             except Exception as e:
