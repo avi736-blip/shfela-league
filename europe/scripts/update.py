@@ -250,8 +250,9 @@ def apply_official(g, fx, countries, label, url, stamp, ch):
         g["s"] = s
     if fx["state"] != "pre":
         return
-    if fx["confirmed"] and fx["utc"] and fx["utc"].astimezone(tz).strftime("%H:%M") == "00:00":
-        fx = dict(fx, confirmed=False, day=fx["utc"].astimezone(tz).strftime("%Y-%m-%d"), utc=None)  # midnight = time not set
+    if fx["confirmed"] and fx["utc"] and fx["utc"].astimezone(tz).hour < 6:
+        # a "kickoff" in the small hours is a placeholder for "time not set yet"
+        fx = dict(fx, confirmed=False, day=fx["utc"].astimezone(tz).strftime("%Y-%m-%d"), utc=None)
     if fx["confirmed"] and fx["utc"]:
         evt = iso_z(fx["utc"])
         if evt != g["t"] or g.get("nt") or not g.get("ok"):
