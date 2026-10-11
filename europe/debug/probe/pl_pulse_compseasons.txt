@@ -1,0 +1,7 @@
+URL: https://footballapi.pulselive.com/football/competitions/1/compseasons?page=0&pageSize=3
+FINAL: https://footballapi.pulselive.com/football/competitions/1/compseasons?page=0&pageSize=3
+STATUS: 200
+TYPE: application/json;charset=UTF-8
+BYTES: 203
+
+{"pageInfo":{"page":0,"numPages":12,"pageSize":3,"numEntries":35},"content":[{"label":"English Premier League Season 2026/2027","id":841.0},{"label":"2025/26","id":777.0},{"label":"2024/25","id":719.0}]}
