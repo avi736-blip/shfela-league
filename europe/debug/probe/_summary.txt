@@ -1,0 +1,5 @@
+200	644	sb_tc	https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3/active?_rt=c&_fmt=json&comp=8ey0ww2zsosdmwr8ehsorh6t7
+200	998533	sb_tc2	https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3?_rt=c&_fmt=json
+200	1412009	efbetleague	https://efbetleague.com/
+200	171076	cfa_root	https://www.cfa.com.cy/
+200	165601	cro_k14	https://hnl.hr/supersport-hnl/raspored-i-rezultati/?kolo=14

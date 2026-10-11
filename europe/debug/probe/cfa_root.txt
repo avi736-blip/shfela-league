@@ -1,0 +1,1772 @@
+URL: https://www.cfa.com.cy/
+FINAL: https://www.cfa.com.cy/
+STATUS: 200
+TYPE: text/html; charset=UTF-8
+BYTES: 171076
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+         <script id="Cookiebot" data-culture="Gr" src="https://consent.cookiebot.com/uc.js" data-cbid="505285fc-a4f3-4727-b024-03a8442ba178" data-blockingmode="auto"  type="text/javascript"></script>
+      <title>Κυπριακή Ομοσπονδία Ποδοσφαίρου - Επίσημη Ιστοσελίδα</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index">
+         
+        <link rel="shortcut icon" type="image/png" href="/images/cfa_logo_ico.png"/>
+        <!-- css  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap-select.css" rel="stylesheet" type="text/css">
+        
+        <link href="/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/main.css" rel="stylesheet" type="text/css">
+        <link href="/css/fotorama.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet" type="text/css">
+        <!-- <link href="/css/jquery.cookiebar.css" rel="stylesheet" type="text/css" /> -->
+        <!-- <link type="text/css" rel="stylesheet" href="/css/magicscroll.css"/> -->
+
+        <!-- javascripts  -->
+       
+       
+        <!-- <script type="text/javascript" src="/javascript/magicscroll.js"></script> --> 
+        <script language="javascript" src="/javascript/jquery-3.2.1.min.js"></script>  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+             
+        <!-- <script language="javascript" src="/javascript/bootstrap.min.js"></script> -->
+
+        <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+        <script language="javascript" src="/javascript/bootstrap-multiselect.js"></script>
+        <script language="javascript" src="/javascript/bootstrap-select.js"></script>
+      <!--   <script src="/javascript/jquery.cookiebar.js"></script> -->
+        <script language="javascript" src="/javascript/fotorama.min.js"></script>
+        <script language="javascript" src="/javascript/jquery.sldr.js"></script>
+        <script language="javascript" src="/javascript/jquery.scrollify.min.js"></script>
+        <script language="javascript" src="/javascript/jquery.scrollify.js"></script>
+
+        <script type="text/javascript" src="/javascript/jcarousellite_1.0.1.js"></script>
+
+   <!--       <script language="javascript" src="/javascript/jquery.localScroll_.js"></script> -->
+<!-- End Google Tag Manager -->
+
+
+<!-- Google tag (gtag.js) -->
+
+      
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VKFV9CXHJS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VKFV9CXHJS');
+</script>
+
+
+
+
+    
+    </head>
+    <body>
+        <!-- <div class="col-md-12 wt-place">
+            <img src="/images/CFA_wm.png" style="position:  fixed;right: 50px;" />
+        </div> -->
+        <div class="watermark"> <img style=" width: 500px; " src="/images/CFA_wm5.png"/></div>
+        <link href="/css/jquery.smartmenus.bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/css/nav.css" rel="stylesheet" type="text/css">
+
+
+
+<script language="javascript" src="/javascript/jquery.smartmenus.min.js"></script>
+<script language="javascript" src="/javascript/jquery.smartmenus.bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+               function myFunction() {
+                    var x = document.getElementById("myDIV");
+                    // alert('display '+x.style.display);
+                    if (!x.style.display) {
+                        x.style.display = "block";
+                    } else if (x.style.display === "none") {
+                       x.style.display = "block";
+                    }else{
+                        x.style.display = "none";
+                    }
+                }
+           </script>
+           <div class="navbar navbar-default" role="navigation">
+
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+
+                   <a href="/Gr/home" class="navbar-brand">
+                       <img class="img-responsive" src="/images/cfa_new1.png" />
+                   </a>
+               </div>
+
+               <div class="navbar-collapse collapse">
+                   <div class="row">
+                       <!-- Main nav - dynamically generated from DB -->
+                       <ul class="nav navbar-nav main-nav">
+                                                                                                                                    <!-- Show all menu items for other languages -->
+                                                                                  <li><a href="/Gr/home">
+                                               Αρχική </a></li>
+                                                                                                                                                                                                                                             <!-- Show all menu items for other languages -->
+                                                                                  <li><a href="#">Νέα & Πληροφορίες<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/news">Ειδήσεις</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/131">Ιστορία της ΚΟΠ</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/expresidents">Πρώην Προέδροι </a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/committees">Επιτροπές</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/5">Δικαστική Επιτροπή & Εφετείο</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/103">Fair Play</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/9">Διαιτησία</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/352">VAR</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/4">Σχολή Προπονητών</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/3">Εισιτήρια Πρωταθλημάτων</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/downloads">Λήψη Αρχείων</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                                                             <!-- Show all menu items for other languages -->
+                                                                                  <li><a href="#">Εθνικές Ομάδες<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/nationalteams/1">Εθνική Ανδρών</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/9">Εθνική Γυναικών</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/7">Εθνική Ανδρών Σάλας</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/3">Εθνική Ελπίδων U21</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/4">Εθνική Νέων U19</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/5">Εθνική Παίδων U17</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/13">Εθνική Παίδων U16</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/2">Εθνική Παίδων U15</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/6">Εθνική  Παίδων U14</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/8"> Εθνική Νέων U19 Σάλας</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/10">Εθνική Νεανίδων U 19</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/11">Εθνική Κορασίδων U17</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                                                             <!-- Show all menu items for other languages -->
+                                                                                  <li><a href="#">Διοργανώσεις<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a >
+                                                               'Ανδρες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68124755">Cyprus League by Stoiximan 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68297384">Super Cup 2026</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68536042">Κύπελλο Coca Cola Α' Β' Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68156043">Παγκύπριο Πρωτάθλημα Β΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68156107">Παγκύπριο Πρωτάθλημα Γ΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68160192">Παγκύπριο Πρωτάθλημα Επίλεκτης Κατηγορίας ΣΤΟΚ 2026/27</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Νέοι<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68155696">Παγκύπριο Πρωτάθλημα Νέων Κ-19 Α΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68155796">Παγκύπριο Πρωτάθλημα Νέων Κ-19 Β΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68155915">Παγκύπριο Πρωτάθλημα Νέων Κ-19 Γ΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Παίδες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68311430">Ανώτατη Κατηγορία Παίδων Κ-14 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68311372">Ανώτατη Κατηγορία Παίδων Κ-15 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68311042">Ανώτατη Κατηγορία Παίδων Κ-16 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68310940">Ανώτατη Κατηγορία Παίδων Κ-17 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68373681">Επίλεκτη Κατηγορία Παίδων Κ-14 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68370268">Επίλεκτη Κατηγορία Παίδων Κ-15 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68366996">Επίλεκτη Κατηγορία Παίδων Κ-16  2026/2027</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68362931">Επίλεκτη Κατηγορία Παίδων Κ-17 2026/2027</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68438898">Παγκύπριο Πρωτάθλημα Παίδων Κ-15 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68412005">Παγκύπριο Πρωτάθλημα Παίδων Κ-16 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68409937">Παγκύπριο Πρωτάθλημα Παίδων Κ-17 2026/27</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Futsal<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68497373">Παγκύπριο Πρωτάθλημα Futsal Ανδρών 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68452804">Super Cup FUTSAL 2026</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Γυναίκες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68354866">Πρωτάθλημα Γυναικών 2026-2027</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68416094">Super Cup Γυναικών 2026</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68353958">Πρωτάθλημα Κοριτσιών Κ-18 2026-2027</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                                                             <!-- Show all menu items for other languages -->
+                                                                                  <li><a href="#">Grassroots<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/categorynews/410">Ειδήσεις Grassroots</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Nicosia">Λευκωσία</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Limassol">Λεμεσός</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Paphos">Πάφος</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Larnaca">Λάρνακα</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Famagusta">Αμμόχωστος</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                                                             <!-- Show all menu items for other languages -->
+                                                                                  <li><a href="#">Κριτήρια UEFA<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/categorynews/17">Ειδήσεις Κριτηρίων UEFA</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/274">Προγραμματισμένα Σεμινάρια</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/downloads/2">Οικονομικές Καταστάσεις Σωματείων</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/downloads/1">Λήψη Αρχείων</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                                                             <!-- Show all menu items for other languages -->
+                                                                                  <li><a href="#">Στατιστικά<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a >
+                                                               Πρωταθλήτριες ομάδες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/285">Πρωταθλήτριες Ομάδες Α' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/356">Πρωταθλήτριες Ομάδες Β' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/357">Πρωταθλήτριες Ομάδες Γ' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/426">Πρωταθλήτριες Ομάδες Δ' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/359">Πρωταθλήτριες Ομάδες Futsal</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/310">Πρωταθλήτριες Ομάδες Γυναικών </a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/355">Πρωταθλήτριες Ομάδες Νέων Κ-19 Α' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/403">Πρωταθλήτριες Ομάδες - Νέοι Β' Κατηγορίας</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Κύπελλο / Τελικοί & Κατακτήσεις<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/381">ΤΕΛΙΚΟΙ ΚΥΠΕΛΛΟΥ ΚΥΠΡΟΥ</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/383">Τελικοί Κυπέλλου Γυναικών</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/382">Κυπελλούχοι Futsal</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/325">Κύπελλο Coca - Cola Μικρών Κατηγοριών</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/364">Τελικοί Κυπέλλου Νέων Κ-19 & Κατακτήσεις</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Ιστορικά Στατιστικά Α’ Κατηγορίας<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/385">Ισοπαλίες με σκορ 5-5</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/363">Αήττητο σερί & συνεχόμενες νίκες</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/371">Πρεμιέρα νεοφώτιστων ομάδων από το 2012/2013</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/414">Ιστορικά Στατιστικά Κυπέλλου Coca - Cola</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Κυπριακές Ομάδες στην Ευρώπη<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/317">Οι πρώτοι σκόρερ στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/398">Τα 1029 τέρματα των ομάδων μας στην Ευρώπη</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/316">Συμμετοχές & αγώνες ομάδων στην Ευρώπη</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/374">Η προϊστορία Κύπρος - Αγγλία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/400">Οι ομάδες μας με αντίπαλο την Αυστρία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/408">Προϊστορία Κύπρος - Αρμενία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/318">Η προϊστορία μας με ομάδες από το Αζερμπαϊτζάν</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/411">Προϊστορία Κύπρος - Αλβανία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/370">Η προϊστορία μας με ομάδες από το Βέλγιο</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/319">Η προϊστορία Κύπρος - Βουλγαρία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/413">Η προϊστορία Κύπρος - Βοσνία / Ερζεγοβίνη</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/422">Η προϊστορία Κύπρος - Βόρεια Ιρλανδία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/387">Η προϊστορία Κύπρος - Πολωνία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/424">Η προϊστορία Κύπρος - Γαλλία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/365">Η προϊστορία μας με ομάδες από τη Σουηδία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/402">Η προϊστορία μας με ομάδες της Γερμανίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/366">Η προϊστορία μας με ομάδες από την Ουκρανία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/367">Η προϊστορία μας με ομάδες από την Ελλάδα</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/416">Προϊστορία Κύπρος - Γεωργία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/315">Η προϊστορία μας με ομάδες από τη Δανία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/417">Η προϊστορία Κύπρος - Ιταλία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/368">Η προϊστορία μας με ομάδες από τη Σερβία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/392">Η προϊστορία Κύπρος - Τσεχία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/369">Η προϊστορία μας με ομάδες από το Καζακστάν</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/401">Η προϊστορία μας με ομάδες της Σλοβενίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/421">Η προϊστορία Κύπρος - Κροατία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/373">Η προϊστορία Κύπρος - Τουρκία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/375">Η προϊστορία Κύπρου - Ολλανδίας στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/390">Η προϊστορία Κύπρος - Ισπανία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/391">Η προϊστορία Κύπρος - Σκωτία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/0">Η προϊστορία Κύπρος - Σλοβακία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/394">Η προϊστορία Κύπρος - Ουγγαρία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/396">Προϊστορία Κύπρος - Ρουμανία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/397">Κύπρος - Λετονία (προϊστορία στα Κύπελλα UEFA)</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/386">Η προϊστορία μας με ομάδες από τη Λευκορωσία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/404">Προϊστορία Κύπρος - Ισλανδία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/405">Προϊστορία Κύπρος - ΕΪΡΕ στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/406">Προϊστορία Κύπρος - Νησιά Φαρόε στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/407">Προϊστορία Κύπρος - Ελβετία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/415">Προϊστορία Κύπρος - Ισραήλ στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/410">Προϊστορία Κύπρος - Φινλανδία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/409">Προϊστορία Κύπρος - Ουαλία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/283">Πρώτοι Σκόρερ Α' Κατηγορίας</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/302">Πρώτοι Σκόρερ Β' Κατηγορίας</a></li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Super Cup<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/287">Super Cup αγώνες και κατακτήσεις</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/372">Super Cup Futsal</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/393">Super Cup Γυναικών</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                    
+                           <!-- Search icon -->
+                           <li class="last-item">
+                               <a id="target" onclick="myFunction()">
+                                   <img src="\images\search_icon.png" height="20px;">
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+
+                   <div class="row rightMenu">
+                       <!-- Right nav -->
+                       <ul class="nav navbar-nav navbar-right">
+                           <li> <a href='https://www.facebook.com/cyprusfaofficial/' target="facebook"><img src="\images\facebook.png" height="15px;"></a></li>
+                           <li> <a href="https://twitter.com/CyprusFA" target="twitter"><img src="\images\icons8-x-50.png" height="24px;"></a></li>
+                           <li> <a href='https://www.youtube.com/channel/UCEzXko3X4P_M5Az4RRB8yOw' target="youtube"><img src="\images\youtube.png" height="15px;"></a></li>
+                           <li> <a href="https://www.instagram.com/cyprusfa_official/" target="instagram"><img src="\images\instagram.png" height="20px;"></a></li>
+                           <li> <a href='/En/home '><img src="\images\en_circle.png" height="25px;" style="border-radius: 50%;"></a></li>
+                           <li> <a href="/Gr/home"><img src="\images\gr_circle.png" height="25px;" style="border-radius: 50%;"></a></li>
+                       </ul>
+                   </div>
+               </div><!--/.nav-collapse -->
+
+           </div>
+
+           <script>
+               // Function to check the current URL and modify the English link behavior
+               document.addEventListener('DOMContentLoaded', function() {
+                   const langLink = document.querySelector('a[href^="/En"]'); // Select the English link
+
+                   if (langLink) {
+                       langLink.addEventListener('click', function(event) {
+                           // Get the current URL path (excluding domain)
+                           const currentPath = window.location.pathname;
+
+                           // Check if the path includes one of the allowed routes
+                           if (!currentPath.includes('/home') &&
+                               !currentPath.includes('/nationalteams') &&
+                               !currentPath.includes('/competitions')) {
+                               // Prevent the default action (navigation)
+                               event.preventDefault();
+
+                               // Redirect to /home in English
+                               window.location.href = '/En/home';
+                           }
+                       });
+                   }
+               });
+           </script>
+
+
+           <!-- <div class="navbar navbar-default" role="navigation">
+
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+
+                   <a href="/Gr/home" class="navbar-brand">
+                       <img class="img-responsive" src="/images/cfa_new1.png" />
+                   </a>
+               </div>
+
+               <div class="navbar-collapse collapse">
+                   <div class="row"> -->
+                       <!-- Main nav - dynamically generated from DB -->
+                       <!-- <ul class="nav navbar-nav main-nav">
+                                                                                              -->
+                                       <!-- Show all menu items for other languages -->
+                                       <!--                                            <li><a href="/Gr/home">
+                                               Αρχική </a></li>
+                                                                                                                                                                                                       -->
+                                       <!-- Show all menu items for other languages -->
+                                       <!--                                            <li><a href="#">Νέα & Πληροφορίες<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/news">Ειδήσεις</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/131">Ιστορία της ΚΟΠ</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/expresidents">Πρώην Προέδροι </a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/committees">Επιτροπές</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/5">Δικαστική Επιτροπή & Εφετείο</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/103">Fair Play</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/9">Διαιτησία</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/352">VAR</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/4">Σχολή Προπονητών</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/categorynews/3">Εισιτήρια Πρωταθλημάτων</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/downloads">Λήψη Αρχείων</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                       -->
+                                       <!-- Show all menu items for other languages -->
+                                       <!--                                            <li><a href="#">Εθνικές Ομάδες<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/nationalteams/1">Εθνική Ανδρών</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/9">Εθνική Γυναικών</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/7">Εθνική Ανδρών Σάλας</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/3">Εθνική Ελπίδων U21</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/4">Εθνική Νέων U19</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/5">Εθνική Παίδων U17</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/13">Εθνική Παίδων U16</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/2">Εθνική Παίδων U15</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/6">Εθνική  Παίδων U14</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/8"> Εθνική Νέων U19 Σάλας</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/10">Εθνική Νεανίδων U 19</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/nationalteams/11">Εθνική Κορασίδων U17</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                       -->
+                                       <!-- Show all menu items for other languages -->
+                                       <!--                                            <li><a href="#">Διοργανώσεις<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a >
+                                                               'Ανδρες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68124755">Cyprus League by Stoiximan 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68297384">Super Cup 2026</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68536042">Κύπελλο Coca Cola Α' Β' Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68156043">Παγκύπριο Πρωτάθλημα Β΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68156107">Παγκύπριο Πρωτάθλημα Γ΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68160192">Παγκύπριο Πρωτάθλημα Επίλεκτης Κατηγορίας ΣΤΟΚ 2026/27</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Νέοι<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68155696">Παγκύπριο Πρωτάθλημα Νέων Κ-19 Α΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68155796">Παγκύπριο Πρωτάθλημα Νέων Κ-19 Β΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68155915">Παγκύπριο Πρωτάθλημα Νέων Κ-19 Γ΄ Κατηγορίας 2026/27</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Παίδες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68311430">Ανώτατη Κατηγορία Παίδων Κ-14 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68311372">Ανώτατη Κατηγορία Παίδων Κ-15 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68311042">Ανώτατη Κατηγορία Παίδων Κ-16 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68310940">Ανώτατη Κατηγορία Παίδων Κ-17 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68373681">Επίλεκτη Κατηγορία Παίδων Κ-14 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68370268">Επίλεκτη Κατηγορία Παίδων Κ-15 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68366996">Επίλεκτη Κατηγορία Παίδων Κ-16  2026/2027</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68362931">Επίλεκτη Κατηγορία Παίδων Κ-17 2026/2027</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68438898">Παγκύπριο Πρωτάθλημα Παίδων Κ-15 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68412005">Παγκύπριο Πρωτάθλημα Παίδων Κ-16 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68409937">Παγκύπριο Πρωτάθλημα Παίδων Κ-17 2026/27</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Futsal<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68497373">Παγκύπριο Πρωτάθλημα Futsal Ανδρών 2026/27</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68452804">Super Cup FUTSAL 2026</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Γυναίκες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/competitions/68354866">Πρωτάθλημα Γυναικών 2026-2027</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68416094">Super Cup Γυναικών 2026</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/competitions/68353958">Πρωτάθλημα Κοριτσιών Κ-18 2026-2027</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                       -->
+                                       <!-- Show all menu items for other languages -->
+                                       <!--                                            <li><a href="#">Grassroots<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/categorynews/410">Ειδήσεις Grassroots</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Nicosia">Λευκωσία</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Limassol">Λεμεσός</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Paphos">Πάφος</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Larnaca">Λάρνακα</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/grassroots/77/Famagusta">Αμμόχωστος</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                       -->
+                                       <!-- Show all menu items for other languages -->
+                                       <!--                                            <li><a href="#">Κριτήρια UEFA<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a href="/Gr/categorynews/17">Ειδήσεις Κριτηρίων UEFA</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/274">Προγραμματισμένα Σεμινάρια</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/downloads/2">Οικονομικές Καταστάσεις Σωματείων</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/downloads/1">Λήψη Αρχείων</a></li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                                                                                       -->
+                                       <!-- Show all menu items for other languages -->
+                                       <!--                                            <li><a href="#">Στατιστικά<span class="caret"></span></a>
+                                               <ul class="dropdown-menu">
+                                                                                                                                                                                                                        <li><a >
+                                                               Πρωταθλήτριες ομάδες<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/285">Πρωταθλήτριες Ομάδες Α' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/356">Πρωταθλήτριες Ομάδες Β' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/357">Πρωταθλήτριες Ομάδες Γ' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/426">Πρωταθλήτριες Ομάδες Δ' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/359">Πρωταθλήτριες Ομάδες Futsal</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/310">Πρωταθλήτριες Ομάδες Γυναικών </a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/355">Πρωταθλήτριες Ομάδες Νέων Κ-19 Α' Κατηγορίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/403">Πρωταθλήτριες Ομάδες - Νέοι Β' Κατηγορίας</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Κύπελλο / Τελικοί & Κατακτήσεις<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/381">ΤΕΛΙΚΟΙ ΚΥΠΕΛΛΟΥ ΚΥΠΡΟΥ</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/383">Τελικοί Κυπέλλου Γυναικών</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/382">Κυπελλούχοι Futsal</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/325">Κύπελλο Coca - Cola Μικρών Κατηγοριών</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/364">Τελικοί Κυπέλλου Νέων Κ-19 & Κατακτήσεις</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Ιστορικά Στατιστικά Α’ Κατηγορίας<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/385">Ισοπαλίες με σκορ 5-5</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/363">Αήττητο σερί & συνεχόμενες νίκες</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/371">Πρεμιέρα νεοφώτιστων ομάδων από το 2012/2013</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/414">Ιστορικά Στατιστικά Κυπέλλου Coca - Cola</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Κυπριακές Ομάδες στην Ευρώπη<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/317">Οι πρώτοι σκόρερ στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/398">Τα 1029 τέρματα των ομάδων μας στην Ευρώπη</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/316">Συμμετοχές & αγώνες ομάδων στην Ευρώπη</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/374">Η προϊστορία Κύπρος - Αγγλία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/400">Οι ομάδες μας με αντίπαλο την Αυστρία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/408">Προϊστορία Κύπρος - Αρμενία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/318">Η προϊστορία μας με ομάδες από το Αζερμπαϊτζάν</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/411">Προϊστορία Κύπρος - Αλβανία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/370">Η προϊστορία μας με ομάδες από το Βέλγιο</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/319">Η προϊστορία Κύπρος - Βουλγαρία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/413">Η προϊστορία Κύπρος - Βοσνία / Ερζεγοβίνη</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/422">Η προϊστορία Κύπρος - Βόρεια Ιρλανδία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/387">Η προϊστορία Κύπρος - Πολωνία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/424">Η προϊστορία Κύπρος - Γαλλία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/365">Η προϊστορία μας με ομάδες από τη Σουηδία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/402">Η προϊστορία μας με ομάδες της Γερμανίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/366">Η προϊστορία μας με ομάδες από την Ουκρανία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/367">Η προϊστορία μας με ομάδες από την Ελλάδα</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/416">Προϊστορία Κύπρος - Γεωργία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/315">Η προϊστορία μας με ομάδες από τη Δανία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/417">Η προϊστορία Κύπρος - Ιταλία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/368">Η προϊστορία μας με ομάδες από τη Σερβία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/392">Η προϊστορία Κύπρος - Τσεχία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/369">Η προϊστορία μας με ομάδες από το Καζακστάν</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/401">Η προϊστορία μας με ομάδες της Σλοβενίας</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/421">Η προϊστορία Κύπρος - Κροατία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/373">Η προϊστορία Κύπρος - Τουρκία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/375">Η προϊστορία Κύπρου - Ολλανδίας στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/390">Η προϊστορία Κύπρος - Ισπανία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/391">Η προϊστορία Κύπρος - Σκωτία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/0">Η προϊστορία Κύπρος - Σλοβακία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/394">Η προϊστορία Κύπρος - Ουγγαρία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/396">Προϊστορία Κύπρος - Ρουμανία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/397">Κύπρος - Λετονία (προϊστορία στα Κύπελλα UEFA)</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/386">Η προϊστορία μας με ομάδες από τη Λευκορωσία</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/404">Προϊστορία Κύπρος - Ισλανδία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/405">Προϊστορία Κύπρος - ΕΪΡΕ στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/406">Προϊστορία Κύπρος - Νησιά Φαρόε στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/407">Προϊστορία Κύπρος - Ελβετία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/415">Προϊστορία Κύπρος - Ισραήλ στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/410">Προϊστορία Κύπρος - Φινλανδία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/409">Προϊστορία Κύπρος - Ουαλία στα Κύπελλα Ευρώπης</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/283">Πρώτοι Σκόρερ Α' Κατηγορίας</a></li>
+                                                                                                                                                                                                                            <li><a href="/Gr/page/302">Πρώτοι Σκόρερ Β' Κατηγορίας</a></li>
+                                                                                                                                                                                                                            <li><a >
+                                                               Super Cup<span class="caret"></span></a>
+                                                               <ul class="dropdown-menu dropdown-lvl3">
+                                                                                                                                                                                                                                                                                        <li><a href="/Gr/page/287">Super Cup αγώνες και κατακτήσεις</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/372">Super Cup Futsal</a></li>
+                                                                                                                                                                                                                                                                                            <li><a href="/Gr/page/393">Super Cup Γυναικών</a></li>
+                                                                                                                                                                                                         </ul>
+                                                           </li>
+                                                                                                                                                         </ul>
+                                           </li>
+                                                                                                                                     -->
+
+                           <!-- Search icon -->
+                           <!-- <li class="last-item">
+                               <a id="target" onclick="myFunction()">
+                                   <img src="\images\search_icon.png" height="20px;">
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+
+                   <div class="row rightMenu"> -->
+                       <!-- Right nav -->
+                       <!-- <ul class="nav navbar-nav navbar-right">
+                           <li> <a href='https://www.facebook.com/cyprusfaofficial/' target="facebook"><img src="\images\facebook.png" height="15px;"></a></li>
+                           <li> <a href="https://twitter.com/CyprusFA" target="twitter"><img src="\images\twetter.png" height="15px;"></a></li>
+                           <li> <a href='https://www.youtube.com/channel/UCEzXko3X4P_M5Az4RRB8yOw' target="youtube"><img src="\images\youtube.png" height="15px;"></a></li>
+                           <li> <a href="https://www.instagram.com/cyprusfa_official/" target="instagram"><img src="\images\instagram.png" height="20px;"></a></li>
+                           <li> <a href='/En/home '><img src="\images\en_circle.png" height="25px;" style="border-radius: 50%;"></a></li>
+                           <li> <a href="/Gr/home"><img src="\images\gr_circle.png" height="25px;" style="border-radius: 50%;"></a></li>                        </ul>
+                   </div> -->
+               <!-- </div>
+
+           </div> -->
+        <div class="mainContent">
+          
+            
+
+
+<div class="container-fluid home-main-content row" >
+
+        <div class="responsive-navigation home-tabs row">
+        <button class="tablinks btn btn-primary" onclick="openLayer(event, 'Details')" >Στατιστικά</button>
+        <button class="tablinks btn btn-primary" onclick="openLayer(event, 'Feature')" id="defaultOpen">Γενικά</button>
+        <button class="tablinks btn btn-primary" onclick="openLayer(event, 'More')">Περισσότερα</button>
+    </div>
+    
+    <div id="Details" class="r1 col-md-3 side-layers-col tabcontent">
+        <div class="section-content">
+
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                    <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+					<a href="https://www.cfa.com.cy/Gr/news/53687" target="banner-102">				<img class="img-responsive" src="/images/BannersGr/1788351337.png"/>
+			</a>	
+			
+			
+			
+</div>               <!--  </div> -->
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                    <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+			
+					<a href="https://www.cfa.com.cy/Gr/contestbestgoal/68124755/4" target="banner-99">				<img class="img-responsive" src="/images/BannersGr/1772087388.jpg"/>
+			</a>	
+			
+			
+</div>               <!--  </div> -->
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                    <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+					<a href="https://www.cfa.com.cy/Gr/contestmvp/68124755/4" target="banner-100">				<img class="img-responsive" src="/images/BannersGr/1772087340.jpg"/>
+			</a>	
+			
+</div>               <!--  </div> -->
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                    <div class="banner-widget ">
+
+	
+			
+			
+			
+					<a href="https://www.cfa.com.cy/Gr/news/53499" target="banner-105">				<img class="img-responsive" src="/images/BannersGr/1781871378.png"/>
+			</a>	
+			
+			
+			
+			
+			
+			
+</div>               <!--  </div> -->
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                    <div class="banner-widget ">
+
+	
+			
+					<a href="/Gr/referees" target="banner-80">				<img class="img-responsive" src="/images/BannersGr/1765455601.jpg"/>
+			</a>	
+			
+			
+			
+			
+			
+			
+			
+			
+</div>               <!--  </div> -->
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                    <div class="banner-widget ">
+
+	
+					<a href="https://www.cfa.com.cy/Gr/news/44622" target="banner-79">				<img class="img-responsive" src="/images/BannersGr/1718607859.png"/>
+			</a>	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+</div>               <!--  </div> -->
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                    <div class="banner-widget ">
+
+	
+			
+			
+					<a href="https://www.cfa.com.cy/Gr/news/51013" target="banner-101">				<img class="img-responsive" src="/images/BannersGr/1745562492.png"/>
+			</a>	
+			
+			
+			
+			
+			
+			
+			
+</div>               <!--  </div> -->
+                          <!--   <div style="height: 300px">
+                    <h2 class="section-header"><span></span></h2> -->
+                                                            
+                                        
+                     
+<div class="event-widget">
+	 <!-- <h2 class="news-category-header"><span>Προσεχή Γεγονότα</span></h2> -->
+	  <h2 class="no-span">Προσεχή Γεγονότα</h2>
+	
+	 	 	<a href="/Gr/events/2838">
+		 	<p class="event-date">2026-10-11</p>
+		 	<p class="event-title"> Cyprus League by Stoiximan</p>
+		 	<p class="event-intro"> <p>Ανόρθωση - Πάφος, ΑΕΛ - Ομόνοια 29Μ, Ολυμπιακός - Άρης</p></p>
+		 	<div class="event-line"></div>
+		 </a>
+
+	 	 	<a href="/Gr/events/2837">
+		 	<p class="event-date">2026-10-12</p>
+		 	<p class="event-title"> Cyprus League by Stoiximan</p>
+		 	<p class="event-intro"> <p>ΑΕΚ - Ομόνοια Αραδίππου (19:00)</p></p>
+		 	<div class="event-line"></div>
+		 </a>
+
+	 	 	<a href="/Gr/events/2839">
+		 	<p class="event-date">2026-10-13</p>
+		 	<p class="event-title"> Διεθνής Φιλικός Αγώνας</p>
+		 	<p class="event-intro"> <p>Μάλτα - Εθνική Παίδων Κ-15</p></p>
+		 	<div class="event-line"></div>
+		 </a>
+
+	 	 	<a href="/Gr/events/2840">
+		 	<p class="event-date">2026-10-14</p>
+		 	<p class="event-title"> Κύπελλο Coca - Cola</p>
+		 	<p class="event-intro"> <p>Σπάρτακος - Krasava, Άρης - Εθνικός, Ομόνοια 29Μ - ΑΕΠ</p></p>
+		 	<div class="event-line"></div>
+		 </a>
+
+	 	 <a class="see-more" href="/Gr/events">Περισσότερα</a>
+</div>               <!--  </div> -->
+            
+
+        </div>
+
+    </div>     <div class="col-md-6 r2 tabcontent" id="Feature">
+        <div class="section-content bg-alt">
+       
+
+                                         <!--                  -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner carousel-home-inner">
+    
+    
+    
+		       <div class="item  active   news-slider-item">
+           <a href="/Gr/news/53887" title="Συνεργασία ΚΟΠ και Εθνικής Αρχής Στοιχημάτων για το Ασφαλές Παιχνίδι">
+		            <!-- <div class="thumbnail"> -->
+		                <img class="news-widget-img-slider img-responsive" src="/images/NewsImages/1791649212.jpg" alt="Συνεργασία ΚΟΠ και Εθνικής Αρχής Στοιχημάτων για το Ασφαλές Παιχνίδι" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Συνεργασία ΚΟΠ και Εθνικής Αρχής Στοιχημάτων για το Ασφαλές Παιχνίδι</h4>
+		                <!-- </div> -->
+		            </div></a>
+		        </div>
+		         
+  
+    
+		       <div class="item   news-slider-item">
+           <a href="/Gr/news/53886" title="Β' Κατηγορία: Τρίτη σερί νίκη για τον Εθνικό Άχνας">
+		            <!-- <div class="thumbnail"> -->
+		                <img class="news-widget-img-slider img-responsive" src="/images/NewsImages/1791644949.jpg" alt="Β' Κατηγορία: Τρίτη σερί νίκη για τον Εθνικό Άχνας" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Β' Κατηγορία: Τρίτη σερί νίκη για τον Εθνικό Άχνας</h4>
+		                <!-- </div> -->
+		            </div></a>
+		        </div>
+		         
+  
+    
+		       <div class="item   news-slider-item">
+           <a href="/Gr/news/53881" title="Η Κύπρος στο FIFA U-15 World Cup & Festival 2026">
+		            <!-- <div class="thumbnail"> -->
+		                <img class="news-widget-img-slider img-responsive" src="/images/NewsImages/1791526754.jpg" alt="Η Κύπρος στο FIFA U-15 World Cup & Festival 2026" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Η Κύπρος στο FIFA U-15 World Cup & Festival 2026</h4>
+		                <!-- </div> -->
+		            </div></a>
+		        </div>
+		         
+  
+    
+		       <div class="item   news-slider-item">
+           <a href="/Gr/news/53879" title="Συνεχίζεται η προετοιμασία της Εθνικής μας ομάδας Γυναικών">
+		            <!-- <div class="thumbnail"> -->
+		                <img class="news-widget-img-slider img-responsive" src="/images/NewsImages/1791518281.jpeg" alt="Συνεχίζεται η προετοιμασία της Εθνικής μας ομάδας Γυναικών" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Συνεχίζεται η προετοιμασία της Εθνικής μας ομάδας Γυναικών</h4>
+		                <!-- </div> -->
+		            </div></a>
+		        </div>
+		         
+     
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+ <!-- Indicators -->
+  <ol  class="carousel-indicators visible-sm-block hidden-xs-block visible-md-block visible-lg-block">
+                        <li   data-target="#myCarousel" data-slide-to="0"  class="active c">
+              <img style="height: 60px;" src="/images/NewsImages/1791649212.jpg" alt="..." class="img-responsive">
+            </li>
+                        <li   data-target="#myCarousel" data-slide-to="1" c">
+              <img style="height: 60px;" src="/images/NewsImages/1791644949.jpg" alt="..." class="img-responsive">
+            </li>
+                        <li   data-target="#myCarousel" data-slide-to="2" c">
+              <img style="height: 60px;" src="/images/NewsImages/1791526754.jpg" alt="..." class="img-responsive">
+            </li>
+                        <li   data-target="#myCarousel" data-slide-to="3" c">
+              <img style="height: 60px;" src="/images/NewsImages/1791518281.jpeg" alt="..." class="img-responsive">
+            </li>
+            
+          </ol> 
+
+</div>
+               
+                                        <!--                                                      -->
+                																				
+
+<!-- <h2 class="news-category-header"><span>Τελευταίες Ειδήσεις</span></h2> -->
+ <h2 class="no-span">Τελευταίες Ειδήσεις</h2>
+<div id="products" class="row list-group">
+ 	 		  
+		 		       <a href="/Gr/news/53885" title="Γ' Κατηγορία: Τρεις ομάδες στους εννέα βαθμούς">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791693021.jpg" alt="Γ' Κατηγορία: Τρεις ομάδες στους εννέα βαθμούς" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Γ' Κατηγορία: Τρεις ομάδες στους εννέα βαθμούς</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53883" title="Ομόνοια, ΑΠΟΕΛ συνεχίζουν χωρίς απώλειες">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791700072.jpeg" alt="Ομόνοια, ΑΠΟΕΛ συνεχίζουν χωρίς απώλειες" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Ομόνοια, ΑΠΟΕΛ συνεχίζουν χωρίς απώλειες</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53882" title="Ελπίδα Αστρομερίτη και ΕΝ Λατσιών άρχισαν νικηφόρα τη χρονιά">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791646520.jpg" alt="Ελπίδα Αστρομερίτη και ΕΝ Λατσιών άρχισαν νικηφόρα τη χρονιά" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Ελπίδα Αστρομερίτη και ΕΝ Λατσιών άρχισαν νικηφόρα τη χρονιά</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53880" title="Πρόγραμμα και τηλεοπτικές μεταδόσεις από την 6η μέχρι την 8η αγωνιστική">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791524643.png" alt="Πρόγραμμα και τηλεοπτικές μεταδόσεις από την 6η μέχρι την 8η αγωνιστική" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Πρόγραμμα και τηλεοπτικές μεταδόσεις από την 6η μέχρι την 8η αγωνιστική</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53878" title="Η αποστολή της Εθνικής Παίδων Κ-15 για τα φιλικά στη Μάλτα">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791530048.jpg" alt="Η αποστολή της Εθνικής Παίδων Κ-15 για τα φιλικά στη Μάλτα" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Η αποστολή της Εθνικής Παίδων Κ-15 για τα φιλικά στη Μάλτα</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53877" title="Στις 14 Οκτωβρίου η κλήρωση του Κυπέλλου Νέων Κ-19">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791540994.jpeg" alt="Στις 14 Οκτωβρίου η κλήρωση του Κυπέλλου Νέων Κ-19" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Στις 14 Οκτωβρίου η κλήρωση του Κυπέλλου Νέων Κ-19</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53876" title="Apollon Ladies - Πέγεια Ακάμας απευθείας από τη Cytavision (18/10)">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791526628.jpeg" alt="Apollon Ladies - Πέγεια Ακάμας απευθείας από τη Cytavision (18/10)" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Apollon Ladies - Πέγεια Ακάμας απευθείας από τη Cytavision (18/10)</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53873" title="Cyprus League by Stoiximan: Οι διαιτητές της 5ης αγωνιστικής">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791452142.jpg" alt="Cyprus League by Stoiximan: Οι διαιτητές της 5ης αγωνιστικής" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Cyprus League by Stoiximan: Οι διαιτητές της 5ης αγωνιστικής</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53825" title="Κύπελλο Coca-Cola: Πρόγραμμα αγώνων Α' φάσης">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1790932159.png" alt="Κύπελλο Coca-Cola: Πρόγραμμα αγώνων Α' φάσης" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Κύπελλο Coca-Cola: Πρόγραμμα αγώνων Α' φάσης</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53820" title="Νέες σειρές μαθημάτων από τη Σχολή προπονητών">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1790925071.png" alt="Νέες σειρές μαθημάτων από τη Σχολή προπονητών" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Νέες σειρές μαθημάτων από τη Σχολή προπονητών</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53687" title="Τα σημεία πώλησης των νέων εμφανίσεων της Εθνικής σε όλη την Κύπρο">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1788933596.jpg" alt="Τα σημεία πώλησης των νέων εμφανίσεων της Εθνικής σε όλη την Κύπρο" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Τα σημεία πώλησης των νέων εμφανίσεων της Εθνικής σε όλη την Κύπρο</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53603" title="Σεμινάρια για ανανέωση προπονητικών διπλωμάτων, 2026">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1786531731.png" alt="Σεμινάρια για ανανέωση προπονητικών διπλωμάτων, 2026" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Σεμινάρια για ανανέωση προπονητικών διπλωμάτων, 2026</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+			  	  	  	  	  </div>
+               
+                                        <!--                  -->
+                <!-- <h2 class="news-category-header"><span>Videos</span></h2> -->
+ <h2 class="no-span">Videos</h2>
+<!-- 2. Add images to <div class="fotorama"></div>. -->
+<div class="fotorama" data-navposition="inside-top" data-nav="thumbs" data-width="100%"
+     data-fit="cover">
+     
+
+    	    		<a data-caption="4η αγωνιστική: Ομόνοια Α. - Ολυμπιακός 1-1"  href="http://youtube.com/watch?v=g8TrRperbWc "></a>
+    	
+    	    
+
+    	    		<a data-caption="4η αγωνιστική: Ομόνοια Λ. - Krasava ΕΝΥ 4-1"  href="http://youtube.com/watch?v=52DWBnA_y10"></a>
+    	
+    	    
+
+    	    		<a data-caption="4η αγωνιστική: Άρης - Καρμιώτισσα 0-0 "  href="http://youtube.com/watch?v=wv1HJ-zIkyQ"></a>
+    	
+    	    
+
+    	    		<a data-caption="4η αγωνιστική: Νέα Σαλαμίνα - Ανόρθωση 3-0"  href="http://youtube.com/watch?v=XGQG60uujE0"></a>
+    	
+    	    
+
+    	    		<a data-caption="4η αγωνιστική: Απόλλων - ΑΠΟΕΛ 2-2"  href="http://youtube.com/watch?v=yPW4ofZ5cOo"></a>
+    	
+    	    
+
+    	    		<a data-caption="4η αγωνιστική: Ομόνοια 29Μ - ΑΕΚ 1-2"  href="http://youtube.com/watch?v=dZxrKsFVmWg"></a>
+    	
+    	    
+
+    	    		<a data-caption="4η αγωνιστική: ΠΑΦΟΣ F.C. - ΑΕΛ 0-2 "  href="http://youtube.com/watch?v=RGpYDhChzR8"></a>
+    	
+    	    
+
+    	    		<a data-caption="ΝΤΟΚΙΜΑΝΤΕΡ UEFA ΓΙΑ ΤΟΥΣ ΔΙΑΙΤΗΤΕΣ"  href="http://youtube.com/watch?v=SQMl2fJLNSw"></a>
+    	
+    	        <!-- <a href="https://youtu.be/5r7N6N5sx7I">game 2</a>
+    <a href="https://player.vimeo.com/video/268757493">game 3</a> -->
+
+
+
+</div>
+
+
+ <a class="see-more" style="color:  #140355!important;" href="/Gr/videos">Περισσότερα</a>
+<script type="text/javascript">
+	
+	$('.product-card-vimeo-video').mouseover(function(){
+		console.log("test mouseover");
+        var player = $("#" + this.id);
+        froogaloop = $f(player[0].id);
+        froogaloop.api('play');
+        player.mouseout(function(){
+            froogaloop.api('pause');
+        });
+    });
+</script>               
+                                        <!--                                                      -->
+                																				
+
+<!-- <h2 class="news-category-header"><span>Πρωτάθλημα Α' Κατηγορίας</span></h2> -->
+ <h2 class="no-span">Πρωτάθλημα Α' Κατηγορίας</h2>
+<div id="products" class="row list-group">
+ 	  	 		  
+		 		       <a href="/Gr/news/53870" title="Cyprus League by Stoiximan: Υποψήφια καλύτερα τέρματα και MVP ">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791366322.jpg" alt="Cyprus League by Stoiximan: Υποψήφια καλύτερα τέρματα και MVP " />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Cyprus League by Stoiximan: Υποψήφια καλύτερα τέρματα και MVP </h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53819" title="Αλλαγή ημέρας στο ΑΕΚ - Καρμιώτισσα (9η αγωνιστική)">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1790955409.jpg" alt="Αλλαγή ημέρας στο ΑΕΚ - Καρμιώτισσα (9η αγωνιστική)" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Αλλαγή ημέρας στο ΑΕΚ - Καρμιώτισσα (9η αγωνιστική)</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53760" title="Cyprus League by Stoiximan: Το πρόγραμμα μέχρι την 16η αγωνιστική">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1790145474.jpg" alt="Cyprus League by Stoiximan: Το πρόγραμμα μέχρι την 16η αγωνιστική" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Cyprus League by Stoiximan: Το πρόγραμμα μέχρι την 16η αγωνιστική</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+			  	  	  	  </div>
+               
+                                        <!--                                                      -->
+                																				
+
+<!-- <h2 class="news-category-header"><span>Εθνικές Ομάδες</span></h2> -->
+ <h2 class="no-span">Εθνικές Ομάδες</h2>
+<div id="products" class="row list-group">
+ 	  	  	 		  
+		 		       <a href="/Gr/news/53875" title="Φιλική ήττα της Εθνικής Νεανίδων Κ-19 από το Μαυροβούνιο">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791450412.jpg" alt="Φιλική ήττα της Εθνικής Νεανίδων Κ-19 από το Μαυροβούνιο" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Φιλική ήττα της Εθνικής Νεανίδων Κ-19 από το Μαυροβούνιο</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53863" title="Εθνική Ανδρών: Όλα θα κριθούν το Νοέμβριο...">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791281099.jpg" alt="Εθνική Ανδρών: Όλα θα κριθούν το Νοέμβριο..." />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Εθνική Ανδρών: Όλα θα κριθούν το Νοέμβριο...</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53713" title="Αποφάσεις Ε.Ε. UEFA που αφορούν αλλαγές στο Nations League">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1789465933.jpg" alt="Αποφάσεις Ε.Ε. UEFA που αφορούν αλλαγές στο Nations League" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Αποφάσεις Ε.Ε. UEFA που αφορούν αλλαγές στο Nations League</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53523" title="Η καταγραφή της ιστορίας των Εθνικών μας ομάδων">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1783501813.jpg" alt="Η καταγραφή της ιστορίας των Εθνικών μας ομάδων" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Η καταγραφή της ιστορίας των Εθνικών μας ομάδων</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+			  	  	  </div>
+               
+                                        <!--                                                      -->
+                																				
+
+<!-- <h2 class="news-category-header"><span>Μικρές Κατηγορίες</span></h2> -->
+ <h2 class="no-span">Μικρές Κατηγορίες</h2>
+<div id="products" class="row list-group">
+ 	  	  	  	 		  
+		 		       <a href="/Gr/news/53701" title="Β’ Κατηγορία: Πρόγραμμα και τηλεοπτικές μεταδόσεις μέχρι την 5η αγωνιστική">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1789114639.png" alt="Β’ Κατηγορία: Πρόγραμμα και τηλεοπτικές μεταδόσεις μέχρι την 5η αγωνιστική" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Β’ Κατηγορία: Πρόγραμμα και τηλεοπτικές μεταδόσεις μέχρι την 5η αγωνιστική</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+			  	  </div>
+               
+                                        <!--                                                      -->
+                																				
+
+<!-- <h2 class="news-category-header"><span>Αναπτυξιακά Πρωταθλήματα</span></h2> -->
+ <h2 class="no-span">Αναπτυξιακά Πρωταθλήματα</h2>
+<div id="products" class="row list-group">
+ 	  	  	  	  	 		  
+		 		       <a href="/Gr/news/53888" title="43 τέρματα στην πρεμιέρα του Πρωταθλήματος Κ-15">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791700651.jpg" alt="43 τέρματα στην πρεμιέρα του Πρωταθλήματος Κ-15" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">43 τέρματα στην πρεμιέρα του Πρωταθλήματος Κ-15</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53884" title="Ανώτατη Κ-14: Τρίτη σερί νίκη για Ομόνοια και πρώτες απώλειες για Άρη">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1791634325.jpg" alt="Ανώτατη Κ-14: Τρίτη σερί νίκη για Ομόνοια και πρώτες απώλειες για Άρη" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Ανώτατη Κ-14: Τρίτη σερί νίκη για Ομόνοια και πρώτες απώλειες για Άρη</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+				       <a href="/Gr/news/53668" title="Πρωτάθλημα Κοριτσιών Κ-15 (η πρεμιέρα)">
+		       <div class="item news-item col-xs-6 col-lg-6">
+
+		            <div class="thumbnail">
+		                <img class="news-widget-img img-responsive" src="/images/NewsImages/1788524971.jpg" alt="Πρωτάθλημα Κοριτσιών Κ-15 (η πρεμιέρα)" />
+		                <div class="centerBottom">
+		                    <h4 class="group inner list-group-item-heading">Πρωτάθλημα Κοριτσιών Κ-15 (η πρεμιέρα)</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+			  </div>
+               
+        
+
+        </div>
+    </div>     <div class="col-md-3 r3 side-layers-col tabcontent" id="More">
+        <div class="section-content">
+           
+              
+           		           		           		
+                <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+</div>               
+            
+           		           		           		
+                <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+					<a href="https://www.cfa.com.cy/Gr/news/53294" target="banner-104">				<img class="img-responsive" src="/images/BannersGr/1791456148.png"/>
+			</a>	
+			
+			
+			
+			
+</div>               
+            
+           		           		           		
+                <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+</div>               
+            
+           		           		           		
+                <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+</div>               
+            
+           		           		           		
+                <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+</div>               
+            
+           		           		           		
+                <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+</div>               
+            
+           		           		           		
+                
+<div class="sponsors-widget">
+ <!-- <h2 class="news-category-header"><span>Χορηγοί</span></h2> -->
+  <h2 class="no-span">Χορηγοί</h2>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1765366878.jpg" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="https://www.stoiximan.com.cy/" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1765370345.jpg" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="http://www.cfacup.com.cy/" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1791367434.png" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="https://www.alphamega.com.cy/el" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1750766611.jpg" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1779273425.jpg" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="http://keogroup.com/" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1537357682.png" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="https://afiscyprus.com.cy/" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1788777258.png" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1699535361.jpg" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="https://geosantro.com/" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1751876795.gif" />
+
+	 </a>
+	 </div>
+		<div class="col-md-12 col-xs-12 BigImage  sponsors-item">
+	 	<a href="" target="_blank">
+	 	<img class="col-md-12 col-xs-12 BigImage img-responsive" src="/images/SponsorPics/1664866386.png" />
+
+	 </a>
+	 </div>
+	
+
+</div>
+               
+            
+           		           		           		
+                <div class="banner-widget ">
+
+	
+			
+			
+			
+			
+					<a href="https://www.cfa.com.cy/Gr/categorynews/109" target="banner-81">				<img class="img-responsive" src="/images/BannersGr/1696331025.jpg"/>
+			</a>	
+			
+			
+			
+			
+			
+</div>               
+            
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+    {
+
+    }
+    else  // If another browser, return 0
+    {
+        var fixmeTop = 0;
+        var divTop = $('.r1').offset().top - $(window).height()- $('.r1').height()/2;
+        var divTop3 = $('.r3').offset().top - $(window).height()- $('.r3').height()/2;
+        var divTop2 = $('.r2').offset().top - $(window).height()- $('.r2').height()/2;
+
+
+        var elmnt = $(window);
+        var x = elmnt.scrollLeft;
+        var y = elmnt.scrollTop;
+
+        $(window).scroll(function () {                  // assign scroll event listener
+            var toCheck = $('.r1').position().top + fixmeTop;
+            var toCheck2 = $('.r2').position().top + fixmeTop;
+            var toCheck3 = $('.r3').position().top + fixmeTop;
+
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+
+                $('.r1').css({                      // scroll to that element or below it
+
+                    top: divTop,
+                    position: 'sticky'
+
+                });
+
+                $('.r2').css({                      // scroll to that element or below it
+
+                    top: divTop2,
+                    position: 'sticky'
+
+                });
+
+                  $('.r3').css({                      // scroll to that element or below it
+
+                    top: divTop3,
+                    position: 'sticky'
+
+                });
+
+
+            } else {
+                // apply position: static
+                $('.r1').css({// if you scroll above it
+                    position: 'static'
+                });
+                 $('.r2').css({// if you scroll above it
+                    position: 'static'
+                });
+                   $('.r3').css({// if you scroll above it
+                    position: 'static'
+                });
+            }
+        })
+    }
+
+
+
+
+
+
+
+    });
+</script>
+
+<script>
+    function openLayer(evt, leyerName) {
+        var x = window.matchMedia("(max-width: 990px)");
+        if (x.matches) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(leyerName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+
+
+// Get the element with id="defaultOpen" and click on it
+
+    }
+    document.getElementById("defaultOpen").click();
+
+</script>
+
+
+<script>
+
+$(document).ready(function () {
+    function moveSponsorsWidget() {
+        if ($(window).width() <= 992) {
+            // Check if the widget exists and hasn't been moved already
+            if ($('.sponsors-widget').length && $('.r2 .sponsors-widget').length === 0) {
+                $('.sponsors-widget').appendTo('.r2'); // Move it into r2
+            }
+        } else {
+            // Optional: Move it back to r3 when screen is larger
+            if ($('.sponsors-widget').length && $('.r3 .sponsors-widget').length === 0) {
+                $('.sponsors-widget').appendTo('.r3');
+            }
+        }
+    }
+
+    // Run on page load
+    moveSponsorsWidget();
+
+    // Run on window resize
+    $(window).resize(function () {
+        moveSponsorsWidget();
+    });
+});
+
+</script>
+
+           
+        </div>
+
+
+
+<script type="text/javascript">
+    $('.news-widget-img img').each(function(){           // Note: {.post-thumb img} is css selector of the image tag
+    var t = $(this),
+        s = 'url(' + t.attr('src') + ')',
+        p = t.parent(),
+        d = $('<div></div>');
+    t.hide();
+    p.append(d);
+    d.css({
+        'height'                : 260,          // Note: You can change it for your needs
+        'background-size'       : 'cover',
+        'background-repeat'     : 'no-repeat',
+        'background-position'   : '50% 20%',
+        'background-image'      : s
+    });
+});
+
+
+</script>
+
+
+<!--  <script>
+            $(document).ready(function () {
+
+                $.cookieBar({
+                    message: 'This website uses cookies to improve your experience. <br/> By viewing our content, you are accepting the use of cookies. To find out more, please view our <a class="ppolicy" href="https://www.cfa.com.cy/Gr/page/341">Cookies policy.</a>', //Message displayed on bar
+                    zindex: '99999999999',
+                    fixed: true,
+                    bottom: true
+                });
+            });
+
+        </script>    -->
+ 
+
+ 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48221564-1', 'cfa.com.cy');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+
+    </script>
+ 
+
+
+ <div class="footerDiv">
+
+        <div class="row" >
+            <div class="footerUpperDiv">
+                <div class="col-md-11">
+
+                    <div style="z-index: 99999;" class="col-md-3 col-xs-12 ">
+                        <p> Αχαιών 10  2413 - Έγκωμη  Λευκωσία  Κύπρος </p>    
+                        <p> <strong>Τηλ. : </strong>+357 22352341 , +357 77771606 </p> 
+                        <p> <strong>Φαξ : </strong> +357 22590544 </p>
+                        <p> <strong>Ταχ. Διεύθυνση : </strong>  Τ.Θ. 25071, 1306 - Λευκωσία  Κύπρος </p>
+                        <p> <strong>Ηλ. Ταχυδρομείο : </strong> info@cfa.com.cy </p>
+                    </div>
+
+                                        <div class="col-md-3 col-xs-6 footerLinks">
+                                                                                     
+              
+                                                      <p>
+                                <a href="/Gr/page/131">
+                                    Ιστορικό
+                                </a> 
+                            </p>    
+                                                      <p>
+                                <a href="/Gr/page/132">
+                                    Οργανωτική Δομή
+                                </a> 
+                            </p>    
+                                                      <p>
+                                <a href="/Gr/committees">
+                                    Επιτροπές
+                                </a> 
+                            </p>    
+                                                      <p>
+                                <a href="/Gr/expresidents">
+                                    Πρώην Προέδροι
+                                </a> 
+                            </p>    
+                                                  
+                    </div>
+                                        <div class="col-md-3 col-xs-6 footerLinks">
+                                                                                     
+              
+                                                      <p>
+                                <a href="/Gr/page/185">
+                                    Σχολή Προπονητών
+                                </a> 
+                            </p>    
+                                                      <p>
+                                <a href="/Gr/news">
+                                    Ειδήσεις
+                                </a> 
+                            </p>    
+                                                      <p>
+                                <a href="/Gr/page/274">
+                                    Προγραμματισμένα Σεμινάρια
+                                </a> 
+                            </p>    
+                                                      <p>
+                                <a href="/Gr/page/329">
+                                    Διπλώματα Uefa
+                                </a> 
+                            </p>    
+                                                      <p>
+                                <a href="/Gr/downloads">
+                                    Ληψη Αρχείων
+                                </a> 
+                            </p>    
+                                                  
+                    </div>
+                    
+                    <div class="col-md-3 col-xs-auto footerLinks">
+                            <p><a href="/Gr/previous_seasons">Προηγούμενες Χρονιές</a></p>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-12 ">
+                    <div class="row">
+                        <p class="footer-image-p">
+                            <img class="footer-logo" src="/images/cfa_new1.png" style="height: 100px !important;" />
+                        </p>
+                    </div>
+                     <div class="row">
+                        <a style="color: white; font-size: 12px;"  href="/Gr/register">Εγγραφείτε στο ενημερωτικό μας δελτίο</a>
+                    </div>
+
+                </div>
+
+            </div> 
+        </div>    
+
+
+    <div class="row">
+        <div align="center" class="footerNotes">
+            <div class="col-md-12">
+               
+                    Copyright © 2018 CFA  |
+                    <a style="color: white;" href="/Gr/page/340" target="_blank">
+                        Privacy policy
+                    </a>
+                    -
+                    <a style="color: white;" href="/Gr/page/339" target="Terms">
+                        Terms of Use
+                    </a>
+                    -
+                    <a style="color: white;" href="/Gr/page/341" target="Terms">
+                       Cookie Policy
+                    </a>
+                    |  Developed and Hosted by
+               
+               <a href="http://www.simplex.com.cy/" target="_blank">
+                    <img text="Simplex - Cyprus Web Development, Cyprus Hosting" title="Simplex - Cyprus Web Development, Cyprus Web Hosting" alt="Simplex - Cyprus Web Development, Cyprus Hosting" style="width: 80px; height: auto;" class="simplex-logo" src="\images\simplex_logo_n.png"/>
+                </a>
+                 <a style="color: white!important;" class="col-md-12 row " href="javascript: Cookiebot.renew()">Change your consent</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>    </body>
+</html>
