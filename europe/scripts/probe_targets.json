@@ -1,7 +1,5 @@
 [
- {"name":"sb_tc","url":"https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3/active?_rt=c&_fmt=json&comp=8ey0ww2zsosdmwr8ehsorh6t7","headers":{"Referer":"https://www.legab.it/","Origin":"https://www.legab.it"}},
- {"name":"sb_tc2","url":"https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3?_rt=c&_fmt=json","headers":{"Referer":"https://www.legab.it/","Origin":"https://www.legab.it"}},
- {"name":"efbetleague","url":"https://efbetleague.com/"},
- {"name":"cfa_root","url":"https://www.cfa.com.cy/"},
- {"name":"cro_k14","url":"https://hnl.hr/supersport-hnl/raspored-i-rezultati/?kolo=14"}
+ {"name":"sb_matches","url":"https://api.performfeeds.com/soccerdata/match/pnhshdiiacyg1anunc1iilqc3?_rt=c&_fmt=json&tmcl=2aad86jp2iq9zr22oxib5a4gk&_pgSz=1000&live=yes","headers":{"Referer":"https://www.legab.it/","Origin":"https://www.legab.it"}},
+ {"name":"bul_matches","url":"https://efbetleague.com/matches"},
+ {"name":"cyp_comp","url":"https://www.cfa.com.cy/Gr/competitions/68124755"}
 ]
