@@ -1,35 +1,121 @@
 {
- "ran": "2026-10-10T21:59Z",
+ "ran": "2026-10-11T05:20Z",
  "changes": {
-  "results": 92,
-  "moved": 0,
-  "timed": 10,
-  "postponed": 3,
-  "live": 0
+  "results": 0,
+  "moved": 2,
+  "timed": 0,
+  "postponed": 0,
+  "live": 1
  },
- "events_per_league": {
-  "uefa.champions": 45,
+ "official": {
+  "eng.1": {
+   "ok": true,
+   "fixtures": 380,
+   "matched": 280,
+   "unmatched_sample": [
+    "Arsenal - Coventry City 2026-08-21 19:00:00+00:00",
+    "Hull City - Manchester United 2026-08-22 11:30:00+00:00",
+    "Everton - Crystal Palace 2026-08-22 14:00:00+00:00",
+    "Ipswich Town - Sunderland 2026-08-22 14:00:00+00:00",
+    "Nottingham Forest - Leeds United 2026-08-22 14:00:00+00:00",
+    "Brentford - Tottenham Hotspur 2026-08-22 16:30:00+00:00",
+    "Brighton and Hove Albion - Aston Villa 2026-08-23 13:00:00+00:00",
+    "Manchester City - Bournemouth 2026-08-23 13:00:00+00:00"
+   ]
+  },
+  "esp.1": {
+   "ok": true,
+   "fixtures": 380,
+   "matched": 261,
+   "unmatched_sample": [
+    "FC Barcelona - Athletic Club 2026-08-27 19:00:00+00:00",
+    "Celta - CA Osasuna 2026-08-27 18:30:00+00:00",
+    "Real Madrid - Real Sociedad 2026-08-26 19:00:00+00:00",
+    "Valencia CF - Real Betis 2026-08-25 19:00:00+00:00",
+    "Atlético de Madrid - Málaga CF 2026-08-19 19:00:00+00:00",
+    "RC Deportivo - Elche CF 2026-08-17 19:00:00+00:00",
+    "RCD Espanyol de Barcelona - Levante UD 2026-08-16 17:00:00+00:00",
+    "R. Racing Club - Villarreal CF 2026-08-16 15:00:00+00:00"
+   ]
+  },
+  "ger.1": {
+   "ok": true,
+   "fixtures": 306,
+   "matched": 243,
+   "unmatched_sample": [
+    "FC Bayern München - VfB Stuttgart 2026-08-28 18:30:00+00:00",
+    "SV Elversberg - Bayer 04 Leverkusen 2026-08-29 13:30:00+00:00",
+    "1. FC Köln - TSG Hoffenheim 2026-08-29 13:30:00+00:00",
+    "1. FC Union Berlin - Eintracht Frankfurt 2026-08-29 13:30:00+00:00",
+    "1. FSV Mainz 05 - SC Paderborn 07 2026-08-29 13:30:00+00:00",
+    "RB Leipzig - Borussia Mönchengladbach 2026-08-29 13:30:00+00:00",
+    "Borussia Dortmund - Hamburger SV 2026-08-29 16:30:00+00:00",
+    "Sport-Club Freiburg - SV Werder Bremen 2026-08-30 13:30:00+00:00"
+   ]
+  },
+  "ger.2": {
+   "ok": true,
+   "fixtures": 306,
+   "matched": 225,
+   "unmatched_sample": [
+    "VfL Bochum 1848 - Hertha BSC 2026-08-07 18:30:00+00:00",
+    "1. FC Magdeburg - Eintracht Braunschweig 2026-08-08 11:00:00+00:00",
+    "Karlsruher SC - DSC Arminia Bielefeld 2026-08-08 11:00:00+00:00",
+    "SV Darmstadt 98 - Holstein Kiel 2026-08-08 11:00:00+00:00",
+    "1. FC Heidenheim 1846 - VfL Osnabrück 2026-08-08 11:00:00+00:00",
+    "VfL Wolfsburg - 1. FC Kaiserslautern 2026-08-08 18:30:00+00:00",
+    "FC Energie Cottbus - Hannover 96 2026-08-09 11:30:00+00:00",
+    "1. FC Nürnberg - SG Dynamo Dresden 2026-08-09 11:30:00+00:00"
+   ]
+  },
+  "ita.1": {
+   "ok": true,
+   "fixtures": 380,
+   "matched": 280,
+   "unmatched_sample": [
+    "Internazionale - Monza 2026-08-22 16:30:00+00:00",
+    "Udinese - Como 2026-08-22 16:30:00+00:00",
+    "Genoa - Napoli 2026-08-22 18:45:00+00:00",
+    "Parma - Cagliari 2026-08-22 18:45:00+00:00",
+    "Frosinone - Juventus 2026-08-23 16:30:00+00:00",
+    "Venezia - Lecce 2026-08-23 16:30:00+00:00",
+    "Atalanta - Sassuolo 2026-08-23 18:45:00+00:00",
+    "Torino - Milan 2026-08-23 18:45:00+00:00"
+   ]
+  },
+  "ned.1": {
+   "ok": true,
+   "fixtures": 306,
+   "matched": 207,
+   "unmatched_sample": [
+    "Sparta Rotterdam - Feyenoord 2026-08-09 10:15:00+00:00",
+    "PEC Zwolle - Ajax 2026-08-09 12:30:00+00:00",
+    "N.E.C. Nijmegen - Telstar 2026-08-08 14:30:00+00:00",
+    "AZ - ADO Den Haag 2026-08-08 19:00:00+00:00",
+    "PSV - Fortuna Sittard 2026-08-08 18:00:00+00:00",
+    "SC Cambuur - Excelsior Rotterdam 2026-08-07 18:00:00+00:00",
+    "Go Ahead Eagles - Willem II 2026-08-08 16:45:00+00:00",
+    "sc Heerenveen - FC Twente 2026-08-09 14:45:00+00:00"
+   ]
+  }
+ },
+ "espn_events_per_league": {
+  "uefa.champions": 54,
   "uefa.europa": 36,
   "uefa.europa.conf": 36,
-  "uefa.nations": 10,
+  "uefa.nations": 0,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
-  "ger.1": 36,
-  "ned.1": 36,
   "aut.1": 24,
   "bel.1": 27,
-  "ita.1": 50,
   "por.1": 28,
-  "eng.1": 40,
-  "esp.1": 41,
   "fra.1": 36,
   "gre.1": 28,
   "sco.1": 28,
   "den.1": 24,
   "nor.1": 32,
   "swe.1": 40,
-  "eng.2": 70,
-  "ger.2": 36,
+  "eng.2": 73,
   "ita.2": 50,
   "cyp.1": 0,
   "bul.1": 0,
@@ -40,14 +126,14 @@
   "rou.1": 0,
   "cro.1": 0
  },
- "requests": 902,
+ "requests": 728,
  "failed": 147,
  "errors": [
-  "uefa.champions/scoreboard?dates=20261007-20261013&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "uefa.champions/scoreboard?dates=20261007-20261013: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261006: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261008-20261014&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261008-20261014: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "bul.1/scoreboard?dates=20261007: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261008: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
+  "bul.1/scoreboard?dates=20261008: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "bul.1/scoreboard?dates=20261009: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
  ],
  "style": "day"
 }
