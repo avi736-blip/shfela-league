@@ -1,7 +1,0 @@
-URL: https://wapp.bapi.bundesliga.com/fixtures/2026-2027/DFL-COM-000001?matchday=7
-FINAL: https://wapp.bapi.bundesliga.com/fixtures/2026-2027/DFL-COM-000001?matchday=7
-STATUS: 403
-TYPE: application/json
-BYTES: 23
-
-{"message":"Forbidden"}

@@ -1,6 +1,0 @@
-URL: https://api-sdp.legaseriea.it/v1/serie-a/football/matches?season=serie-a%3A%3AFootball_Season%3A%3Aed7fdc2a3e7b408b942ec177b7b956b5&locale=en-GB
-FINAL: https://api-sdp.legaseriea.it/v1/serie-a/football/matches?season=serie-a%3A%3AFootball_Season%3A%3Aed7fdc2a3e7b408b942ec177b7b956b5&locale=en-GB
-STATUS: 404
-TYPE: 
-BYTES: 0
-

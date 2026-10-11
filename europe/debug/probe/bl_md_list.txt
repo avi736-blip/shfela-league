@@ -1,7 +1,0 @@
-URL: https://wapp.bapi.bundesliga.com/matchday/DFL-COM-000001/DFL-SEA-0001KA
-FINAL: https://wapp.bapi.bundesliga.com/matchday/DFL-COM-000001/DFL-SEA-0001KA
-STATUS: 404
-TYPE: application/json
-BYTES: 122
-
-{"timestamp":"2026-10-11T05:14:29.790Z","status":404,"error":"Not Found","path":"/matchday/DFL-COM-000001/DFL-SEA-0001KA"}

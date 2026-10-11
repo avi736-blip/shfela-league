@@ -1,3 +1,0 @@
-200	1567777	10 json	sa_cal1	https://en.legaseriea.it/serie-a/fixtures-results
-404	1083994	1 json	sa_cal2	https://en.legaseriea.it/serie-a/calendar
-307	1599484	24 json	sa_cal3	https://www.legaseriea.it/serie-a
