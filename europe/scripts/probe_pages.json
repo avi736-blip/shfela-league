@@ -1,5 +1,21 @@
 [
- {"name":"sa_cal1","url":"https://en.legaseriea.it/serie-a/fixtures-results","click":["button:has-text('Accept')"]},
- {"name":"sa_cal2","url":"https://en.legaseriea.it/serie-a/calendar","click":["button:has-text('Accept')"]},
- {"name":"sa_cal3","url":"https://www.legaseriea.it/it/serie-a/calendario-e-risultati","click":["button:has-text('Accetta')"]}
+ {"name":"fra","url":"https://ligue1.com/en/fixtures-results","click":["#didomi-notice-agree-button","button:has-text('Accept')"]},
+ {"name":"por","url":"https://www.ligaportugal.pt/en/liga/calendario/","click":["#onetrust-accept-btn-handler"]},
+ {"name":"bel","url":"https://www.proleague.be/en/calendar","click":["#onetrust-accept-btn-handler"]},
+ {"name":"aut","url":"https://www.bundesliga.at/de/spielplan/","click":["button:has-text('Akzeptieren')","#onetrust-accept-btn-handler"]},
+ {"name":"sco","url":"https://spfl.co.uk/league/premiership/fixtures","click":["button:has-text('Accept')"]},
+ {"name":"den","url":"https://superliga.dk/kampe","click":["button:has-text('Accept')","button:has-text('Tillad')"]},
+ {"name":"nor","url":"https://www.eliteserien.no/terminliste","click":["button:has-text('Godta')"]},
+ {"name":"swe","url":"https://allsvenskan.se/matcher","click":["button:has-text('Godkänn')","button:has-text('Acceptera')"]},
+ {"name":"efl","url":"https://www.efl.com/competitions/sky-bet-championship/fixtures/","click":["#onetrust-accept-btn-handler"]},
+ {"name":"legab","url":"https://www.legab.it/calendario","click":["button:has-text('Accetta')"]},
+ {"name":"sui","url":"https://www.sfl.ch/superleague/spielplan/","click":["button:has-text('Akzeptieren')"]},
+ {"name":"pol","url":"https://www.ekstraklasa.org/terminarz","click":["button:has-text('Akceptuj')","button:has-text('Zgadzam')"]},
+ {"name":"hun","url":"https://www.mlsz.hu/","click":["button:has-text('Elfogad')"]},
+ {"name":"rou","url":"https://lpf.ro/program-rezultate","click":["button:has-text('Accept')"]},
+ {"name":"cro","url":"https://hnl.hr/raspored/","click":["button:has-text('Prihvati')"]},
+ {"name":"cyp","url":"https://www.cfa.com.cy/En/competitions","click":[]},
+ {"name":"bul","url":"https://efbet-liga.bg/","click":[]},
+ {"name":"geo","url":"https://erovnuliliga.ge/en/calendar","click":[]},
+ {"name":"dfb","url":"https://www.dfb.de/dfb-pokal/spiele","click":["button:has-text('Akzeptieren')"]}
 ]

@@ -1,10 +1,7 @@
 [
- {"name":"ere_json","url":"https://eredivisie.com/cache/site/EredivisieEN/json/fixtures.json"},
- {"name":"bl_fx_season","url":"https://wapp.bapi.bundesliga.com/fixtures/DFL-COM-000001/DFL-SEA-0001KA","headers":{"x-api-key":"60ETUJ4j5YagIHdu-PROD","Referer":"https://www.bundesliga.com/","Accept":"application/json"}},
- {"name":"bl_fx_day","url":"https://wapp.bapi.bundesliga.com/fixtures/DFL-COM-000001/DFL-SEA-0001KA/DFL-DAY-004CBX","headers":{"x-api-key":"60ETUJ4j5YagIHdu-PROD","Referer":"https://www.bundesliga.com/","Accept":"application/json"}},
- {"name":"bl_md_list","url":"https://wapp.bapi.bundesliga.com/matchday/DFL-COM-000001/DFL-SEA-0001KA","headers":{"x-api-key":"60ETUJ4j5YagIHdu-PROD","Referer":"https://www.bundesliga.com/","Accept":"application/json"}},
- {"name":"bl_bundle","url":"https://www.bundesliga.com/assets/bundles/main-DB4H2DKR.js"},
- {"name":"sa_matches","url":"https://api-sdp.legaseriea.it/v1/serie-a/football/seasons/serie-a%3A%3AFootball_Season%3A%3Aed7fdc2a3e7b408b942ec177b7b956b5/matches?locale=en-GB","headers":{"Origin":"https://en.legaseriea.it","Referer":"https://en.legaseriea.it/"}},
- {"name":"sa_matchdays","url":"https://api-sdp.legaseriea.it/v1/serie-a/football/seasons/serie-a%3A%3AFootball_Season%3A%3Aed7fdc2a3e7b408b942ec177b7b956b5/matchdays?locale=en-GB","headers":{"Origin":"https://en.legaseriea.it","Referer":"https://en.legaseriea.it/"}},
- {"name":"sa_fixtures2","url":"https://api-sdp.legaseriea.it/v1/serie-a/football/matches?season=serie-a%3A%3AFootball_Season%3A%3Aed7fdc2a3e7b408b942ec177b7b956b5&locale=en-GB","headers":{"Origin":"https://en.legaseriea.it","Referer":"https://en.legaseriea.it/"}}
+ {"name":"uefa_ucl","url":"https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2027&order=ASC&offset=0&limit=20"},
+ {"name":"uefa_uel","url":"https://match.uefa.com/v5/matches?competitionId=14&seasonYear=2027&order=ASC&offset=0&limit=5"},
+ {"name":"uefa_uecl","url":"https://match.uefa.com/v5/matches?competitionId=2019&seasonYear=2027&order=ASC&offset=0&limit=5"},
+ {"name":"uefa_unl","url":"https://match.uefa.com/v5/matches?competitionId=2014&seasonYear=2027&order=ASC&offset=0&limit=5"},
+ {"name":"uefa_comps","url":"https://comp.uefa.com/v2/competitions?limit=50&offset=0"}
 ]
