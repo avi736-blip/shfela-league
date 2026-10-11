@@ -292,7 +292,12 @@ function statusOf(g) {
   if (g.pp) return '<span class="st pp">נדחה</span>';
   if (g.live) return '<span class="st live">משחק חי' + (g.s ? ' ' + g.s[0] + '–' + g.s[1] : '') + '</span>';
   if (isPast(g)) return '';
-  return g.ok ? '<span class="st ok">מועד סופי</span>' : '<span class="st est">מועד משוער</span>';
+  return (g.ok ? '<span class="st ok">מועד סופי</span>' : '<span class="st est">מועד משוער</span>') + sourceTag(g);
+}
+const SRC_LABEL = { league: 'לפי הליגה', espn: 'לפי ESPN', data: 'לפי אתר נתונים' };
+function sourceTag(g) {
+  const label = g.by === 'league' && g.byn ? 'לפי ' + g.byn : SRC_LABEL[g.by] || SRC_LABEL.data;
+  return `<span class="by by-${esc(g.by || 'data')}">${esc(label)}</span>`;
 }
 function timeBlock(g) {
   if (g.s && !g.live) return `<b class="res">${g.s[0]}–${g.s[1]}</b><small>תוצאה סופית</small>`;
@@ -318,7 +323,7 @@ function gameRow(g) {
       ${!past && !g.nt ? `<a class="ib" href="${gcal(g)}" target="_blank" rel="noopener" title="הוספה ליומן Google" aria-label="הוספה ליומן">${ICON.cal}</a>` : ''}
       ${mapQ ? `<a class="ib" href="https://www.google.com/maps/search/?api=1&query=${mapQ}" target="_blank" rel="noopener" title="פתיחה במפות Google" aria-label="פתיחה במפות Google">${ICON.pin}</a>` : ''}
     </div>
-    ${src ? `<details class="src"><summary>מקור המועד</summary>${src}</details>` : ''}
+    ${src ? `<details class="src"><summary>פרטי המקור</summary>${src}</details>` : ''}
   </article>`;
 }
 
@@ -396,7 +401,7 @@ function highlight() {
 function mapRow(g, dist) {
   const c = DB.countries[g.c], k = (ptOf(g) || []).map(x => x.toFixed(3)).join(',');
   return `<button class="mg" data-sel="${k}"><div class="r1"><span class="t">${g.nt ? '—' : g.lt}</span><span><bdi>${esc(g.h)}</bdi> – <bdi>${esc(g.a)}</bdi></span></div>
-    <div class="r2">${flagImg(c, 'sm')}<span>${esc(g.city || c.he)}</span><span class="lg" style="--dot:${LG_COLOR[g.lg] || '#94a3b8'}">${esc(leagueName(g.lg))}</span>${dist != null ? `<span class="km">${dist < 1 ? 'אותו אצטדיון' : Math.round(dist) + ' ק״מ'}</span>` : ''}</div></button>`;
+    <div class="r2">${flagImg(c, 'sm')}<span>${esc(g.city || c.he)}</span><span class="lg" style="--dot:${LG_COLOR[g.lg] || '#94a3b8'}">${esc(leagueName(g.lg))}</span>${isPast(g) ? '' : `<span class="${g.ok ? 'st ok' : 'st est'}">${g.ok ? 'סופי' : 'משוער'}</span>`}${dist != null ? `<span class="km">${dist < 1 ? 'אותו אצטדיון' : Math.round(dist) + ' ק״מ'}</span>` : ''}</div></button>`;
 }
 function byDay(list, rowFn) {
   let out = '', last = '';
@@ -497,6 +502,7 @@ function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.ad
 function footer() {
   const up = new Date(DB.updated).toLocaleString('he-IL', { timeZone: IL_TZ, dateStyle: 'short', timeStyle: 'short' });
   $('#foot').innerHTML = `<b>מועד סופי</b>: התאריך והשעה פורסמו. <b>מועד משוער</b>: עלול להשתנות, כדאי לבדוק שוב לפני שמזמינים טיסה או כרטיס.
+    ליד כל משחק כתוב מאיפה המועד: <b>לפי הליגה</b> (האתר הרשמי של הליגה או של UEFA), <b>לפי ESPN</b>, או <b>לפי אתר נתונים</b> לליגות שאין להן עדיין מקור אוטומטי.
     השעה הגדולה היא לפי השעון המקומי, ומתחתיה שעון ישראל. הלוח מתעדכן פעמיים ביום, העדכון האחרון: ${up}.`;
 }
 saveFavs();

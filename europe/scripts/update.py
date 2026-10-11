@@ -28,7 +28,7 @@ STYLES = [
     ("day", "?dates={a}", 1),
 ]
 PAST_DAYS, AHEAD_DAYS = 10, 75
-DAY_PAST, DAY_AHEAD = 4, 24  # narrower window when only day-by-day requests work
+DAY_PAST, DAY_AHEAD = 4, 45  # narrower window when only day-by-day requests work
 
 
 STATS = {"requests": 0, "failed": 0, "errors": []}
@@ -100,8 +100,27 @@ def iso_z(dt):
 EVENTS = {}
 
 
+def tag_source(g):
+    """Where the date/time of a game comes from: the league itself, ESPN, or another data site."""
+    if g.get("by"):
+        return
+    note = g.get("note", "")
+    if "ESPN" in note:
+        g["by"] = "espn"
+    elif "UEFA" in note:
+        g["by"], g["byn"] = "league", "UEFA"
+    elif g.get("src"):
+        g["by"] = "league"
+    elif g["id"].isdigit():
+        g["by"] = "espn"
+    else:
+        g["by"] = "data"
+
+
 def main():
     doc = json.loads(DATA.read_text(encoding="utf-8"))
+    for g in doc["games"]:
+        tag_source(g)
     countries = doc["countries"]
     now = datetime.now(timezone.utc)
     style = pick_style(list(doc["leagues"])[0], now)
@@ -233,6 +252,7 @@ def run_official(doc, now, ch):
 
 def apply_official(g, fx, countries, label, url, stamp, ch):
     tz = ZoneInfo(countries.get(g["c"], {}).get("tz", "Europe/Paris"))
+    g["by"], g["byn"] = "league", label
     if fx["state"] == "pp":
         if not g.get("pp"):
             g["pp"] = 1; ch["postponed"] += 1
@@ -306,18 +326,28 @@ def apply(g, ev, countries, ch):
         if g.get("s") != s:
             g["s"] = s; ch["results"] += 1
         return
-    # schedule changes (only future, only confirmed times)
-    if ev["state"] != "pre" or not ev["timeValid"] or not ev["date"]:
+    # schedule (only future games)
+    if ev["state"] != "pre" or not ev["date"]:
+        return
+    stamp = datetime.now(timezone.utc).strftime("%d.%m.%Y")
+    if not ev["timeValid"]:
+        if g.get("by") != "league":  # ESPN has no fixed time yet
+            g["by"], g["ok"] = "espn", False
+            g["note"] = f"לפי ESPN: השעה טרם נקבעה (נבדק {stamp})"
         return
     evt = iso_z(datetime.fromisoformat(ev["date"].replace("Z", "+00:00")))
     if evt == g["t"] and not g.get("nt"):
+        if g.get("by") != "league":  # ESPN confirms the time we already have
+            g["by"], g["ok"] = "espn", True
+            g["note"] = f"סופי לפי ESPN (נבדק {stamp})"
         return
     tz = ZoneInfo(countries.get(g["c"], {}).get("tz", "Europe/Paris"))
     local = datetime.fromisoformat(evt.replace("Z", "+00:00")).astimezone(tz)
     was_tbd = g.pop("nt", None)
     g["t"], g["ld"], g["lt"] = evt, local.strftime("%Y-%m-%d"), local.strftime("%H:%M")
-    g["ok"] = False  # only the league itself can make a kickoff "final"
-    g["note"] = "שעה לפי ESPN (" + datetime.now(timezone.utc).strftime("%d.%m.%Y") + "), טרם אושרה באתר הליגה"
+    g["by"], g["ok"] = "espn", True
+    g.pop("byn", None)
+    g["note"] = f"מועד עודכן לפי ESPN (נבדק {stamp})"
     ch["timed" if was_tbd else "moved"] += 1
 
 
