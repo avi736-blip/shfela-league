@@ -1,0 +1,23 @@
+[
+ {
+  "url": "https://www.slgr.gr/cdn-cgi/challenge-platform/h/g/precursor/4df4a60fa397/0.47390937878972417:1791691514:1WlrB52qfUCznmeOj2Pm_eCRBSfrqbW0yHmCrFw1_Lw/a48b6a16e9ac163c",
+  "status": 200,
+  "method": "POST",
+  "req_headers": {
+   "sec-ch-ua-full-version-list": "\"HeadlessChrome\";v=\"153.0.8010.12\", \"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"153.0.8010.12\"",
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://www.slgr.gr/en/schedule/",
+   "accept-language": "en-GB",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+   "sec-ch-ua-bitness": "\"64\"",
+   "sec-ch-ua-model": "\"\"",
+   "sec-ch-ua-mobile": "?0",
+   "sec-ch-ua-arch": "\"x86\"",
+   "sec-ch-ua-full-version": "\"153.0.8010.12\"",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-platform-version": "\"10.0\""
+  },
+  "body": "{\"i\":60,\"n\":false}"
+ }
+]
