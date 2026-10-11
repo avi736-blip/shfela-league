@@ -1,8 +1,16 @@
 [
- {"name":"swe","url":"https://allsvenskan.se/matcher","click":["button:has-text('Godkänn')","button:has-text('Acceptera')"]},
- {"name":"por","url":"https://www.ligaportugal.pt/pt/liga/calendario/20262027/ligaportugalbetclic","click":["#onetrust-accept-btn-handler"]},
- {"name":"efl","url":"https://www.efl.com/competitions/sky-bet-championship/fixtures-results/","click":["#onetrust-accept-btn-handler"]},
- {"name":"fra","url":"https://ligue1.com/fr/competitions/ligue1mcdonalds?tab=calendar","click":["#didomi-notice-agree-button"]},
- {"name":"bel","url":"https://www.proleague.be/fr/calendrier","click":["#onetrust-accept-btn-handler"]},
- {"name":"sui","url":"https://www.sfl.ch/fr/superleague/calendrier/","click":[]}
+ {"name":"sco","url":"https://spfl.co.uk/league/premiership/fixtures","click":["button:has-text('Accept')"]},
+ {"name":"fra","url":"https://ligue1.com/fr/competitions/ligue1mcdonalds/calendar?gameWeek=8","click":["#didomi-notice-agree-button"],"js":["window.scrollTo(0,document.body.scrollHeight)"]},
+ {"name":"efl","url":"https://www.efl.com/competitions/sky-bet-championship/fixtures/","click":["#onetrust-accept-btn-handler"],"js":["window.scrollTo(0,document.body.scrollHeight)"]},
+ {"name":"por","url":"https://www.ligaportugal.pt/pt/liga/","click":["#onetrust-accept-btn-handler"]},
+ {"name":"bel","url":"https://www.proleague.be/","click":["#onetrust-accept-btn-handler"]},
+ {"name":"sui","url":"https://www.sfl.ch/","click":[]},
+ {"name":"den","url":"https://superliga.dk/kampe","click":[]},
+ {"name":"hun","url":"https://www.mlsz.hu/nb-i","click":[]},
+ {"name":"cro","url":"https://hnl.hr/raspored/","click":[]},
+ {"name":"cyp","url":"https://www.cfa.com.cy/En/fixtures","click":[]},
+ {"name":"bul","url":"https://efbetliga.bg/","click":[]},
+ {"name":"rou","url":"https://lpf.ro/","click":[]},
+ {"name":"legab","url":"https://www.legab.it/","click":[]},
+ {"name":"aut","url":"https://www.bundesliga.at/de/spielplan/","click":[]}
 ]
