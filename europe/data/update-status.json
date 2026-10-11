@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-11T14:47Z",
+ "ran": "2026-10-11T15:01Z",
  "changes": {
-  "results": 1,
+  "results": 4,
   "moved": 0,
-  "timed": 0,
+  "timed": 10,
   "postponed": 1,
-  "live": 29
+  "live": 18
  },
  "official": {
   "uefa.champions": {
@@ -190,12 +190,8 @@
    ]
   },
   "swe.1": {
-   "ok": true,
-   "fixtures": 240,
-   "matched": 64,
-   "added": 0,
-   "unmatched_sample": [],
-   "ours_not_found": []
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   "nor.1": {
    "ok": true,
@@ -210,12 +206,13 @@
   },
   "geo.1": {
    "ok": true,
-   "fixtures": 41,
-   "matched": 41,
+   "fixtures": 40,
+   "matched": 40,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
-    "2026-10-11 FC Samgurali Tskaltubo - FC Gagra"
+    "2026-10-11 FC Samgurali Tskaltubo - FC Gagra",
+    "2026-10-11 FC Dinamo Batumi - FC Dinamo Tbilisi"
    ]
   },
   "fra.1": {
@@ -290,6 +287,65 @@
     "FC St.Gallen 1879 - BSC Young Boys 2027-01-24 15:30:00+00:00"
    ],
    "ours_not_found": []
+  },
+  "sco.1": {
+   "ok": true,
+   "fixtures": 198,
+   "matched": 156,
+   "added": 0,
+   "unmatched_sample": [],
+   "ours_not_found": []
+  },
+  "den.1": {
+   "ok": true,
+   "fixtures": 132,
+   "matched": 65,
+   "added": 0,
+   "unmatched_sample": [
+    "FC Nordsjælland - OB 2026-10-09 17:00:00+00:00",
+    "OB - Brøndby IF 2026-10-18 14:00:00+00:00",
+    "F.C. København - OB 2026-10-26 18:00:00+00:00",
+    "OB - Silkeborg IF 2026-11-01 13:00:00+00:00",
+    "OB - Viborg FF 2026-11-07 17:00:00+00:00",
+    "Sønderjyske Fodbold - OB 2026-11-22 15:00:00+00:00",
+    "OB - FC Nordsjælland 2026-11-30 18:00:00+00:00",
+    "Brøndby IF - OB 2026-12-06 15:00:00+00:00",
+    "FC Midtjylland - OB 2027-02-21",
+    "OB - Lyngby Boldklub 2027-02-28",
+    "OB - AGF 2027-03-07",
+    "AC Horsens - OB 2027-03-14"
+   ],
+   "ours_not_found": [
+    "2026-10-18 Odense Boldklub - Brøndby IF",
+    "2026-10-26 F.C. København - Odense Boldklub",
+    "2026-11-01 Odense Boldklub - Silkeborg IF",
+    "2026-11-07 Odense Boldklub - Viborg FF",
+    "2026-11-22 Sønderjyske Fodbold - Odense Boldklub",
+    "2026-11-29 Odense Boldklub - FC Nordsjælland",
+    "2026-12-06 Brøndby IF - Odense Boldklub",
+    "2027-02-21 FC Midtjylland - Odense Boldklub",
+    "2027-02-28 Odense Boldklub - Lyngby Boldklub",
+    "2027-03-07 Odense Boldklub - AGF"
+   ]
+  },
+  "cro.1": {
+   "ok": true,
+   "fixtures": 50,
+   "matched": 11,
+   "added": 0,
+   "unmatched_sample": [],
+   "ours_not_found": [
+    "2026-10-24 GNK Dinamo Zagreb - HNK Rijeka",
+    "2026-10-24 HNK Gorica - NK Lokomotiva Zagreb",
+    "2026-10-24 NK Istra 1961 - Hajduk Split",
+    "2026-10-24 NK Osijek - NK Rudes Zagreb",
+    "2026-10-24 NK Varazdin - NK Slaven Belupo",
+    "2026-10-31 HNK Rijeka - NK Varazdin",
+    "2026-10-31 Hajduk Split - HNK Gorica",
+    "2026-10-31 NK Lokomotiva Zagreb - NK Osijek",
+    "2026-10-31 NK Rudes Zagreb - GNK Dinamo Zagreb",
+    "2026-10-31 NK Slaven Belupo - NK Istra 1961"
+   ]
   }
  },
  "espn_events_per_league": {
