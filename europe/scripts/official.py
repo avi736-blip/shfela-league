@@ -399,11 +399,24 @@ def ligue1(now):
 # ---------------- Liga Portugal (ligaportugal.pt data feed) ----------------
 def liga_portugal(now):
     yr = season_year(now)
-    js = get(f"https://www.ligaportugal.pt/api/v1/competition/matches?season={yr}{yr + 1}&competition=ligaportugalbetclic",
-             {"Accept": "*/*", "Accept-Language": "en", "Referer": "https://www.ligaportugal.pt/"})
-    print(f"  liga portugal: {len(js)} records")
+    base = f"https://www.ligaportugal.pt/api/v1/competition/matches?season={yr}{yr + 1}&competition=ligaportugalbetclic"
+    hdr = {"Accept": "*/*", "Accept-Language": "en", "Referer": "https://www.ligaportugal.pt/"}
+    # the feed returns one matchweek at a time; find which parameter selects the matchweek
+    param = None
+    for cand in ("round", "matchweek", "matchweekNumber", "jornada"):
+        js = get(f"{base}&{cand}=2", hdr)
+        if js and all(m.get("matchweekNumber") == 2 for m in js):
+            param = cand
+            break
+    print(f"  liga portugal: matchweek parameter = {param}")
+    if not param:
+        raise RuntimeError("liga portugal: no matchweek parameter works")
+    rows = []
+    for mw in range(1, 35):
+        rows += get(f"{base}&{param}={mw}", hdr) or []
+        time.sleep(0.3)
     out = []
-    for m in js:
+    for m in rows:
         if m.get("canceledFixture") or m.get("postponedFixture") or m.get("notPlayedFixture"):
             state = "pp"
         elif m.get("homeTeamGoals") is not None and m.get("fixtureStateTypeId") in (5, 6):
