@@ -1,36 +1,20 @@
 {
- "ran": "2026-10-11T14:10Z",
+ "ran": "2026-10-11T14:20Z",
  "changes": {
-  "results": 0,
-  "moved": 0,
+  "results": 9,
+  "moved": 41,
   "timed": 0,
-  "postponed": 0,
-  "live": 17
+  "postponed": 1,
+  "live": 29
  },
  "official": {
   "uefa.champions": {
    "ok": true,
    "fixtures": 234,
-   "matched": 119,
+   "matched": 126,
    "added": 0,
-   "unmatched_sample": [
-    "Atleti - Man Utd 2026-10-13 19:00:00+00:00",
-    "Como - Man Utd 2026-10-21 16:45:00+00:00",
-    "Man Utd - Roma 2026-11-03 20:00:00+00:00",
-    "Sporting CP - Man Utd 2026-11-25 20:00:00+00:00",
-    "Man Utd - Leipzig 2026-12-08 20:00:00+00:00",
-    "Man Utd - Bayern München 2027-01-20 20:00:00+00:00",
-    "Villarreal - Man Utd 2027-01-27 20:00:00+00:00"
-   ],
-   "ours_not_found": [
-    "2026-10-13 Atlético Madrid - Manchester United",
-    "2026-10-21 Como - Manchester United",
-    "2026-11-03 Manchester United - AS Roma",
-    "2026-11-25 Sporting CP - Manchester United",
-    "2026-12-08 Manchester United - RB Leipzig",
-    "2027-01-20 Manchester United - Bayern München",
-    "2027-01-27 Villarreal - Manchester United"
-   ]
+   "unmatched_sample": [],
+   "ours_not_found": []
   },
   "uefa.europa": {
    "ok": true,
@@ -181,14 +165,93 @@
     "PEC Zwolle - Sparta Rotterdam 2027-05-08"
    ],
    "ours_not_found": []
+  },
+  "pol.1": {
+   "ok": true,
+   "fixtures": 306,
+   "matched": 189,
+   "added": 0,
+   "unmatched_sample": [
+    "GKS Katowice - Jagiellonia Białystok 2027-05-01",
+    "Piast Gliwice - Śląsk Wrocław 2027-05-01",
+    "Cracovia - Wisła Kraków 2027-05-01",
+    "Pogoń Szczecin - Widzew Łódź 2027-05-01",
+    "Radomiak Radom - Korona Kielce 2027-05-01",
+    "Zagłębie Lubin - Lech Poznań 2027-05-01",
+    "Raków Częstochowa - Legia Warszawa 2027-05-01",
+    "Wieczysta Kraków - Górnik Zabrze 2027-05-01",
+    "Wisła Płock - Motor Lublin 2027-05-01",
+    "Śląsk Wrocław - Pogoń Szczecin 2027-05-08",
+    "Korona Kielce - Piast Gliwice 2027-05-08",
+    "Lech Poznań - GKS Katowice 2027-05-08"
+   ],
+   "ours_not_found": [
+    "2026-10-12 GKS Katowice - Wieczysta Krakow"
+   ]
+  },
+  "swe.1": {
+   "ok": true,
+   "fixtures": 240,
+   "matched": 64,
+   "added": 0,
+   "unmatched_sample": [],
+   "ours_not_found": []
+  },
+  "nor.1": {
+   "ok": true,
+   "fixtures": 68,
+   "matched": 59,
+   "added": 0,
+   "unmatched_sample": [
+    "Start - HamKam 2026-10-11 15:00:00+00:00",
+    "HamKam - Bodø/Glimt 2026-10-17 12:00:00+00:00",
+    "HamKam - Rosenborg 2026-10-24 16:00:00+00:00",
+    "KFUM - HamKam 2026-11-01 16:00:00+00:00",
+    "HamKam - Sarpsborg 08 2026-11-08 16:00:00+00:00",
+    "HamKam - Fredrikstad 2026-11-21 15:00:00+00:00",
+    "Lillestrøm - HamKam 2026-11-30 18:00:00+00:00",
+    "HamKam - Sandefjord Fotball 2026-12-06 18:15:00+00:00",
+    "Viking - HamKam 2026-12-13 16:00:00+00:00"
+   ],
+   "ours_not_found": [
+    "2026-10-11 Fredrikstad - Tromso",
+    "2026-10-11 IK Start - Hamarkameratene",
+    "2026-10-17 Hamarkameratene - Bodo/Glimt",
+    "2026-10-24 Hamarkameratene - Rosenborg",
+    "2026-11-01 KFUM Oslo - Hamarkameratene",
+    "2026-11-08 Hamarkameratene - Sarpsborg FK",
+    "2026-11-21 Hamarkameratene - Fredrikstad",
+    "2026-11-30 Lillestrom - Hamarkameratene",
+    "2026-12-06 Hamarkameratene - Sandefjord",
+    "2026-12-13 Viking FK - Hamarkameratene"
+   ]
+  },
+  "geo.1": {
+   "ok": true,
+   "fixtures": 41,
+   "matched": 41,
+   "added": 0,
+   "unmatched_sample": [],
+   "ours_not_found": [
+    "2026-10-11 FC Samgurali Tskaltubo - FC Gagra"
+   ]
   }
  },
  "espn_events_per_league": {
+  "uefa.champions": 72,
+  "uefa.europa": 54,
+  "uefa.europa.conf": 54,
+  "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
+  "ger.1": 54,
+  "ned.1": 54,
   "aut.1": 36,
   "bel.1": 45,
+  "ita.1": 70,
   "por.1": 37,
+  "eng.1": 60,
+  "esp.1": 61,
   "fra.1": 54,
   "gre.1": 42,
   "sco.1": 42,
@@ -196,6 +259,7 @@
   "nor.1": 48,
   "swe.1": 56,
   "eng.2": 109,
+  "ger.2": 54,
   "ita.2": 80,
   "cyp.1": 0,
   "bul.1": 0,
@@ -206,7 +270,7 @@
   "rou.1": 0,
   "cro.1": 0
  },
- "requests": 1053,
+ "requests": 1553,
  "failed": 252,
  "errors": [
   "uefa.champions/scoreboard?dates=20261008-20261014&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
