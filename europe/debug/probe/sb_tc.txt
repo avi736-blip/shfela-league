@@ -1,7 +1,0 @@
-URL: https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3/active?_rt=c&_fmt=json&comp=8ey0ww2zsosdmwr8ehsorh6t7
-FINAL: https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3/active?_rt=c&_fmt=json&comp=8ey0ww2zsosdmwr8ehsorh6t7
-STATUS: 200
-TYPE: application/json;charset=utf-8
-BYTES: 644
-
-{"competition":[{"id":"8ey0ww2zsosdmwr8ehsorh6t7","ocId":"14","opId":"105","name":"Serie B","knownName":"Italian Serie B","competitionCode":"SEB","displayOrder":20,"country":"Italy","countryId":"25f2cmb2r8mk5rj92tzer6kvv","countryCode":"ITA","isFriendly":"no","competitionFormat":"Domestic league","type":"men","tournamentCalendar":[{"id":"2aad86jp2iq9zr22oxib5a4gk","includesVenues":"yes","ocId":"28636","name":"2026/2027","startDate":"2026-08-21Z","endDate":"2027-05-29Z","active":"yes","lastUpdated":"2026-08-17T12:33:53Z","includesStandings":"yes"}],"competitionType":"club","sponsorName":"Serie BKT"}],"lastUpdated":"2026-08-17T14:10:23Z"}

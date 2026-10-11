@@ -1,3 +1,0 @@
-413	57	sb_matches	https://api.performfeeds.com/soccerdata/match/pnhshdiiacyg1anunc1iilqc3?_rt=c&_fmt=json&tmcl=2aad86jp2iq9zr22oxib5a4gk&_pgSz=1000&live=yes
-200	1145350	bul_matches	https://efbetleague.com/matches
-200	178605	cyp_comp	https://www.cfa.com.cy/Gr/competitions/68124755

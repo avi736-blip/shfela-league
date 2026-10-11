@@ -705,6 +705,42 @@ def nb1_hungary(now):
     return out
 
 
+# ---------------- Serie BKT, Italy (legab.it data feed, Opta) ----------------
+LEGAB_OUTLET, SERIE_B_COMP = "pnhshdiiacyg1anunc1iilqc3", "8ey0ww2zsosdmwr8ehsorh6t7"  # used by legab.it itself
+
+
+def serie_b(now):
+    hdr = {"Referer": "https://www.legab.it/", "Origin": "https://www.legab.it"}
+    base = "https://api.performfeeds.com/soccerdata/"
+    tc = get(f"{base}tournamentcalendar/{LEGAB_OUTLET}/active?_rt=c&_fmt=json&comp={SERIE_B_COMP}", hdr)
+    tmcl = tc["competition"][0]["tournamentCalendar"][0]["id"]
+    out, page = [], 1
+    while page <= 20:
+        js = get(f"{base}match/{LEGAB_OUTLET}?_rt=c&_fmt=json&tmcl={tmcl}&_pgSz=100&_pgNm={page}&live=yes", hdr)
+        ms = js.get("match", [])
+        for m in ms:
+            info, live = m.get("matchInfo", {}), (m.get("liveData") or {}).get("matchDetails", {})
+            st = (live.get("matchStatus") or "").lower()
+            state = "post" if st == "played" else "pre" if st in ("fixture", "") else \
+                "pp" if st in ("postponed", "cancelled", "suspended", "awarded") else "live"
+            day = (info.get("date") or "").rstrip("Z")
+            tm = info.get("time")
+            unknown = not tm or info.get("timeTbc") in (True, "yes")
+            utc = datetime.fromisoformat(f"{day}T{tm.rstrip('Z')}+00:00") if day and not unknown else None
+            cs = {c.get("position"): c for c in info.get("contestant", [])}
+            tot = (live.get("scores") or {}).get("total") or (live.get("scores") or {}).get("ft") or {}
+            v = info.get("venue") or {}
+            out.append(_fx(home=(cs.get("home") or {}).get("name", ""), away=(cs.get("away") or {}).get("name", ""),
+                           alt_home=[(cs.get("home") or {}).get("shortName", "")], alt_away=[(cs.get("away") or {}).get("shortName", "")],
+                           utc=utc, day=None if utc else day or None, confirmed=utc is not None, state=state,
+                           score=[tot.get("home"), tot.get("away")] if state in ("post", "live") and tot.get("home") is not None else None,
+                           venue=v.get("longName") or v.get("shortName") or ""))
+        if len(ms) < 100:
+            break
+        page += 1
+    return out
+
+
 SOURCES = {
     "uefa.champions": ("UEFA", "https://www.uefa.com/uefachampionsleague/fixtures-results/", ucl),
     "uefa.europa": ("UEFA", "https://www.uefa.com/uefaeuropaleague/fixtures-results/", uel),
@@ -731,4 +767,5 @@ SOURCES = {
     "bel.1": ("Pro League", "https://www.proleague.be/jpl-kalender", pro_league_be),
     "rou.1": ("LPF", "https://lpf.ro/etape-liga-1/1", lpf_romania),
     "hun.1": ("MLSZ", "https://adatbank.mlsz.hu/", nb1_hungary),
+    "ita.2": ("Lega B", "https://www.legab.it/seriebkt/calendario", serie_b),
 }
