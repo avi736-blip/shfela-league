@@ -1,0 +1,61 @@
+[
+ {
+  "url": "https://policy.app.cookieinformation.com/cookie-data/superliga.dk/cabl.json",
+  "status": 200,
+  "method": "GET",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://superliga.dk/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+   "accept-language": "en-GB",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "body": "{\"metadata\":{\"last_updated\":\"2026-10-04T23:22:45.948Z\",\"autoblocking_enabled\":true},\"cookies\":[{\"name\":\"CookieInformationConsent\",\"domain\":\"superliga.dk\",\"category\":\"cookie_cat_necessary\"},{\"name\":\"CookieInformationConsent\",\"domain\":\"www.superliga.dk\",\"category\":\"cookie_cat_necessary\"},{\"name\":\"__Secure-BUCKET\",\"domain\":\".youtube.com\",\"category\":\"cookie_cat_necessary\"},{\"name\":\"ARRAffinitySameSite\",\"domain\":\".cms.superliga.dk\",\"category\":\"cookie_cat_necessary\"},{\"name\":\"ARRAffinity\",\"domain\":\".cms.superliga.dk\",\"category\":\"cookie_cat_necessary\"},{\"name\":\"__cf_bm\",\"domain\":\".hubspot.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".twitter.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".x.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".hsforms.net\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".hsadspixel.net\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".www.superliga.dk\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".hs-analytics.net\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".hs-banner.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".usemessages.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".hsforms.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".hs-scripts.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".linkedin.com\",\"category\":\"cookie_cat_functional\"},{\"name\":\"__cf_bm\",\"domain\":\".superliga.dk\",\"category\":\"cookie_cat_functional\"},{\"name\":\"_ga_xxx\",\"domain\":\".superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"_ga\",\"domain\":\".superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"_ga_xxx\",\"domain\":\"superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"mixpanel_user_id\",\"domain\":\"superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"_gat_main\",\"domain\":\".superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"_ga_xxx\",\"domain\":\"www.superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"_ga_xxx\",\"domain\":\".www.superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"mixpanel_user_id\",\"domain\":\"www.superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"_gid\",\"domain\":\".superliga.dk\",\"category\":\"cookie_cat_statistic\"},{\"name\":\"li_gc\",\"domain\":\".linkedin.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"__Secure-YNID\",\"domain\":\".youtube.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"__Secure-ROLLOUT_TOKEN\",\"domain\":\".youtube.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"VISITOR_PRIVACY_METADATA\",\"domain\":\".youtube.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"bcookie\",\"domain\":\".linkedin.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"YSC\",\"domain\":\".youtube.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"lidc\",\"domain\":\".linkedin.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"VISITOR_INFO1_LIVE\",\"domain\":\".youtube.com\",\"category\":\"cookie_cat_marketing\"},{\"name\":\"euconsent-v2\",\"domain\":\"superliga.dk\",\"category\":\"cookie_cat_necessary\"}]}"
+ },
+ {
+  "url": "https://api-eu.mixpanel.com/track/?verbose=1&ip=1&_=1791726586605",
+  "status": 200,
+  "method": "POST",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://superliga.dk/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+   "content-type": "application/x-www-form-urlencoded",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "en-GB"
+  },
+  "body": "{\"error\":null,\"status\":1}"
+ },
+ {
+  "url": "https://api-eu.mixpanel.com/engage/?verbose=1&ip=1&_=1791726586607",
+  "status": 200,
+  "method": "POST",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://superliga.dk/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+   "content-type": "application/x-www-form-urlencoded",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "en-GB"
+  },
+  "body": "{\"error\":null,\"status\":1}"
+ },
+ {
+  "url": "https://consent.app.cookieinformation.com/api/consent?v=1.1.2",
+  "status": 200,
+  "method": "POST",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://superliga.dk/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+   "content-type": "application/json",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "en-GB"
+  },
+  "body": "{\"status\":\"Ok\",\"message\":\"Cookie consent gathered\"}"
+ }
+]
