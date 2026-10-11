@@ -1,9 +1,5 @@
 [
- {"name":"slgr","url":"https://www.slgr.gr/en/schedule/","click":["#onetrust-accept-btn-handler","button:has-text('Accept')"]},
- {"name":"slgr_round","url":"https://www.slgr.gr/en/schedule/25/158/262706/","click":["#onetrust-accept-btn-handler"]},
- {"name":"seriea","url":"https://www.legaseriea.it/en/serie-a/fixture-and-results","click":["#onetrust-accept-btn-handler","button:has-text('Accept')"]},
- {"name":"ere","url":"https://eredivisie.eu/competition/fixtures/","click":["#onetrust-accept-btn-handler","button:has-text('Accept')"]},
- {"name":"ere_nl","url":"https://eredivisie.nl/","click":["button:has-text('Accept')","button:has-text('Akkoord')"]},
- {"name":"bl_md12","url":"https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/12","click":["#onetrust-accept-btn-handler"]},
- {"name":"bl_md7","url":"https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/7","click":["#onetrust-accept-btn-handler"]}
+ {"name":"sa_cal1","url":"https://en.legaseriea.it/serie-a/fixtures-results","click":["button:has-text('Accept')"]},
+ {"name":"sa_cal2","url":"https://en.legaseriea.it/serie-a/calendar","click":["button:has-text('Accept')"]},
+ {"name":"sa_cal3","url":"https://www.legaseriea.it/it/serie-a/calendario-e-risultati","click":["button:has-text('Accetta')"]}
 ]

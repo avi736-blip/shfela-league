@@ -6,7 +6,7 @@ OUT = ROOT / "debug" / "probe"
 OUT.mkdir(parents=True, exist_ok=True)
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
 TARGETS = json.loads((pathlib.Path(__file__).parent / "probe_targets.json").read_text(encoding="utf-8"))
-LIMIT = 400_000
+LIMIT = 4_000_000
 
 summary = []
 for t in TARGETS:
