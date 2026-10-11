@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-11T16:31Z",
+ "ran": "2026-10-11T20:57Z",
  "changes": {
-  "results": 4,
-  "moved": 10,
-  "timed": 60,
+  "results": 22,
+  "moved": 32,
+  "timed": 1,
   "postponed": 1,
-  "live": 25
+  "live": 7
  },
  "official": {
   "uefa.champions": {
@@ -199,13 +199,16 @@
   },
   "nor.1": {
    "ok": true,
-   "fixtures": 67,
-   "matched": 67,
+   "fixtures": 64,
+   "matched": 64,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
     "2026-10-11 Fredrikstad - Tromso",
-    "2026-10-11 Aalesund - Sarpsborg FK"
+    "2026-10-11 Aalesund - Sarpsborg FK",
+    "2026-10-11 IK Start - Hamarkameratene",
+    "2026-10-11 Lillestrom - Molde",
+    "2026-10-12 KFUM Oslo - Vålerenga"
    ]
   },
   "geo.1": {
@@ -388,7 +391,7 @@
   },
   "hun.1": {
    "ok": true,
-   "fixtures": 117,
+   "fixtures": 122,
    "matched": 75,
    "added": 0,
    "unmatched_sample": [
@@ -396,24 +399,19 @@
     "Paksi Fc - Mtk Budapest 2027-05-01",
     "Kispest–Honvéd Fc - Újpest Fc 2027-05-01",
     "Zte Fc - Nyíregyháza Spartacus Fc 2027-05-01",
-    "Eto Fc - Puskás Akadémia Fc 2027-05-01",
-    "Paksi Fc - Eto Fc 2027-05-15",
-    "Mtk Budapest - Vasas Fc 2027-05-15",
-    "Kisvárda Master Good - Ferencvárosi Tc 2027-05-15",
-    "Nyíregyháza Spartacus Fc - Kispest–Honvéd Fc 2027-05-15",
-    "Újpest Fc - Puskás Akadémia Fc 2027-05-15"
+    "Eto Fc - Puskás Akadémia Fc 2027-05-01"
    ],
    "ours_not_found": [
     "2026-10-11 Zalaegerszeg TE - Nyiregyhaza Spartacus FC",
     "2026-10-11 Budapest Honved FC - Ujpest FC Budapest",
     "2026-10-11 WKW ETO FC Gyor - Puskas Akademia FC",
-    "2026-10-16 MTK Budapest - Vasas FC",
-    "2026-10-17 Nyiregyhaza Spartacus FC - Budapest Honved FC",
-    "2026-10-17 Paksi FC - WKW ETO FC Gyor",
-    "2026-10-17 Ujpest FC Budapest - Puskas Akademia FC",
-    "2026-10-18 Kisvarda FC - Ferencvarosi Budapest",
     "2026-12-12 Paksi FC - Nyiregyhaza Spartacus FC",
-    "2026-12-12 WKW ETO FC Gyor - Kisvarda FC"
+    "2026-12-12 WKW ETO FC Gyor - Kisvarda FC",
+    "2026-12-12 Vasas FC - Ujpest FC Budapest",
+    "2026-12-13 Zalaegerszeg TE - Budapest Honved FC",
+    "2026-12-14 Ferencvarosi Budapest - Puskas Akademia FC",
+    "2027-02-06 Kisvarda FC - Vasas FC",
+    "2027-02-06 MTK Budapest - Paksi FC"
    ]
   },
   "ita.2": {
