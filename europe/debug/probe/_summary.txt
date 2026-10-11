@@ -1,0 +1,6 @@
+200	289307	pol_w10	https://api.centrum-meczowe.ekstraklasa.org/v1/matches?season_id=efed6802-8252-44a1-9d1b-943d224c4b50&week=10
+200	11530	pol_w20	https://api.centrum-meczowe.ekstraklasa.org/v1/matches?season_id=efed6802-8252-44a1-9d1b-943d224c4b50&week=20
+200	189637	pol_w5	https://api.centrum-meczowe.ekstraklasa.org/v1/matches?season_id=efed6802-8252-44a1-9d1b-943d224c4b50&week=5
+200	132215	sco_res	https://spfl.co.uk/league/premiership/results
+200	173949	nor_page	https://www.eliteserien.no/terminliste
+200	118333	geo_page	https://erovnuliliga.ge/en/calendar
