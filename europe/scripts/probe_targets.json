@@ -1,9 +1,7 @@
 [
- {"name":"rou_e12","url":"https://lpf.ro/etape-liga-1/12"},
- {"name":"hun_r12","url":"https://adatbank.mlsz.hu/league/25/0/31786/12.html"},
- {"name":"dfb_pd","url":"https://www.dfb.de/page-data/maenner/wettbewerbe/dfb-pokal/page-data.json"},
- {"name":"cyp_gr","url":"https://www.cfa.com.cy/Gr/fixtures"},
- {"name":"cyp_home","url":"https://www.cfa.com.cy/Gr/"},
- {"name":"bfu","url":"https://bfunion.bg/"},
- {"name":"aut_r9","url":"https://www.bundesliga.at/de/spielplan?runde=9"}
+ {"name":"sb_tc","url":"https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3/active?_rt=c&_fmt=json&comp=8ey0ww2zsosdmwr8ehsorh6t7","headers":{"Referer":"https://www.legab.it/","Origin":"https://www.legab.it"}},
+ {"name":"sb_tc2","url":"https://api.performfeeds.com/soccerdata/tournamentcalendar/pnhshdiiacyg1anunc1iilqc3?_rt=c&_fmt=json","headers":{"Referer":"https://www.legab.it/","Origin":"https://www.legab.it"}},
+ {"name":"efbetleague","url":"https://efbetleague.com/"},
+ {"name":"cfa_root","url":"https://www.cfa.com.cy/"},
+ {"name":"cro_k14","url":"https://hnl.hr/supersport-hnl/raspored-i-rezultati/?kolo=14"}
 ]

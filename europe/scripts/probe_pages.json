@@ -1,6 +1,4 @@
 [
- {"name":"bel","url":"https://www.proleague.be/jpl-kalender","click":["#onetrust-accept-btn-handler"],"js":["(()=>{const b=[...document.querySelectorAll('button,a')].find(x=>/volgende|next|S9|Speeldag 9/i.test((x.getAttribute('aria-label')||'')+x.textContent));b&&b.click()})()"]},
- {"name":"legab","url":"https://www.legab.it/seriebkt/calendario","click":["button:has-text('Accetta')"],"js":["window.scrollTo(0,document.body.scrollHeight/2)","window.scrollTo(0,document.body.scrollHeight)"]},
- {"name":"coppa","url":"https://en.legaseriea.it/coppa-italia","click":["button:has-text('Accept')"],"js":["window.scrollTo(0,document.body.scrollHeight/2)","window.scrollTo(0,document.body.scrollHeight)"]},
- {"name":"aut","url":"https://www.bundesliga.at/de/spielplan","js":["(()=>{const b=[...document.querySelectorAll('button,a,select')].find(x=>/runde|nächste|weiter/i.test((x.getAttribute('aria-label')||'')+x.textContent));b&&b.click()})()"]}
+ {"name":"efbetleague","url":"https://efbetleague.com/","click":[]},
+ {"name":"cfa","url":"https://www.cfa.com.cy/Gr/news/53760","click":[]}
 ]
