@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-11T13:59Z",
+ "ran": "2026-10-11T14:04Z",
  "changes": {
   "results": 0,
   "moved": 0,
   "timed": 0,
   "postponed": 0,
-  "live": 16
+  "live": 17
  },
  "official": {
   "uefa.champions": {
@@ -36,7 +36,7 @@
   "uefa.europa": {
    "ok": true,
    "fixtures": 224,
-   "matched": 111,
+   "matched": 126,
    "added": 0,
    "unmatched_sample": [
     "Qarabağ - Vestri 2026-07-09 16:00:00+00:00",
@@ -48,23 +48,12 @@
     "U. Cluj - Dynamo Kyiv 2026-07-16 17:30:00+00:00",
     "Derry - CSKA Sofia 2026-07-16 17:30:00+00:00"
    ],
-   "ours_not_found": [
-    "2026-10-15 AZ Alkmaar - Hapoel Be'er",
-    "2026-10-15 Sparta Prague - Lillestrom",
-    "2026-10-15 Stade Rennais - OFI Crete",
-    "2026-10-22 Juventus - Stade Rennais",
-    "2026-10-22 Union St.-Gilloise - Hapoel Be'er",
-    "2026-10-22 Lillestrom - Real Sociedad",
-    "2026-11-05 Lillestrom - Viktoria Plzen",
-    "2026-11-05 Stade Rennais - Olympiacos",
-    "2026-11-05 Hapoel Be'er - OFI Crete",
-    "2026-11-26 Besiktas - Hapoel Be'er"
-   ]
+   "ours_not_found": []
   },
   "uefa.europa.conf": {
    "ok": true,
    "fixtures": 366,
-   "matched": 102,
+   "matched": 108,
    "added": 0,
    "unmatched_sample": [
     "UNA Strassen - La Fiorita 2026-07-07 17:15:00+00:00",
@@ -76,14 +65,7 @@
     "Liepāja - Dečić 2026-07-09 16:00:00+00:00",
     "Hegelmann - Paide 2026-07-09 16:00:00+00:00"
    ],
-   "ours_not_found": [
-    "2026-10-15 F.C. København - Braga",
-    "2026-10-22 Red Star Belgrade - F.C. København",
-    "2026-11-05 F.C. København - Iberia 1999",
-    "2026-11-26 Inter D'Escaldes - F.C. København",
-    "2026-12-10 F.C. København - FC Lugano",
-    "2026-12-17 CSU Craiova - F.C. København"
-   ]
+   "ours_not_found": []
   },
   "uefa.nations": {
    "ok": true,
