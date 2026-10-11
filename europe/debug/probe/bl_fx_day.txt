@@ -1,0 +1,7 @@
+URL: https://wapp.bapi.bundesliga.com/fixtures/DFL-COM-000001/DFL-SEA-0001KA/DFL-DAY-004CBX
+FINAL: https://wapp.bapi.bundesliga.com/fixtures/DFL-COM-000001/DFL-SEA-0001KA/DFL-DAY-004CBX
+STATUS: 404
+TYPE: application/json
+BYTES: 137
+
+{"timestamp":"2026-10-11T05:14:29.446Z","status":404,"error":"Not Found","path":"/fixtures/DFL-COM-000001/DFL-SEA-0001KA/DFL-DAY-004CBX"}
