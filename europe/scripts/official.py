@@ -399,7 +399,9 @@ def ligue1(now):
 # ---------------- Liga Portugal (ligaportugal.pt data feed) ----------------
 def liga_portugal(now):
     yr = season_year(now)
-    js = get(f"https://www.ligaportugal.pt/api/v1/competition/matches?season={yr}{yr + 1}&competition=ligaportugalbetclic")
+    js = get(f"https://www.ligaportugal.pt/api/v1/competition/matches?season={yr}{yr + 1}&competition=ligaportugalbetclic",
+             {"Accept": "*/*", "Accept-Language": "en", "Referer": "https://www.ligaportugal.pt/"})
+    print(f"  liga portugal: {len(js)} records")
     out = []
     for m in js:
         if m.get("canceledFixture") or m.get("postponedFixture") or m.get("notPlayedFixture"):
@@ -448,7 +450,8 @@ SFL_COMP = "e0lck99w8meo9qoalfrxgo33o"
 
 def swiss_super_league(now):
     base = "https://origins-webex-orchestrator.origins-digital.com/trpc/"
-    hdr = {"Origin": "https://www.sfl.ch", "Referer": "https://www.sfl.ch/"}
+    hdr = {"Origin": "https://sfl.ch", "Referer": "https://sfl.ch/", "x-account-key": "Os-hXumIK",
+           "Content-Type": "application/json"}  # public key used by sfl.ch itself
     q = lambda d: urllib.request.quote(json.dumps(d, separators=(",", ":")))
     days = get(base + "matchDays.getList?input=" + q({"competitionProviderId": SFL_COMP}), hdr)["result"]["data"]
     out = []
