@@ -306,8 +306,15 @@ def allsvenskan(now):
     req = urllib.request.Request("https://gql.sportomedia.se/graphql", data=body, method="POST",
                                  headers={"User-Agent": UA, "Content-Type": "application/json", "Accept": "application/json",
                                           "Origin": "https://allsvenskan.se", "Referer": "https://allsvenskan.se/"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        js = json.loads(r.read().decode("utf-8"))
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                js = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 3:
+                raise
+            time.sleep(20 * (attempt + 1))  # rate limited: wait and try again
     out = []
     for m in js["data"]["matchesForLeague"]["matches"]:
         st = (m.get("extendedStatus") or m.get("status") or "").upper()
