@@ -484,6 +484,93 @@ def swiss_super_league(now):
     return out
 
 
+# ---------------- Scottish Premiership (spfl.co.uk fixtures widget, Opta feed) ----------------
+SPFL_FEED = "https://omo.akamai.opta.net/auth/competition.php?feed_type=f1&competition=14&season_id={yr}&user=OW2017&psw=dXWg5gVZ&sps=widgets&jsoncallback=f1_14_{yr}"
+
+
+def spfl(now):
+    yr = season_year(now)
+    raw = get(SPFL_FEED.format(yr=yr), {"Referer": "https://spfl.co.uk/", "Accept": "*/*"}, as_json=False)
+    doc = json.loads(raw[raw.index("(") + 1:raw.rindex(")")])["SoccerFeed"]["SoccerDocument"]
+    teams = {t["@attributes"]["uID"]: t for t in doc.get("Team", [])}
+    rows, by_md = [], {}
+    for m in doc.get("MatchData", []):
+        info = m["MatchInfo"]; at = info["@attributes"]
+        by_md.setdefault(at.get("MatchDay"), []).append(info.get("DateUtc"))
+        rows.append(m)
+    out = []
+    for m in rows:
+        info = m["MatchInfo"]; at = info["@attributes"]
+        side = {td["@attributes"]["Side"]: td for td in m.get("TeamData", [])}
+        h, a = teams.get(side["Home"]["@attributes"]["TeamRef"], {}), teams.get(side["Away"]["@attributes"]["TeamRef"], {})
+        per = (at.get("Period") or "").lower()
+        state = "post" if per == "fulltime" else "pre" if per == "prematch" else "pp" if "postpon" in per or "abandon" in per else "live"
+        utc = datetime.strptime(info["DateUtc"], "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc) if info.get("DateUtc") else None
+        conf = _round_confirmed(by_md.get(at.get("MatchDay"), [])) or state != "pre"
+        stats = {s["@attributes"]["Type"]: s.get("@value", "") for s in m.get("Stat", []) if isinstance(s, dict)}
+        hs, as_ = side["Home"].get("@value", ""), side["Away"].get("@value", "")
+        out.append(_fx(home=h.get("Name", ""), away=a.get("Name", ""), alt_home=[h.get("OfficialTeamName", "")], alt_away=[a.get("OfficialTeamName", "")],
+                       utc=utc if conf else None, day=None if conf or not utc else utc.strftime("%Y-%m-%d"), confirmed=conf, state=state,
+                       score=[int(hs), int(as_)] if state in ("post", "live") and str(hs).isdigit() and str(as_).isdigit() else None,
+                       venue=stats.get("Venue", ""), city=stats.get("City", "")))
+    return out
+
+
+# ---------------- Danish Superliga (superliga.dk data feed) ----------------
+SUPERLIGA_TOKEN = "5b6ab6f5eb84c60031bbbd24"  # public token used by superliga.dk itself
+
+
+def superliga(now):
+    q = f"appName=dk.releaze.livecenter.spdk&access_token={SUPERLIGA_TOKEN}&env=production&locale=da"
+    t = get(f"https://api.superliga.dk/tournaments/46?appName=superligadk&access_token={SUPERLIGA_TOKEN}&env=production&locale=da",
+            {"Origin": "https://superliga.dk", "Referer": "https://superliga.dk/"})
+    season = None
+    for key in ("seasonId", "currentSeasonId", "activeSeasonId"):
+        season = season or (t.get(key) if isinstance(t, dict) else None)
+    season = season or (((t.get("seasons") or [{}])[0]).get("id") if isinstance(t, dict) and t.get("seasons") else None) or 35802
+    js = get(f"https://api.superliga.dk/events-v2?{q}&seasonId={season}", {"Origin": "https://superliga.dk", "Referer": "https://superliga.dk/"})
+    out = []
+    for m in js.get("events", []):
+        st = (m.get("statusType") or "").lower()
+        state = "post" if st == "finished" else "pre" if st == "notstarted" else "pp" if st in ("postponed", "cancelled", "canceled", "interrupted") else "live"
+        utc = datetime.fromisoformat(m["startDate"].replace("Z", "+00:00")) if m.get("startDate") else None
+        tbd = (m.get("properties") or {}).get("startDateTimeToBeDecided") == "yes"
+        sc = m.get("score") or {}
+        out.append(_fx(home=m.get("homeName", ""), away=m.get("awayName", ""), utc=None if tbd else utc,
+                       day=utc.strftime("%Y-%m-%d") if tbd and utc else None, confirmed=not tbd and utc is not None, state=state,
+                       score=[sc.get("home"), sc.get("away")] if state in ("post", "live") else None,
+                       venue=(m.get("properties") or {}).get("venueName", "")))
+    return out
+
+
+# ---------------- SuperSport HNL, Croatia (hnl.hr schedule) ----------------
+def hnl(now):
+    page = get("https://hnl.hr/supersport-hnl/raspored-i-rezultati/", {"Accept": "text/html"}, as_json=False)
+    tz, out, rnd = ZoneInfo("Europe/Zagreb"), [], 0
+    rows = []
+    for m in re.finditer(r'<tr class="th"><th[^>]*>(\d+)\. kolo|<tr><td>(\d{2})\.(\d{2})\.(\d{4})\.\s*(\d{1,2}):(\d{2})'
+                         r'<div class="natjecanje">[^<]*</div><div class="mjesto">([^<]*)</div></td><td>([^<]+)</td><td>([^<]*)</td>'
+                         r'<td>\s*:\s*</td><td>([^<]*)</td><td>([^<]+)</td>', page):
+        if m.group(1):
+            rnd = int(m.group(1)); continue
+        d, mo, y, hh, mi = (int(m.group(i)) for i in range(2, 7))
+        utc = datetime(y, mo, d, hh, mi, tzinfo=tz).astimezone(timezone.utc)
+        rows.append((rnd, utc, m))
+    by_r = {}
+    for rnd, utc, _ in rows:
+        by_r.setdefault(rnd, []).append(utc)
+    for rnd, utc, m in rows:
+        hs, as_ = m.group(9).strip(), m.group(10).strip()
+        state = "post" if hs.isdigit() and as_.isdigit() else "pre"
+        conf = _round_confirmed(by_r.get(rnd, [])) or state != "pre"
+        place = html.unescape(m.group(7)).rsplit(",", 1)
+        out.append(_fx(home=html.unescape(m.group(8)).strip(), away=html.unescape(m.group(11)).strip(),
+                       utc=utc if conf else None, day=None if conf else utc.astimezone(tz).strftime("%Y-%m-%d"), confirmed=conf,
+                       state=state, score=[int(hs), int(as_)] if state == "post" else None,
+                       venue=place[0].strip(), city=place[1].strip() if len(place) > 1 else ""))
+    return out
+
+
 SOURCES = {
     "uefa.champions": ("UEFA", "https://www.uefa.com/uefachampionsleague/fixtures-results/", ucl),
     "uefa.europa": ("UEFA", "https://www.uefa.com/uefaeuropaleague/fixtures-results/", uel),
@@ -503,4 +590,7 @@ SOURCES = {
     "por.1": ("Liga Portugal", "https://www.ligaportugal.pt/pt/liga/calendario/", liga_portugal),
     "eng.2": ("EFL", "https://www.efl.com/competitions/sky-bet-championship/fixtures/", efl_championship),
     "sui.1": ("Swiss Football League", "https://www.sfl.ch/superleague/", swiss_super_league),
+    "sco.1": ("SPFL", "https://spfl.co.uk/league/premiership/fixtures", spfl),
+    "den.1": ("Superliga", "https://superliga.dk/kampprogram", superliga),
+    "cro.1": ("HNL", "https://hnl.hr/supersport-hnl/raspored-i-rezultati/", hnl),
 }
