@@ -1,5 +1,5 @@
 {
- "ran": "2026-10-11T14:04Z",
+ "ran": "2026-10-11T14:10Z",
  "changes": {
   "results": 0,
   "moved": 0,
@@ -14,14 +14,13 @@
    "matched": 119,
    "added": 0,
    "unmatched_sample": [
-    "Sabah - The New Saints 2026-07-07 16:00:00+00:00",
-    "L. Red Imps - Inter Escaldes 2026-07-07 16:00:00+00:00",
-    "Ararat-Armenia - Riga 2026-07-07 16:00:00+00:00",
-    "Kauno Žalgiris - Drita 2026-07-07 16:00:00+00:00",
-    "Vardar - KuPS Kuopio 2026-07-07 17:00:00+00:00",
-    "Floriana - Shamrock Rovers 2026-07-07 17:30:00+00:00",
-    "Tre Fiori - Larne 2026-07-07 18:30:00+00:00",
-    "Borac - Levski Sofia 2026-07-07 18:30:00+00:00"
+    "Atleti - Man Utd 2026-10-13 19:00:00+00:00",
+    "Como - Man Utd 2026-10-21 16:45:00+00:00",
+    "Man Utd - Roma 2026-11-03 20:00:00+00:00",
+    "Sporting CP - Man Utd 2026-11-25 20:00:00+00:00",
+    "Man Utd - Leipzig 2026-12-08 20:00:00+00:00",
+    "Man Utd - Bayern München 2027-01-20 20:00:00+00:00",
+    "Villarreal - Man Utd 2027-01-27 20:00:00+00:00"
    ],
    "ours_not_found": [
     "2026-10-13 Atlético Madrid - Manchester United",
@@ -38,16 +37,7 @@
    "fixtures": 224,
    "matched": 126,
    "added": 0,
-   "unmatched_sample": [
-    "Qarabağ - Vestri 2026-07-09 16:00:00+00:00",
-    "Dynamo Kyiv - U. Cluj 2026-07-09 17:00:00+00:00",
-    "Sheriff - Aluminij 2026-07-09 17:00:00+00:00",
-    "Hajduk Split - Žilina 2026-07-09 18:00:00+00:00",
-    "CSKA Sofia - Derry 2026-07-09 18:00:00+00:00",
-    "Vojvodina - Ferencváros 2026-07-09 18:00:00+00:00",
-    "U. Cluj - Dynamo Kyiv 2026-07-16 17:30:00+00:00",
-    "Derry - CSKA Sofia 2026-07-16 17:30:00+00:00"
-   ],
+   "unmatched_sample": [],
    "ours_not_found": []
   },
   "uefa.europa.conf": {
@@ -55,16 +45,7 @@
    "fixtures": 366,
    "matched": 108,
    "added": 0,
-   "unmatched_sample": [
-    "UNA Strassen - La Fiorita 2026-07-07 17:15:00+00:00",
-    "ElbasanI - BATE 2026-07-07 18:00:00+00:00",
-    "Zire - Torpedo Kutaisi 2026-07-08 16:00:00+00:00",
-    "Connah's Quay - Ballkani 2026-07-08 17:30:00+00:00",
-    "Differdange - Ilves 2026-07-08 17:30:00+00:00",
-    "At. Escaldes - Mornar 2026-07-09 14:00:00+00:00",
-    "Liepāja - Dečić 2026-07-09 16:00:00+00:00",
-    "Hegelmann - Paide 2026-07-09 16:00:00+00:00"
-   ],
+   "unmatched_sample": [],
    "ours_not_found": []
   },
   "uefa.nations": {
@@ -72,16 +53,7 @@
    "fixtures": 156,
    "matched": 104,
    "added": 0,
-   "unmatched_sample": [
-    "Andorra - Malta 2026-09-24 16:00:00+00:00",
-    "Portugal - Wales 2026-09-24 18:45:00+00:00",
-    "Netherlands - Germany 2026-09-24 18:45:00+00:00",
-    "Serbia - Greece 2026-09-24 18:45:00+00:00",
-    "Norway - Denmark 2026-09-24 18:45:00+00:00",
-    "Austria - Israel 2026-09-24 18:45:00+00:00",
-    "Kosovo - Republic of Ireland 2026-09-24 18:45:00+00:00",
-    "Liechtenstein - Lithuania 2026-09-24 18:45:00+00:00"
-   ],
+   "unmatched_sample": [],
    "ours_not_found": []
   },
   "eng.1": {
@@ -90,14 +62,18 @@
    "matched": 280,
    "added": 0,
    "unmatched_sample": [
-    "Arsenal - Coventry City 2026-08-21 19:00:00+00:00",
-    "Hull City - Manchester United 2026-08-22 11:30:00+00:00",
-    "Everton - Crystal Palace 2026-08-22 14:00:00+00:00",
-    "Ipswich Town - Sunderland 2026-08-22 14:00:00+00:00",
-    "Nottingham Forest - Leeds United 2026-08-22 14:00:00+00:00",
-    "Brentford - Tottenham Hotspur 2026-08-22 16:30:00+00:00",
-    "Brighton and Hove Albion - Aston Villa 2026-08-23 13:00:00+00:00",
-    "Manchester City - Bournemouth 2026-08-23 13:00:00+00:00"
+    "Arsenal - Tottenham Hotspur 2027-05-01",
+    "Brighton and Hove Albion - Nottingham Forest 2027-05-01",
+    "Coventry City - Manchester United 2027-05-01",
+    "Crystal Palace - Aston Villa 2027-05-01",
+    "Fulham - Everton 2027-05-01",
+    "Hull City - Bournemouth 2027-05-01",
+    "Ipswich Town - Leeds United 2027-05-01",
+    "Liverpool - Chelsea 2027-05-01",
+    "Manchester City - Brentford 2027-05-01",
+    "Sunderland - Newcastle United 2027-05-01",
+    "Bournemouth - Manchester United 2027-05-08",
+    "Brentford - Aston Villa 2027-05-08"
    ],
    "ours_not_found": []
   },
@@ -107,14 +83,18 @@
    "matched": 261,
    "added": 0,
    "unmatched_sample": [
-    "FC Barcelona - Athletic Club 2026-08-27 19:00:00+00:00",
-    "Celta - CA Osasuna 2026-08-27 18:30:00+00:00",
-    "Real Madrid - Real Sociedad 2026-08-26 19:00:00+00:00",
-    "Valencia CF - Real Betis 2026-08-25 19:00:00+00:00",
-    "Atlético de Madrid - Málaga CF 2026-08-19 19:00:00+00:00",
-    "RC Deportivo - Elche CF 2026-08-17 19:00:00+00:00",
-    "RCD Espanyol de Barcelona - Levante UD 2026-08-16 17:00:00+00:00",
-    "R. Racing Club - Villarreal CF 2026-08-16 15:00:00+00:00"
+    "Real Sociedad - Athletic Club 2027-05-02",
+    "Rayo Vallecano - Villarreal CF 2027-05-02",
+    "Málaga CF - Getafe CF 2027-05-02",
+    "Levante UD - Real Madrid 2027-05-02",
+    "FC Barcelona - CA Osasuna 2027-05-02",
+    "Elche CF - RCD Espanyol de Barcelona 2027-05-02",
+    "RC Deportivo - R. Racing Club 2027-05-02",
+    "Celta - Sevilla FC 2027-05-02",
+    "Real Betis - Valencia CF 2027-05-02",
+    "Atlético de Madrid - Deportivo Alavés 2027-05-02",
+    "Villarreal CF - Celta 2027-05-09",
+    "Valencia CF - Atlético de Madrid 2027-05-09"
    ],
    "ours_not_found": []
   },
@@ -124,14 +104,18 @@
    "matched": 243,
    "added": 0,
    "unmatched_sample": [
-    "FC Bayern München - VfB Stuttgart 2026-08-28 18:30:00+00:00",
-    "SV Elversberg - Bayer 04 Leverkusen 2026-08-29 13:30:00+00:00",
-    "1. FC Köln - TSG Hoffenheim 2026-08-29 13:30:00+00:00",
-    "1. FC Union Berlin - Eintracht Frankfurt 2026-08-29 13:30:00+00:00",
-    "1. FSV Mainz 05 - SC Paderborn 07 2026-08-29 13:30:00+00:00",
-    "RB Leipzig - Borussia Mönchengladbach 2026-08-29 13:30:00+00:00",
-    "Borussia Dortmund - Hamburger SV 2026-08-29 16:30:00+00:00",
-    "Sport-Club Freiburg - SV Werder Bremen 2026-08-30 13:30:00+00:00"
+    "SV Elversberg - TSG Hoffenheim 2027-05-08",
+    "FC Schalke 04 - Eintracht Frankfurt 2027-05-08",
+    "1. FC Union Berlin - SV Werder Bremen 2027-05-08",
+    "1. FSV Mainz 05 - Borussia Dortmund 2027-05-08",
+    "FC Augsburg - VfB Stuttgart 2027-05-08",
+    "Sport-Club Freiburg - 1. FC Köln 2027-05-08",
+    "Bayer 04 Leverkusen - Hamburger SV 2027-05-08",
+    "RB Leipzig - SC Paderborn 07 2027-05-08",
+    "FC Bayern München - Borussia Mönchengladbach 2027-05-08",
+    "SC Paderborn 07 - 1. FC Union Berlin 2027-05-15",
+    "SV Werder Bremen - FC Schalke 04 2027-05-15",
+    "Hamburger SV - Sport-Club Freiburg 2027-05-15"
    ],
    "ours_not_found": []
   },
@@ -141,14 +125,18 @@
    "matched": 225,
    "added": 0,
    "unmatched_sample": [
-    "VfL Bochum 1848 - Hertha BSC 2026-08-07 18:30:00+00:00",
-    "1. FC Magdeburg - Eintracht Braunschweig 2026-08-08 11:00:00+00:00",
-    "Karlsruher SC - DSC Arminia Bielefeld 2026-08-08 11:00:00+00:00",
-    "SV Darmstadt 98 - Holstein Kiel 2026-08-08 11:00:00+00:00",
-    "1. FC Heidenheim 1846 - VfL Osnabrück 2026-08-08 11:00:00+00:00",
-    "VfL Wolfsburg - 1. FC Kaiserslautern 2026-08-08 18:30:00+00:00",
-    "FC Energie Cottbus - Hannover 96 2026-08-09 11:30:00+00:00",
-    "1. FC Nürnberg - SG Dynamo Dresden 2026-08-09 11:30:00+00:00"
+    "FC Energie Cottbus - SG Dynamo Dresden 2027-05-09",
+    "Karlsruher SC - Eintracht Braunschweig 2027-05-09",
+    "1. FC Nürnberg - 1. FC Magdeburg 2027-05-09",
+    "1. FC Kaiserslautern - DSC Arminia Bielefeld 2027-05-09",
+    "SV Darmstadt 98 - Hertha BSC 2027-05-09",
+    "Hannover 96 - Holstein Kiel 2027-05-09",
+    "1. FC Heidenheim 1846 - VfL Bochum 1848 2027-05-09",
+    "FC St. Pauli - VfL Osnabrück 2027-05-09",
+    "VfL Wolfsburg - SpVgg Greuther Fürth 2027-05-09",
+    "VfL Osnabrück - 1. FC Nürnberg 2027-05-16",
+    "SpVgg Greuther Fürth - SV Darmstadt 98 2027-05-16",
+    "Eintracht Braunschweig - 1. FC Heidenheim 1846 2027-05-16"
    ],
    "ours_not_found": []
   },
@@ -158,14 +146,18 @@
    "matched": 280,
    "added": 0,
    "unmatched_sample": [
-    "Internazionale - Monza 2026-08-22 16:30:00+00:00",
-    "Udinese - Como 2026-08-22 16:30:00+00:00",
-    "Genoa - Napoli 2026-08-22 18:45:00+00:00",
-    "Parma - Cagliari 2026-08-22 18:45:00+00:00",
-    "Frosinone - Juventus 2026-08-23 16:30:00+00:00",
-    "Venezia - Lecce 2026-08-23 16:30:00+00:00",
-    "Atalanta - Sassuolo 2026-08-23 18:45:00+00:00",
-    "Torino - Milan 2026-08-23 18:45:00+00:00"
+    "Atalanta - Juventus 2027-05-02",
+    "Bologna - Fiorentina 2027-05-02",
+    "Como - Internazionale 2027-05-02",
+    "Lecce - Cagliari 2027-05-02",
+    "Milan - Lazio 2027-05-02",
+    "Monza - Venezia 2027-05-02",
+    "Roma - Napoli 2027-05-02",
+    "Sassuolo - Frosinone 2027-05-02",
+    "Torino - Parma 2027-05-02",
+    "Udinese - Genoa 2027-05-02",
+    "Fiorentina - Roma 2027-05-09",
+    "Frosinone - Atalanta 2027-05-09"
    ],
    "ours_not_found": []
   },
@@ -175,14 +167,18 @@
    "matched": 207,
    "added": 0,
    "unmatched_sample": [
-    "Sparta Rotterdam - Feyenoord 2026-08-09 10:15:00+00:00",
-    "PEC Zwolle - Ajax 2026-08-09 12:30:00+00:00",
-    "N.E.C. Nijmegen - Telstar 2026-08-08 14:30:00+00:00",
-    "AZ - ADO Den Haag 2026-08-08 19:00:00+00:00",
-    "PSV - Fortuna Sittard 2026-08-08 18:00:00+00:00",
-    "SC Cambuur - Excelsior Rotterdam 2026-08-07 18:00:00+00:00",
-    "Go Ahead Eagles - Willem II 2026-08-08 16:45:00+00:00",
-    "sc Heerenveen - FC Twente 2026-08-09 14:45:00+00:00"
+    "sc Heerenveen - FC Utrecht 2027-05-01",
+    "Ajax - Fortuna Sittard 2027-05-01",
+    "Sparta Rotterdam - FC Twente 2027-05-01",
+    "Telstar - AZ 2027-05-01",
+    "FC Groningen - ADO Den Haag 2027-05-01",
+    "Feyenoord - Willem II 2027-05-01",
+    "N.E.C. Nijmegen - PEC Zwolle 2027-05-01",
+    "Go Ahead Eagles - PSV 2027-05-01",
+    "Excelsior Rotterdam - SC Cambuur 2027-05-01",
+    "AZ - Ajax 2027-05-08",
+    "ADO Den Haag - N.E.C. Nijmegen 2027-05-08",
+    "PEC Zwolle - Sparta Rotterdam 2027-05-08"
    ],
    "ours_not_found": []
   }
