@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-11T13:54Z",
+ "ran": "2026-10-11T13:59Z",
  "changes": {
-  "results": 49,
+  "results": 0,
   "moved": 0,
   "timed": 0,
   "postponed": 0,
-  "live": 13
+  "live": 16
  },
  "official": {
   "uefa.champions": {
@@ -22,6 +22,15 @@
     "Floriana - Shamrock Rovers 2026-07-07 17:30:00+00:00",
     "Tre Fiori - Larne 2026-07-07 18:30:00+00:00",
     "Borac - Levski Sofia 2026-07-07 18:30:00+00:00"
+   ],
+   "ours_not_found": [
+    "2026-10-13 Atlético Madrid - Manchester United",
+    "2026-10-21 Como - Manchester United",
+    "2026-11-03 Manchester United - AS Roma",
+    "2026-11-25 Sporting CP - Manchester United",
+    "2026-12-08 Manchester United - RB Leipzig",
+    "2027-01-20 Manchester United - Bayern München",
+    "2027-01-27 Villarreal - Manchester United"
    ]
   },
   "uefa.europa": {
@@ -38,13 +47,25 @@
     "Vojvodina - Ferencváros 2026-07-09 18:00:00+00:00",
     "U. Cluj - Dynamo Kyiv 2026-07-16 17:30:00+00:00",
     "Derry - CSKA Sofia 2026-07-16 17:30:00+00:00"
+   ],
+   "ours_not_found": [
+    "2026-10-15 AZ Alkmaar - Hapoel Be'er",
+    "2026-10-15 Sparta Prague - Lillestrom",
+    "2026-10-15 Stade Rennais - OFI Crete",
+    "2026-10-22 Juventus - Stade Rennais",
+    "2026-10-22 Union St.-Gilloise - Hapoel Be'er",
+    "2026-10-22 Lillestrom - Real Sociedad",
+    "2026-11-05 Lillestrom - Viktoria Plzen",
+    "2026-11-05 Stade Rennais - Olympiacos",
+    "2026-11-05 Hapoel Be'er - OFI Crete",
+    "2026-11-26 Besiktas - Hapoel Be'er"
    ]
   },
   "uefa.europa.conf": {
    "ok": true,
    "fixtures": 366,
-   "matched": 97,
-   "added": 1,
+   "matched": 102,
+   "added": 0,
    "unmatched_sample": [
     "UNA Strassen - La Fiorita 2026-07-07 17:15:00+00:00",
     "ElbasanI - BATE 2026-07-07 18:00:00+00:00",
@@ -54,6 +75,14 @@
     "At. Escaldes - Mornar 2026-07-09 14:00:00+00:00",
     "Liepāja - Dečić 2026-07-09 16:00:00+00:00",
     "Hegelmann - Paide 2026-07-09 16:00:00+00:00"
+   ],
+   "ours_not_found": [
+    "2026-10-15 F.C. København - Braga",
+    "2026-10-22 Red Star Belgrade - F.C. København",
+    "2026-11-05 F.C. København - Iberia 1999",
+    "2026-11-26 Inter D'Escaldes - F.C. København",
+    "2026-12-10 F.C. København - FC Lugano",
+    "2026-12-17 CSU Craiova - F.C. København"
    ]
   },
   "uefa.nations": {
@@ -70,7 +99,8 @@
     "Austria - Israel 2026-09-24 18:45:00+00:00",
     "Kosovo - Republic of Ireland 2026-09-24 18:45:00+00:00",
     "Liechtenstein - Lithuania 2026-09-24 18:45:00+00:00"
-   ]
+   ],
+   "ours_not_found": []
   },
   "eng.1": {
    "ok": true,
@@ -86,7 +116,8 @@
     "Brentford - Tottenham Hotspur 2026-08-22 16:30:00+00:00",
     "Brighton and Hove Albion - Aston Villa 2026-08-23 13:00:00+00:00",
     "Manchester City - Bournemouth 2026-08-23 13:00:00+00:00"
-   ]
+   ],
+   "ours_not_found": []
   },
   "esp.1": {
    "ok": true,
@@ -102,7 +133,8 @@
     "RC Deportivo - Elche CF 2026-08-17 19:00:00+00:00",
     "RCD Espanyol de Barcelona - Levante UD 2026-08-16 17:00:00+00:00",
     "R. Racing Club - Villarreal CF 2026-08-16 15:00:00+00:00"
-   ]
+   ],
+   "ours_not_found": []
   },
   "ger.1": {
    "ok": true,
@@ -118,7 +150,8 @@
     "RB Leipzig - Borussia Mönchengladbach 2026-08-29 13:30:00+00:00",
     "Borussia Dortmund - Hamburger SV 2026-08-29 16:30:00+00:00",
     "Sport-Club Freiburg - SV Werder Bremen 2026-08-30 13:30:00+00:00"
-   ]
+   ],
+   "ours_not_found": []
   },
   "ger.2": {
    "ok": true,
@@ -134,7 +167,8 @@
     "VfL Wolfsburg - 1. FC Kaiserslautern 2026-08-08 18:30:00+00:00",
     "FC Energie Cottbus - Hannover 96 2026-08-09 11:30:00+00:00",
     "1. FC Nürnberg - SG Dynamo Dresden 2026-08-09 11:30:00+00:00"
-   ]
+   ],
+   "ours_not_found": []
   },
   "ita.1": {
    "ok": true,
@@ -150,7 +184,8 @@
     "Venezia - Lecce 2026-08-23 16:30:00+00:00",
     "Atalanta - Sassuolo 2026-08-23 18:45:00+00:00",
     "Torino - Milan 2026-08-23 18:45:00+00:00"
-   ]
+   ],
+   "ours_not_found": []
   },
   "ned.1": {
    "ok": true,
@@ -166,7 +201,8 @@
     "SC Cambuur - Excelsior Rotterdam 2026-08-07 18:00:00+00:00",
     "Go Ahead Eagles - Willem II 2026-08-08 16:45:00+00:00",
     "sc Heerenveen - FC Twente 2026-08-09 14:45:00+00:00"
-   ]
+   ],
+   "ours_not_found": []
   }
  },
  "espn_events_per_league": {
