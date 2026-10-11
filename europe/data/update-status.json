@@ -1,17 +1,82 @@
 {
- "ran": "2026-10-11T11:24Z",
+ "ran": "2026-10-11T13:54Z",
  "changes": {
-  "results": 0,
-  "moved": 2,
-  "timed": 26,
+  "results": 49,
+  "moved": 0,
+  "timed": 0,
   "postponed": 0,
-  "live": 5
+  "live": 13
  },
  "official": {
+  "uefa.champions": {
+   "ok": true,
+   "fixtures": 234,
+   "matched": 119,
+   "added": 0,
+   "unmatched_sample": [
+    "Sabah - The New Saints 2026-07-07 16:00:00+00:00",
+    "L. Red Imps - Inter Escaldes 2026-07-07 16:00:00+00:00",
+    "Ararat-Armenia - Riga 2026-07-07 16:00:00+00:00",
+    "Kauno Žalgiris - Drita 2026-07-07 16:00:00+00:00",
+    "Vardar - KuPS Kuopio 2026-07-07 17:00:00+00:00",
+    "Floriana - Shamrock Rovers 2026-07-07 17:30:00+00:00",
+    "Tre Fiori - Larne 2026-07-07 18:30:00+00:00",
+    "Borac - Levski Sofia 2026-07-07 18:30:00+00:00"
+   ]
+  },
+  "uefa.europa": {
+   "ok": true,
+   "fixtures": 224,
+   "matched": 111,
+   "added": 0,
+   "unmatched_sample": [
+    "Qarabağ - Vestri 2026-07-09 16:00:00+00:00",
+    "Dynamo Kyiv - U. Cluj 2026-07-09 17:00:00+00:00",
+    "Sheriff - Aluminij 2026-07-09 17:00:00+00:00",
+    "Hajduk Split - Žilina 2026-07-09 18:00:00+00:00",
+    "CSKA Sofia - Derry 2026-07-09 18:00:00+00:00",
+    "Vojvodina - Ferencváros 2026-07-09 18:00:00+00:00",
+    "U. Cluj - Dynamo Kyiv 2026-07-16 17:30:00+00:00",
+    "Derry - CSKA Sofia 2026-07-16 17:30:00+00:00"
+   ]
+  },
+  "uefa.europa.conf": {
+   "ok": true,
+   "fixtures": 366,
+   "matched": 97,
+   "added": 1,
+   "unmatched_sample": [
+    "UNA Strassen - La Fiorita 2026-07-07 17:15:00+00:00",
+    "ElbasanI - BATE 2026-07-07 18:00:00+00:00",
+    "Zire - Torpedo Kutaisi 2026-07-08 16:00:00+00:00",
+    "Connah's Quay - Ballkani 2026-07-08 17:30:00+00:00",
+    "Differdange - Ilves 2026-07-08 17:30:00+00:00",
+    "At. Escaldes - Mornar 2026-07-09 14:00:00+00:00",
+    "Liepāja - Dečić 2026-07-09 16:00:00+00:00",
+    "Hegelmann - Paide 2026-07-09 16:00:00+00:00"
+   ]
+  },
+  "uefa.nations": {
+   "ok": true,
+   "fixtures": 156,
+   "matched": 104,
+   "added": 0,
+   "unmatched_sample": [
+    "Andorra - Malta 2026-09-24 16:00:00+00:00",
+    "Portugal - Wales 2026-09-24 18:45:00+00:00",
+    "Netherlands - Germany 2026-09-24 18:45:00+00:00",
+    "Serbia - Greece 2026-09-24 18:45:00+00:00",
+    "Norway - Denmark 2026-09-24 18:45:00+00:00",
+    "Austria - Israel 2026-09-24 18:45:00+00:00",
+    "Kosovo - Republic of Ireland 2026-09-24 18:45:00+00:00",
+    "Liechtenstein - Lithuania 2026-09-24 18:45:00+00:00"
+   ]
+  },
   "eng.1": {
    "ok": true,
    "fixtures": 380,
    "matched": 280,
+   "added": 0,
    "unmatched_sample": [
     "Arsenal - Coventry City 2026-08-21 19:00:00+00:00",
     "Hull City - Manchester United 2026-08-22 11:30:00+00:00",
@@ -27,6 +92,7 @@
    "ok": true,
    "fixtures": 380,
    "matched": 261,
+   "added": 0,
    "unmatched_sample": [
     "FC Barcelona - Athletic Club 2026-08-27 19:00:00+00:00",
     "Celta - CA Osasuna 2026-08-27 18:30:00+00:00",
@@ -42,6 +108,7 @@
    "ok": true,
    "fixtures": 306,
    "matched": 243,
+   "added": 0,
    "unmatched_sample": [
     "FC Bayern München - VfB Stuttgart 2026-08-28 18:30:00+00:00",
     "SV Elversberg - Bayer 04 Leverkusen 2026-08-29 13:30:00+00:00",
@@ -57,6 +124,7 @@
    "ok": true,
    "fixtures": 306,
    "matched": 225,
+   "added": 0,
    "unmatched_sample": [
     "VfL Bochum 1848 - Hertha BSC 2026-08-07 18:30:00+00:00",
     "1. FC Magdeburg - Eintracht Braunschweig 2026-08-08 11:00:00+00:00",
@@ -72,6 +140,7 @@
    "ok": true,
    "fixtures": 380,
    "matched": 280,
+   "added": 0,
    "unmatched_sample": [
     "Internazionale - Monza 2026-08-22 16:30:00+00:00",
     "Udinese - Como 2026-08-22 16:30:00+00:00",
@@ -87,6 +156,7 @@
    "ok": true,
    "fixtures": 306,
    "matched": 207,
+   "added": 0,
    "unmatched_sample": [
     "Sparta Rotterdam - Feyenoord 2026-08-09 10:15:00+00:00",
     "PEC Zwolle - Ajax 2026-08-09 12:30:00+00:00",
@@ -100,10 +170,6 @@
   }
  },
  "espn_events_per_league": {
-  "uefa.champions": 72,
-  "uefa.europa": 54,
-  "uefa.europa.conf": 54,
-  "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
   "aut.1": 36,
@@ -126,7 +192,7 @@
   "rou.1": 0,
   "cro.1": 0
  },
- "requests": 1253,
+ "requests": 1053,
  "failed": 252,
  "errors": [
   "uefa.champions/scoreboard?dates=20261008-20261014&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
