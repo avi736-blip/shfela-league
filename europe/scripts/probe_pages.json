@@ -1,16 +1,14 @@
 [
  {"name":"sco","url":"https://spfl.co.uk/league/premiership/fixtures","click":["button:has-text('Accept')"]},
- {"name":"fra","url":"https://ligue1.com/fr/competitions/ligue1mcdonalds/calendar?gameWeek=8","click":["#didomi-notice-agree-button"],"js":["window.scrollTo(0,document.body.scrollHeight)"]},
- {"name":"efl","url":"https://www.efl.com/competitions/sky-bet-championship/fixtures/","click":["#onetrust-accept-btn-handler"],"js":["window.scrollTo(0,document.body.scrollHeight)"]},
- {"name":"por","url":"https://www.ligaportugal.pt/pt/liga/","click":["#onetrust-accept-btn-handler"]},
- {"name":"bel","url":"https://www.proleague.be/","click":["#onetrust-accept-btn-handler"]},
- {"name":"sui","url":"https://www.sfl.ch/","click":[]},
- {"name":"den","url":"https://superliga.dk/kampe","click":[]},
- {"name":"hun","url":"https://www.mlsz.hu/nb-i","click":[]},
- {"name":"cro","url":"https://hnl.hr/raspored/","click":[]},
- {"name":"cyp","url":"https://www.cfa.com.cy/En/fixtures","click":[]},
- {"name":"bul","url":"https://efbetliga.bg/","click":[]},
- {"name":"rou","url":"https://lpf.ro/","click":[]},
- {"name":"legab","url":"https://www.legab.it/","click":[]},
- {"name":"aut","url":"https://www.bundesliga.at/de/spielplan/","click":[]}
+ {"name":"bel","url":"https://www.proleague.be/jpl-kalender","click":["#onetrust-accept-btn-handler"]},
+ {"name":"den","url":"https://superliga.dk/kampprogram","click":[]},
+ {"name":"cro","url":"https://hnl.hr/supersport-hnl/raspored-i-rezultati/","click":[]},
+ {"name":"legab","url":"https://www.legab.it/seriebkt/calendario","click":[]},
+ {"name":"rou","url":"https://lpf.ro/cluburi/fc-rapid/30/calendar","click":[]},
+ {"name":"hun","url":"https://adatbank.mlsz.hu/league/25/0/31786/12.html","click":[]},
+ {"name":"cyp","url":"https://www.cfa.com.cy/En/competitions/52/1","click":[]},
+ {"name":"bul","url":"https://www.efbetliga.bg/","click":[]},
+ {"name":"aut","url":"https://www.bundesliga.at/de/spielplan","click":[]},
+ {"name":"dfb","url":"https://www.dfb.de/maenner/wettbewerbe/dfb-pokal/spielplan","click":[]},
+ {"name":"coppa","url":"https://en.legaseriea.it/coppa-italia","click":[]}
 ]

@@ -40,7 +40,8 @@ async def main():
 
             async def on_resp(r, jsons=jsons):
                 ct = r.headers.get("content-type", "")
-                if "json" in ct and r.request.resource_type in ("xhr", "fetch"):
+                if ("json" in ct and r.request.resource_type in ("xhr", "fetch")) or \
+                        any(k in r.url for k in ("performfeeds", "opta", "/api/", "graphql")) and r.request.resource_type in ("xhr", "fetch", "script"):
                     try:
                         body = await r.text()
                     except Exception:

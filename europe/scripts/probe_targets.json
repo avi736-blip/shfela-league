@@ -1,10 +1,5 @@
 [
- {"name":"fra_g1","url":"https://ma-api.ligue1.fr/championship-match/l1_championship_match_73875"},
- {"name":"fra_g2","url":"https://ma-api.ligue1.fr/championship-matches?ids=l1_championship_match_73875"},
- {"name":"fra_g3","url":"https://ma-api.ligue1.fr/championship-calendar/1/game-week/7?season=2026"},
- {"name":"fra_g4","url":"https://ma-api.ligue1.fr/championship-matches/1/game-week/7?season=2026"},
- {"name":"efl_g1","url":"https://multi-club-matches.webapi.gc.eflservices.co.uk/v2/matches?competitionID=10&seasonID=2026","headers":{"Referer":"https://www.efl.com/","Origin":"https://www.efl.com"}},
- {"name":"efl_g2","url":"https://multi-club-matches.webapi.gc.eflservices.co.uk/v2/fixtures?competitionID=10&seasonID=2026","headers":{"Referer":"https://www.efl.com/","Origin":"https://www.efl.com"}},
- {"name":"por_g1","url":"https://www.ligaportugal.pt/api/v1/competition/matches?season=20262027&competition=ligaportugalbetclic"},
- {"name":"por_g2","url":"https://www.ligaportugal.pt/api/v1/matches?season=20262027&competition=ligaportugalbetclic&round=8"}
+ {"name":"coppa_seasons","url":"https://api-sdp.legaseriea.it/v1/coppa-italia/football/seasons?locale=en-GB","headers":{"Origin":"https://en.legaseriea.it","Referer":"https://en.legaseriea.it/"}},
+ {"name":"den_kp","url":"https://superliga.dk/kampprogram"},
+ {"name":"cro_rr","url":"https://hnl.hr/supersport-hnl/raspored-i-rezultati/"}
 ]
