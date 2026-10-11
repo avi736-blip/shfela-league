@@ -1,7 +1,0 @@
-200	42101	rou_e12	https://lpf.ro/etape-liga-1/12
-200	401172	hun_r12	https://adatbank.mlsz.hu/league/25/0/31786/12.html
-200	113385	dfb_pd	https://www.dfb.de/page-data/maenner/wettbewerbe/dfb-pokal/page-data.json
-404	209	cyp_gr	https://www.cfa.com.cy/Gr/fixtures
-404	201	cyp_home	https://www.cfa.com.cy/Gr/
-200	152848	bfu	https://bfunion.bg/
-200	287000	aut_r9	https://www.bundesliga.at/de/spielplan?runde=9

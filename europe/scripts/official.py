@@ -580,10 +580,15 @@ def hnl(now):
 
 # ---------------- Austrian Bundesliga (bundesliga.at Spielplan) ----------------
 def bundesliga_at(now):
-    page = get("https://www.bundesliga.at/de/spielplan", {"Accept": "text/html"}, as_json=False)
-    page = re.sub(r'\sclass="[^"]*"', "", page)
-    tz, rows = ZoneInfo("Europe/Vienna"), []
-    for tr in re.findall(r"<tr>(.*?)</tr>", page, re.S):
+    tz, rows, seen = ZoneInfo("Europe/Vienna"), [], set()
+    pages = []
+    for st in range(1, 33):
+        try:
+            pages.append(re.sub(r'\sclass="[^"]*"', "", get(f"https://www.bundesliga.at/de/spielplan?spieltag={st}", {"Accept": "text/html"}, as_json=False)))
+        except RuntimeError:
+            continue
+        time.sleep(0.3)
+    for tr in (x for page in pages for x in re.findall(r"<tr>(.*?)</tr>", page, re.S)):
         ps = [html.unescape(x).strip() for x in re.findall(r"<p>([^<]*)</p>", tr)]
         dt = next((x for x in ps if re.fullmatch(r"\d{2}\.\d{2}\.\d{4}", x)), None)
         if not dt or len(ps) < 8:
@@ -596,6 +601,9 @@ def bundesliga_at(now):
         d, mo, y = (int(x) for x in dt.split("."))
         utc = datetime(y, mo, d, *(int(x) for x in tm.split(":")), tzinfo=tz).astimezone(timezone.utc) if tm else None
         sc = re.fullmatch(r"(\d+)\s*:\s*(\d+)", score.replace("\xa0", " "))
+        if (home, away) in seen:
+            continue
+        seen.add((home, away))
         rows.append((rnd, utc, f"{y}-{mo:02d}-{d:02d}", home, away, sc))
     by_r = {}
     for r in rows:
@@ -606,6 +614,94 @@ def bundesliga_at(now):
         conf = utc is not None and (_round_confirmed(by_r.get(rnd, [])) or state != "pre")
         out.append(_fx(home=home, away=away, utc=utc if conf else None, day=None if conf else day, confirmed=conf, state=state,
                        score=[int(sc.group(1)), int(sc.group(2))] if sc else None))
+    return out
+
+
+# ---------------- Jupiler Pro League, Belgium (proleague.be data feed) ----------------
+PL_BE_EDITION, PL_BE_ROUND = "6582729e-c371-4573-8d59-50674807d96c", "c36a5f14-de03-4ec9-93fe-07e9065a8b57"
+
+
+def pro_league_be(now):
+    base = (f"https://www.proleague.be/api/football_list/football_competition_match/variant_a?locale=nl"
+            f"&editionId={PL_BE_EDITION}&roundId={PL_BE_ROUND}&groupIds=")
+    hdr = {"Referer": "https://www.proleague.be/jpl-kalender"}
+    first = get(base, hdr)
+    out = []
+    for gw in first.get("gameweeks", []):
+        js = get(base + "&gameweekId=" + gw["id"], hdr)
+        for m in js.get("matches", []):
+            h, a = m.get("homeTeam") or {}, m.get("awayTeam") or {}
+            t = m.get("time")
+            utc = datetime.fromisoformat(t.replace("Z", "+00:00")) if t else None
+            st = str(m.get("status") or "").lower()
+            played = m.get("homeScore") is not None and m.get("awayScore") is not None
+            state = "pp" if "postpon" in st or "cancel" in st else "post" if played and (utc is None or utc < now) else "pre"
+            out.append(_fx(home=h.get("name", ""), away=a.get("name", ""), alt_home=[h.get("nickname") or ""], alt_away=[a.get("nickname") or ""],
+                           utc=utc, day=None if utc else m.get("date"), confirmed=utc is not None, state=state,
+                           score=[m.get("homeScore"), m.get("awayScore")] if state == "post" else None,
+                           venue=(m.get("venue") or {}).get("name", "") if isinstance(m.get("venue"), dict) else (m.get("venueName") or "")))
+        time.sleep(0.3)
+    return out
+
+
+# ---------------- SuperLiga, Romania (lpf.ro round pages) ----------------
+RO_MONTHS = {"ian": 1, "feb": 2, "mar": 3, "apr": 4, "mai": 5, "iun": 6, "iul": 7, "aug": 8, "sep": 9, "oct": 10, "noi": 11, "dec": 12}
+RO_ROW = re.compile(r'<td class="etapa-meci-data hiddenMobile">\s*(\d{1,2}) ([a-z]{3})[a-z]* (\d{4})(?:,\s*(\d{1,2}):(\d{2}))?\s*</td>'
+                    r'.*?class="echipa-etapa-1"><a [^>]*title="([^"]+)".*?<div class="scor-goluri">([^<]*)</div>\s*<div class="scor-goluri">([^<]*)</div>'
+                    r'.*?class="echipa-etapa-2"><a [^>]*title="([^"]+)"', re.S)
+
+
+def lpf_romania(now):
+    tz, out, seen = ZoneInfo("Europe/Bucharest"), [], set()
+    for rnd in range(1, 31):
+        try:
+            page = get(f"https://lpf.ro/etape-liga-1/{rnd}", {"Accept": "text/html"}, as_json=False)
+        except RuntimeError:
+            continue
+        for d, mon, y, hh, mi, home, hs, as_, away in RO_ROW.findall(page):
+            if (home, away) in seen or mon not in RO_MONTHS:
+                continue
+            seen.add((home, away))
+            day = f"{int(y)}-{RO_MONTHS[mon]:02d}-{int(d):02d}"
+            utc = datetime(int(y), RO_MONTHS[mon], int(d), int(hh), int(mi), tzinfo=tz).astimezone(timezone.utc) if hh else None
+            played = hs.strip().isdigit() and as_.strip().isdigit()
+            out.append(_fx(home=html.unescape(home).title(), away=html.unescape(away).title(), utc=utc, day=None if utc else day,
+                           confirmed=utc is not None, state="post" if played else "pre",
+                           score=[int(hs), int(as_)] if played else None))
+        time.sleep(0.3)
+    return out
+
+
+# ---------------- NB I, Hungary (MLSZ data bank) ----------------
+HU_SEASON, HU_COMP = 25, 31786
+HU_BLOCK = re.compile(r'<div class="schedule\s*"[^>]*>(.*?)class="team_sorsolas_arena">([^<]*)<', re.S)
+
+
+def nb1_hungary(now):
+    tz, out, seen = ZoneInfo("Europe/Budapest"), [], set()
+    for rnd in range(1, 34):
+        try:
+            page = get(f"https://adatbank.mlsz.hu/league/{HU_SEASON}/0/{HU_COMP}/{rnd}.html", {"Accept": "text/html"}, as_json=False)
+        except RuntimeError:
+            continue
+        for blk, arena in HU_BLOCK.findall(page):
+            hm = re.search(r'class="home_team"><a [^>]*title="([^"]+)"', blk)
+            aw = re.search(r'class="away_team"><a [^>]*title="([^"]+)"', blk)
+            dt = re.search(r'class="team_sorsolas_date">(?:<a [^>]*>)?\s*(\d{4})\. (\d{2})\. (\d{2})\.\s*(?:<span>\s*(\d{1,2}):(\d{2}))?', blk)
+            if not hm or not aw or not dt:
+                continue
+            key = (hm.group(1), aw.group(1))
+            if key in seen:
+                continue
+            seen.add(key)
+            y, mo, d = int(dt.group(1)), int(dt.group(2)), int(dt.group(3))
+            utc = datetime(y, mo, d, int(dt.group(4)), int(dt.group(5)), tzinfo=tz).astimezone(timezone.utc) if dt.group(4) else None
+            sc = re.search(r'schedule-points">\s*(\d+)\s*-\s*(\d+)', blk)
+            out.append(_fx(home=html.unescape(hm.group(1)).title(), away=html.unescape(aw.group(1)).title(), utc=utc,
+                           day=None if utc else f"{y}-{mo:02d}-{d:02d}", confirmed=utc is not None,
+                           state="post" if sc else "pre", score=[int(sc.group(1)), int(sc.group(2))] if sc else None,
+                           venue=html.unescape(arena).strip()))
+        time.sleep(0.3)
     return out
 
 
@@ -632,4 +728,7 @@ SOURCES = {
     "den.1": ("Superliga", "https://superliga.dk/kampprogram", superliga),
     "cro.1": ("HNL", "https://hnl.hr/supersport-hnl/raspored-i-rezultati/", hnl),
     "aut.1": ("Österreichische Bundesliga", "https://www.bundesliga.at/de/spielplan", bundesliga_at),
+    "bel.1": ("Pro League", "https://www.proleague.be/jpl-kalender", pro_league_be),
+    "rou.1": ("LPF", "https://lpf.ro/etape-liga-1/1", lpf_romania),
+    "hun.1": ("MLSZ", "https://adatbank.mlsz.hu/", nb1_hungary),
 }

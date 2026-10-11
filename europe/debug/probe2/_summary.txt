@@ -1,4 +1,0 @@
-200	189901	14 json	bel	https://www.proleague.be/jpl-kalender
-200	139967	6 json	legab	https://www.legab.it/seriebkt/calendario
-200	1737769	23 json	coppa	https://en.legaseriea.it/coppa-italia
-200	307892	0 json	aut	https://www.bundesliga.at/de/spielplan?spieltag=9
