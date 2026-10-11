@@ -1,7 +1,8 @@
 [
- {"name":"uefa_ucl","url":"https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2027&order=ASC&offset=0&limit=20"},
- {"name":"uefa_uel","url":"https://match.uefa.com/v5/matches?competitionId=14&seasonYear=2027&order=ASC&offset=0&limit=5"},
- {"name":"uefa_uecl","url":"https://match.uefa.com/v5/matches?competitionId=2019&seasonYear=2027&order=ASC&offset=0&limit=5"},
- {"name":"uefa_unl","url":"https://match.uefa.com/v5/matches?competitionId=2014&seasonYear=2027&order=ASC&offset=0&limit=5"},
- {"name":"uefa_comps","url":"https://comp.uefa.com/v2/competitions?limit=50&offset=0"}
+ {"name":"pol_w10","url":"https://api.centrum-meczowe.ekstraklasa.org/v1/matches?season_id=efed6802-8252-44a1-9d1b-943d224c4b50&week=10","headers":{"Referer":"https://ekstraklasa.org/"}},
+ {"name":"pol_w20","url":"https://api.centrum-meczowe.ekstraklasa.org/v1/matches?season_id=efed6802-8252-44a1-9d1b-943d224c4b50&week=20","headers":{"Referer":"https://ekstraklasa.org/"}},
+ {"name":"pol_w5","url":"https://api.centrum-meczowe.ekstraklasa.org/v1/matches?season_id=efed6802-8252-44a1-9d1b-943d224c4b50&week=5","headers":{"Referer":"https://ekstraklasa.org/"}},
+ {"name":"sco_res","url":"https://spfl.co.uk/league/premiership/results"},
+ {"name":"nor_page","url":"https://www.eliteserien.no/terminliste"},
+ {"name":"geo_page","url":"https://erovnuliliga.ge/en/calendar"}
 ]

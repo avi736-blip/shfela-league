@@ -45,9 +45,9 @@ async def main():
                         body = await r.text()
                     except Exception:
                         body = ""
-                    jsons.append({"url": r.url, "status": r.status, "method": r.request.method,
+                    jsons.append({"url": r.url, "status": r.status, "method": r.request.method, "post": r.request.post_data,
                                   "req_headers": {k: v for k, v in r.request.headers.items() if k.lower() not in ("cookie",)},
-                                  "body": body[:60000]})
+                                  "body": body[:int(os.environ.get("PROBE_BODY", "60000"))]})
             page.on("response", on_resp)
             try:
                 resp = await page.goto(url, wait_until="domcontentloaded", timeout=60000)

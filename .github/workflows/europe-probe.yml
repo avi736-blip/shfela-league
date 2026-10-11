@@ -14,6 +14,8 @@ jobs:
       - run: python europe/scripts/probe.py
       - run: pip install playwright==1.47.0 && python -m playwright install --with-deps chromium
       - run: python europe/scripts/probe_browser.py
+        env:
+          PROBE_BODY: "400000"
       - run: |
           git config user.name "games-bot"
           git config user.email "games-bot@users.noreply.github.com"
