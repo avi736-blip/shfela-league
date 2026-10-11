@@ -363,6 +363,111 @@ def erovnuli(now):
     return out
 
 
+# ---------------- Ligue 1, France (ligue1.com data feed) ----------------
+def ligue1(now):
+    cal = get(f"https://ma-api.ligue1.fr/championship-calendar/1?season={season_year(now)}",
+              {"Origin": "https://ligue1.com", "Referer": "https://ligue1.com/"})
+    lo, hi = now - timedelta(days=4), now + timedelta(days=120)
+    out = []
+    for gw in (cal.get("gameWeeks") or {}).values():
+        start = datetime.fromisoformat(gw["startDate"].replace("Z", "+00:00"))
+        end = datetime.fromisoformat(gw["endDate"].replace("Z", "+00:00"))
+        if end < lo or start > hi:
+            continue
+        ms = []
+        for mid in gw.get("matchesIds", []):
+            try:
+                ms.append(get(f"https://ma-api.ligue1.fr/championship-match/{mid}", {"Origin": "https://ligue1.com", "Referer": "https://ligue1.com/"}))
+            except RuntimeError:
+                continue
+        conf_round = _round_confirmed([m.get("date") for m in ms])
+        for m in ms:
+            per = (m.get("period") or "").lower()
+            state = "post" if per in ("fullTime".lower(), "ended", "postmatch") else "pre" if per in ("prematch", "") else \
+                "pp" if "postpon" in per or "cancel" in per else "live"
+            h, a = (m.get("home") or {}).get("clubIdentity") or {}, (m.get("away") or {}).get("clubIdentity") or {}
+            utc = datetime.fromisoformat(m["date"].replace("Z", "+00:00")) if m.get("date") else None
+            conf = conf_round or state != "pre"
+            st = m.get("stadium") or {}
+            out.append(_fx(home=h.get("name", ""), away=a.get("name", ""), alt_home=[h.get("officialName", "")],
+                           alt_away=[a.get("officialName", "")], utc=utc if conf else None,
+                           day=None if conf or not utc else utc.strftime("%Y-%m-%d"), confirmed=conf, state=state,
+                           venue=(st.get("name") or "").title(), city=((st.get("address") or {}).get("city") or "").title()))
+    return out
+
+
+# ---------------- Liga Portugal (ligaportugal.pt data feed) ----------------
+def liga_portugal(now):
+    yr = season_year(now)
+    js = get(f"https://www.ligaportugal.pt/api/v1/competition/matches?season={yr}{yr + 1}&competition=ligaportugalbetclic")
+    out = []
+    for m in js:
+        if m.get("canceledFixture") or m.get("postponedFixture") or m.get("notPlayedFixture"):
+            state = "pp"
+        elif m.get("homeTeamGoals") is not None and m.get("fixtureStateTypeId") in (5, 6):
+            state = "post"
+        else:
+            state = "pre"
+        d = m.get("fixtureDate") or m.get("matchDate")
+        utc = datetime.fromisoformat(d.replace("Z", "+00:00")) if d else None
+        conf = bool(m.get("fixtureDateIsDefined")) and utc is not None
+        h, a = m.get("homeTeam") or {}, m.get("awayTeam") or {}
+        out.append(_fx(home=h.get("name", ""), away=a.get("name", ""), alt_home=[h.get("fullName", "")], alt_away=[a.get("fullName", "")],
+                       utc=utc if conf else None, day=None if conf or not utc else utc.strftime("%Y-%m-%d"), confirmed=conf, state=state,
+                       score=[m.get("homeTeamGoals"), m.get("awayTeamGoals")] if state == "post" else None))
+    return out
+
+
+# ---------------- EFL Championship (efl.com data feed) ----------------
+def efl_championship(now):
+    url = f"https://multi-club-matches.webapi.gc.eflservices.co.uk/v2/matches?competitionID=10&seasonID={season_year(now)}"
+    hdr = {"Origin": "https://www.efl.com", "Referer": "https://www.efl.com/"}
+    out, guard = [], 0
+    while url and guard < 80:
+        js = get(url, hdr)
+        for m in js.get("data", []):
+            at = m.get("attributes") or {}
+            per = (at.get("matchPeriod") or "").lower()
+            state = "post" if per == "fulltime" else "pre" if per in ("prematch", "", "none") else \
+                "pp" if at.get("postponementReason") or "postpon" in per else "live"
+            k = at.get("kickOffDateUTC")
+            utc = datetime.strptime(k, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc) if k else None
+            conf = utc is not None and not at.get("TBC")
+            h, a = at.get("homeTeam") or {}, at.get("awayTeam") or {}
+            out.append(_fx(home=h.get("name", ""), away=a.get("name", ""), alt_home=[h.get("shortName") or ""], alt_away=[a.get("shortName") or ""],
+                           utc=utc if conf else None, day=None if conf or not utc else utc.strftime("%Y-%m-%d"), confirmed=conf, state=state,
+                           score=[h.get("score"), a.get("score")] if state in ("post", "live") and h.get("score") is not None else None))
+        url = (js.get("links") or {}).get("next")
+        guard += 1
+    return out
+
+
+# ---------------- Swiss Super League (sfl.ch data feed) ----------------
+SFL_COMP = "e0lck99w8meo9qoalfrxgo33o"
+
+
+def swiss_super_league(now):
+    base = "https://origins-webex-orchestrator.origins-digital.com/trpc/"
+    hdr = {"Origin": "https://www.sfl.ch", "Referer": "https://www.sfl.ch/"}
+    q = lambda d: urllib.request.quote(json.dumps(d, separators=(",", ":")))
+    days = get(base + "matchDays.getList?input=" + q({"competitionProviderId": SFL_COMP}), hdr)["result"]["data"]
+    out = []
+    for md in days:
+        evs = get(base + "matchDays.getEvents?input=" + q({"competitionProviderId": SFL_COMP, "matchDay": str(md), "language": "de"}), hdr)
+        for m in evs["result"]["data"]:
+            gs = (m.get("gameStatus") or "").lower()
+            state = "post" if gs in ("post-game", "final", "ended") else "pre" if gs in ("pre-game", "scheduled", "") else \
+                "pp" if "postpon" in gs or "cancel" in gs else "live"
+            day, tm = (m.get("date") or "")[:10], m.get("time")
+            utc = datetime.fromisoformat(f"{day}T{tm.replace('Z', '')}+00:00") if day and tm else None
+            out.append(_fx(home=m.get("homeTeamName", ""), away=m.get("awayTeamName", ""), utc=utc, day=None if utc else day or None,
+                           confirmed=utc is not None, state=state,
+                           score=[m.get("homeScore"), m.get("awayScore")] if state in ("post", "live") and m.get("homeScore") is not None else None,
+                           venue=m.get("stadiumName") or ""))
+        time.sleep(0.3)
+    return out
+
+
 SOURCES = {
     "uefa.champions": ("UEFA", "https://www.uefa.com/uefachampionsleague/fixtures-results/", ucl),
     "uefa.europa": ("UEFA", "https://www.uefa.com/uefaeuropaleague/fixtures-results/", uel),
@@ -378,4 +483,8 @@ SOURCES = {
     "swe.1": ("Allsvenskan", "https://allsvenskan.se/matcher", allsvenskan),
     "nor.1": ("Eliteserien", "https://www.eliteserien.no/terminliste", eliteserien),
     "geo.1": ("Erovnuli Liga", "https://erovnuliliga.ge/en/calendar", erovnuli),
+    "fra.1": ("Ligue 1", "https://ligue1.com/fr/competitions/ligue1mcdonalds/calendar", ligue1),
+    "por.1": ("Liga Portugal", "https://www.ligaportugal.pt/pt/liga/calendario/", liga_portugal),
+    "eng.2": ("EFL", "https://www.efl.com/competitions/sky-bet-championship/fixtures/", efl_championship),
+    "sui.1": ("Swiss Football League", "https://www.sfl.ch/superleague/", swiss_super_league),
 }
