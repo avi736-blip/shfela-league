@@ -3,9 +3,10 @@ import asyncio, json, pathlib, re
 from playwright.async_api import async_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-OUT = ROOT / "debug" / "probe2"
+import os
+OUT = ROOT / "debug" / os.environ.get("PROBE_OUT", "probe2")
 OUT.mkdir(parents=True, exist_ok=True)
-PAGES = json.loads((pathlib.Path(__file__).parent / "probe_pages.json").read_text(encoding="utf-8"))
+PAGES = json.loads((pathlib.Path(__file__).parent / os.environ.get("PROBE_PAGES", "probe_pages.json")).read_text(encoding="utf-8"))
 
 
 async def main():

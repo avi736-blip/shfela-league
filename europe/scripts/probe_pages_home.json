@@ -1,0 +1,4 @@
+[
+ {"name":"slgr","url":"https://www.slgr.gr/en/schedule/","click":["#onetrust-accept-btn-handler","button:has-text('Accept')"]},
+ {"name":"slgr_round","url":"https://www.slgr.gr/en/schedule/25/158/262706/"}
+]
