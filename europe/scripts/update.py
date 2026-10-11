@@ -185,7 +185,8 @@ def main():
 OFFICIAL = {}
 
 
-SYN = {"koln": "cologne", "munchen": "munich", "inter": "internazionale", "roma": "roma", "hamburger": "hamburg",
+SYN = {"kobenhavn": "copenhagen", "zvezda": "star", "crvena": "red", "sheva": "beer", "beersheva": "beer",
+       "praha": "prague", "plzen": "pilsen", "bodo": "bodo", "glimt": "glimt", "koln": "cologne", "munchen": "munich", "inter": "internazionale", "roma": "roma", "hamburger": "hamburg",
        "nurnberg": "nuremberg", "athletic": "athletic", "brighton": "brighton", "wolverhampton": "wolves",
        "nottm": "nottingham", "spurs": "tottenham", "deportivo": "deportivo", "coruna": "deportivo"}
 
@@ -253,7 +254,10 @@ def run_official(doc, now, ch):
                 continue
             used.add(best["id"]); matched += 1
             apply_official(best, fx, countries, label, url, stamp, ch)
-        OFFICIAL[lg] = {"ok": True, "fixtures": len(fixtures), "matched": matched, "added": added, "unmatched_sample": unmatched}
+        ours_left = [f'{g["ld"]} {g["h"]} - {g["a"]}' for g in pool if g["id"] not in used and g["ld"] >= now.strftime("%Y-%m-%d")
+                     and not g["id"].startswith("uefa-general")][:10]
+        OFFICIAL[lg] = {"ok": True, "fixtures": len(fixtures), "matched": matched, "added": added,
+                        "unmatched_sample": unmatched, "ours_not_found": ours_left}
         if added:
             drop_placeholders(doc, lg)
         print(f"official {lg}: {len(fixtures)} fixtures, {matched} matched")
@@ -274,7 +278,8 @@ def add_fixture(doc, lg, fx, now):
         return None
     for g in doc["games"]:  # never add a second copy of a game we already list under another spelling
         if g["lg"] == lg and abs((datetime.fromisoformat(g["t"].replace("Z", "+00:00")) - when).days) <= 2 and \
-                (sim([fx["home"], *fx["alt_home"]], [g["h"]]) > 0 or sim([fx["away"], *fx["alt_away"]], [g["a"]]) > 0):
+                (sim([fx["home"], *fx["alt_home"]], [g["h"]]) > 0 or sim([fx["away"], *fx["alt_away"]], [g["a"]]) > 0
+                 or (fx["city"] and g.get("city") and sim([fx["city"]], [g["city"]]) > 0) or g["c"] == fx["country"]):
             return None
     g = {"id": fx["ext_id"], "lg": lg, "c": fx["country"], "t": iso_z(when), "ld": when.strftime("%Y-%m-%d"),
          "lt": when.strftime("%H:%M"), "ok": False, "h": fx["home"], "a": fx["away"],

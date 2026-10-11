@@ -290,7 +290,7 @@ function renderList(key) {
 }
 function statusOf(g) {
   if (g.pp) return '<span class="st pp">נדחה</span>';
-  if (g.live) return '<span class="st live">משחק חי' + (g.s ? ' ' + g.s[0] + '–' + g.s[1] : '') + '</span>';
+  if (g.live && Date.now() - new Date(g.t) < 2.5 * 3600e3) return '<span class="st live">משחק חי' + (g.s ? ' ' + g.s[0] + '–' + g.s[1] : '') + '</span>';
   if (isPast(g)) return '';
   return (g.ok ? '<span class="st ok">מועד סופי</span>' : '<span class="st est">מועד משוער</span>') + sourceTag(g);
 }
@@ -300,7 +300,7 @@ function sourceTag(g) {
   return `<span class="by by-${esc(g.by || 'data')}">${esc(label)}</span>`;
 }
 function timeBlock(g) {
-  if (g.s && !g.live) return `<b class="res">${g.s[0]}–${g.s[1]}</b><small>תוצאה סופית</small>`;
+  if (g.s && !(g.live && Date.now() - new Date(g.t) < 2.5 * 3600e3)) return `<b class="res">${g.s[0]}–${g.s[1]}</b><small>תוצאה סופית</small>`;
   if (g.nt) return '<span class="tbd">השעה<br>טרם נקבעה</span>';
   const il = fmtIL.format(new Date(g.t)), ild = fmtILDay.format(new Date(g.t));
   return `<b>${g.lt}</b><small>${il} בישראל${ild !== g.ld ? ' (' + dm(ild) + ')' : ''}</small>`;
