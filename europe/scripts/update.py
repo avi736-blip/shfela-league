@@ -190,7 +190,7 @@ def main():
 OFFICIAL = {}
 
 
-SYN = {"rennais": "rennes", "kobenhavn": "copenhagen", "zvezda": "star", "crvena": "red", "sheva": "beer", "beersheva": "beer",
+SYN = {"utd": "united", "man": "manchester", "atleti": "atletico", "rennais": "rennes", "kobenhavn": "copenhagen", "zvezda": "star", "crvena": "red", "sheva": "beer", "beersheva": "beer",
        "praha": "prague", "plzen": "pilsen", "bodo": "bodo", "glimt": "glimt", "koln": "cologne", "munchen": "munich", "inter": "internazionale", "roma": "roma", "hamburger": "hamburg",
        "nurnberg": "nuremberg", "athletic": "athletic", "brighton": "brighton", "wolverhampton": "wolves",
        "nottm": "nottingham", "spurs": "tottenham", "deportivo": "deportivo", "coruna": "deportivo"}
