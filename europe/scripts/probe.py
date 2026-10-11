@@ -22,6 +22,8 @@ for t in TARGETS:
             code, ctype, final = r.status, r.headers.get("Content-Type", ""), r.geturl()
     except urllib.error.HTTPError as e:
         raw, code, ctype, final = e.read(), e.code, e.headers.get("Content-Type", ""), url
+        if e.headers.get("Content-Encoding") == "gzip":
+            raw = gzip.decompress(raw)
     except Exception as e:
         raw, code, ctype, final = str(e).encode(), 0, "", url
     text = raw.decode("utf-8", "replace")
