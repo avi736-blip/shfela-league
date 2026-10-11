@@ -70,6 +70,7 @@ TRANS = str.maketrans({"ø": "o", "Ø": "o", "æ": "ae", "Æ": "ae", "å": "a", 
 
 def toks(name):
     name = name.translate(TRANS).replace("Be'er", "Beer").replace("Be’er", "Beer")
+    name = re.sub(r"[\W_]+", " ", name)  # dashes and other punctuation separate words
     n = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
     t = {w for w in re.split(r"[^a-z0-9]+", n) if w and w not in STOP and not w.isdigit()}
     return t or {n}
@@ -189,7 +190,8 @@ def main():
 OFFICIAL = {}
 
 
-SYN = {"ob": "odense", "hamkam": "hamarkameratene", "thoune": "thun", "utd": "united", "man": "manchester", "atleti": "atletico", "rennais": "rennes", "kobenhavn": "copenhagen", "zvezda": "star", "crvena": "red", "sheva": "beer", "beersheva": "beer",
+SYN = {"stvv": "truidense", "wac": "wolfsberger", "dvsc": "debreceni", "zte": "zalaegerszeg", "ferencvarosi": "ferencvarosi",
+       "kispest": "honved", "eto": "eto", "ob": "odense", "hamkam": "hamarkameratene", "thoune": "thun", "utd": "united", "man": "manchester", "atleti": "atletico", "rennais": "rennes", "kobenhavn": "copenhagen", "zvezda": "star", "crvena": "red", "sheva": "beer", "beersheva": "beer",
        "praha": "prague", "plzen": "pilsen", "bodo": "bodo", "glimt": "glimt", "koln": "cologne", "munchen": "munich", "inter": "internazionale", "roma": "roma", "hamburger": "hamburg",
        "nurnberg": "nuremberg", "athletic": "athletic", "brighton": "brighton", "wolverhampton": "wolves",
        "nottm": "nottingham", "spurs": "tottenham", "deportivo": "deportivo", "coruna": "deportivo"}
