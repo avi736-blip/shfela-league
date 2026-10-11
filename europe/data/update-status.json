@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-11T15:13Z",
+ "ran": "2026-10-11T16:07Z",
  "changes": {
-  "results": 0,
-  "moved": 0,
-  "timed": 2,
+  "results": 9,
+  "moved": 8,
+  "timed": 0,
   "postponed": 1,
-  "live": 25
+  "live": 26
  },
  "official": {
   "uefa.champions": {
@@ -329,23 +329,114 @@
   },
   "aut.1": {
    "ok": true,
-   "fixtures": 6,
-   "matched": 5,
+   "fixtures": 96,
+   "matched": 45,
    "added": 0,
    "unmatched_sample": [
-    "SCR Altach - RZ Pellets WAC 2026-10-11 12:30:00+00:00"
+    "SCR Altach - RZ Pellets WAC 2026-10-11 12:30:00+00:00",
+    "RZ Pellets WAC - WSG Tirol 2026-10-18 12:30:00+00:00",
+    "TSV Egger Glas Hartberg - RZ Pellets WAC 2026-10-24 15:00:00+00:00",
+    "RZ Pellets WAC - SK Puntigamer Sturm Graz 2026-11-01 13:30:00+00:00",
+    "SK Rapid - RZ Pellets WAC 2026-11-06 18:30:00+00:00",
+    "RZ Pellets WAC - SV Oberbank Ried 2026-11-22 13:30:00+00:00",
+    "FK Austria Wien - RZ Pellets WAC 2026-11-28 16:00:00+00:00",
+    "RZ Pellets WAC - SC Austria Lustenau 2026-12-06 13:30:00+00:00",
+    "FC Red Bull Salzburg - RZ Pellets WAC 2026-12-13 13:30:00+00:00"
    ],
    "ours_not_found": [
     "2026-10-11 SC Rheindorf Altach - Wolfsberger",
-    "2026-10-16 Rapid Vienna - TSV Hartberg",
-    "2026-10-17 Austria Lustenau - LASK Linz",
-    "2026-10-17 SV Josko Ried - Austria Vienna",
-    "2026-10-18 RB Salzburg - SC Rheindorf Altach",
     "2026-10-18 Wolfsberger - WSG Swarovski Tirol",
-    "2026-10-18 SK Sturm Graz - Grazer AK",
-    "2026-10-23 SC Rheindorf Altach - Austria Vienna",
     "2026-10-24 TSV Hartberg - Wolfsberger",
-    "2026-10-24 WSG Swarovski Tirol - Grazer AK"
+    "2026-11-01 Wolfsberger - SK Sturm Graz",
+    "2026-11-06 Rapid Vienna - Wolfsberger",
+    "2026-11-22 Wolfsberger - SV Josko Ried",
+    "2026-11-28 Austria Vienna - Wolfsberger",
+    "2026-12-06 Wolfsberger - Austria Lustenau",
+    "2026-12-13 RB Salzburg - Wolfsberger",
+    "2027-01-23 Austria Lustenau - RB Salzburg"
+   ]
+  },
+  "bel.1": {
+   "ok": true,
+   "fixtures": 342,
+   "matched": 184,
+   "added": 0,
+   "unmatched_sample": [
+    "KV Mechelen - STVV 2026-10-11 17:15:00+00:00",
+    "Club Brugge - STVV 2026-10-25 15:00:00+00:00",
+    "STVV - OH Leuven 2026-11-01 15:00:00+00:00",
+    "STVV - SV Zulte Waregem 2026-11-08 18:15:00+00:00",
+    "Sporting Charleroi - STVV 2026-11-21 15:00:00+00:00",
+    "STVV - KRC Genk 2026-11-29 12:30:00+00:00",
+    "KAA Gent - STVV 2026-12-13 18:15:00+00:00",
+    "STVV - KV Kortrijk 2026-12-20 15:00:00+00:00",
+    "RSC Anderlecht - STVV 2026-12-27 12:30:00+00:00",
+    "STVV - Standard de Liège 2027-01-17 12:30:00+00:00",
+    "OH Leuven - STVV 2027-01-23",
+    "STVV - KV Mechelen 2027-01-30"
+   ],
+   "ours_not_found": [
+    "2026-10-11 KV Mechelen - Sint-Truidense",
+    "2026-10-25 Club Brugge - Sint-Truidense",
+    "2026-11-01 Sint-Truidense - OH Leuven",
+    "2026-11-08 Sint-Truidense - Zulte-Waregem",
+    "2026-11-21 Royal Charleroi SC - Sint-Truidense",
+    "2026-11-29 Sint-Truidense - Racing Genk",
+    "2026-12-13 KAA Gent - Sint-Truidense",
+    "2026-12-20 Sint-Truidense - KV Kortrijk",
+    "2026-12-27 Anderlecht - Sint-Truidense",
+    "2027-01-17 Sint-Truidense - Standard Liege"
+   ]
+  },
+  "rou.1": {
+   "ok": true,
+   "fixtures": 104,
+   "matched": 25,
+   "added": 0,
+   "unmatched_sample": [],
+   "ours_not_found": [
+    "2026-10-31 ASC Otelul Galati - ACS Sepsi OSK Sfantu Gheorghe",
+    "2026-10-31 CS Corvinul 1921 Hunedoara - ACS Champions FC Arges",
+    "2026-10-31 CS Universitatea Craiova - FC Botosani",
+    "2026-10-31 FC Dinamo Bucuresti 1948 - FC Uta Arad",
+    "2026-10-31 FC Petrolul Ploiesti - CFR Cluj",
+    "2026-10-31 FC Universitatea Cluj - Fotbal Club FCSB",
+    "2026-10-31 Rapid Bucuresti 1923 - AFK Csikszereda Miercurea Ciuc",
+    "2026-10-31 SC FC Voluntari - FC Farul Constanta",
+    "2026-11-07 ACS Champions FC Arges - FC Dinamo Bucuresti 1948",
+    "2026-11-07 ACS Sepsi OSK Sfantu Gheorghe - SC FC Voluntari"
+   ]
+  },
+  "hun.1": {
+   "ok": true,
+   "fixtures": 82,
+   "matched": 24,
+   "added": 0,
+   "unmatched_sample": [
+    "Ferencvárosi Tc - Dvsc 2026-10-10 15:00:00+00:00",
+    "Dvsc - Zte Fc 2026-10-18 13:30:00+00:00",
+    "Kispest–Honvéd Fc - Dvsc 2026-10-24 12:30:00+00:00",
+    "Puskás Akadémia Fc - Dvsc 2026-11-01 12:30:00+00:00",
+    "Dvsc - Újpest Fc 2026-11-08 14:30:00+00:00",
+    "Nyíregyháza Spartacus Fc - Dvsc 2026-11-22 15:00:00+00:00",
+    "Eto Fc - Dvsc 2026-11-27 18:30:00+00:00",
+    "Dvsc - Kisvárda Master Good 2026-12-05 13:30:00+00:00",
+    "Mtk Budapest - Dvsc 2026-12-13 14:45:00+00:00",
+    "Dvsc - Paksi Fc 2026-12-19 15:00:00+00:00",
+    "Vasas Fc - Dvsc 2027-01-30",
+    "Dvsc - Ferencvárosi Tc 2027-02-06"
+   ],
+   "ours_not_found": [
+    "2026-10-11 Zalaegerszeg TE - Nyiregyhaza Spartacus FC",
+    "2026-10-11 Budapest Honved FC - Ujpest FC Budapest",
+    "2026-10-11 WKW ETO FC Gyor - Puskas Akademia FC",
+    "2026-10-16 MTK Budapest - Vasas FC",
+    "2026-10-17 Nyiregyhaza Spartacus FC - Budapest Honved FC",
+    "2026-10-17 Paksi FC - WKW ETO FC Gyor",
+    "2026-10-17 Ujpest FC Budapest - Puskas Akademia FC",
+    "2026-10-18 Debreceni VSC - Zalaegerszeg TE",
+    "2026-10-18 Kisvarda FC - Ferencvarosi Budapest",
+    "2026-10-24 Budapest Honved FC - Debreceni VSC"
    ]
   }
  },
