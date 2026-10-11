@@ -1,0 +1,13 @@
+URL: https://www.cfa.com.cy/Gr/fixtures
+FINAL: https://www.cfa.com.cy/Gr/fixtures
+STATUS: 404
+TYPE: text/html; charset=iso-8859-1
+BYTES: 209
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /Gr/fixtures was not found on this server.</p>
+</body></html>
