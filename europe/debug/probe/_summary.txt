@@ -1,5 +1,0 @@
-200	757008	uefa_ucl	https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2027&order=ASC&offset=0&limit=20
-200	172149	uefa_uel	https://match.uefa.com/v5/matches?competitionId=14&seasonYear=2027&order=ASC&offset=0&limit=5
-200	149718	uefa_uecl	https://match.uefa.com/v5/matches?competitionId=2019&seasonYear=2027&order=ASC&offset=0&limit=5
-200	147257	uefa_unl	https://match.uefa.com/v5/matches?competitionId=2014&seasonYear=2027&order=ASC&offset=0&limit=5
-200	85111	uefa_comps	https://comp.uefa.com/v2/competitions?limit=50&offset=0

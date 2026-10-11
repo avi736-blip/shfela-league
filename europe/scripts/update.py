@@ -226,7 +226,7 @@ def run_official(doc, now, ch):
             print(f"official {lg}: FAILED {e}")
             continue
         pool = [g for g in games if g["lg"] == lg]
-        used, matched, unmatched = set(), 0, []
+        used, matched, unmatched, added = set(), 0, [], 0
         for fx in fixtures:
             ref = fx["utc"] or (datetime.fromisoformat(fx["day"] + "T12:00:00+00:00") if fx["day"] else None)
             best, best_score = None, 0.0
@@ -244,16 +244,50 @@ def run_official(doc, now, ch):
                 if score > best_score:
                     best, best_score = g, score
             if best is None:
-                if len(unmatched) < 8:
+                new = add_fixture(doc, lg, fx, now)
+                if new:
+                    added += 1; used.add(new["id"]); pool.append(new)
+                    apply_official(new, fx, countries, label, url, stamp, ch)
+                elif len(unmatched) < 8:
                     unmatched.append(f'{fx["home"]} - {fx["away"]} {fx["utc"] or fx["day"]}')
                 continue
             used.add(best["id"]); matched += 1
             apply_official(best, fx, countries, label, url, stamp, ch)
-        OFFICIAL[lg] = {"ok": True, "fixtures": len(fixtures), "matched": matched, "unmatched_sample": unmatched}
+        OFFICIAL[lg] = {"ok": True, "fixtures": len(fixtures), "matched": matched, "added": added, "unmatched_sample": unmatched}
+        if added:
+            drop_placeholders(doc, lg)
         print(f"official {lg}: {len(fixtures)} fixtures, {matched} matched")
         if fixtures and matched >= min(len(pool), len(fixtures)) * 0.6:
             done.add(lg)
     return done
+
+
+def add_fixture(doc, lg, fx, now):
+    """New fixtures are added only for competitions whose pairings appear during the season (UEFA knockouts)."""
+    if not fx.get("ext_id") or not fx.get("country") or fx["country"] not in doc["countries"]:
+        return None
+    when = fx["utc"] or (datetime.fromisoformat(fx["day"] + "T12:00:00+00:00") if fx["day"] else None)
+    lo, hi = doc["range"]
+    if not when or not (lo <= when.strftime("%Y-%m-%d") <= hi) or when < now - timedelta(days=3):
+        return None
+    if any(g["id"] == fx["ext_id"] for g in doc["games"]):
+        return None
+    for g in doc["games"]:  # never add a second copy of a game we already list under another spelling
+        if g["lg"] == lg and abs((datetime.fromisoformat(g["t"].replace("Z", "+00:00")) - when).days) <= 2 and \
+                (sim([fx["home"], *fx["alt_home"]], [g["h"]]) > 0 or sim([fx["away"], *fx["alt_away"]], [g["a"]]) > 0):
+            return None
+    g = {"id": fx["ext_id"], "lg": lg, "c": fx["country"], "t": iso_z(when), "ld": when.strftime("%Y-%m-%d"),
+         "lt": when.strftime("%H:%M"), "ok": False, "h": fx["home"], "a": fx["away"],
+         "hl": (fx.get("logos") or ["", ""])[0], "al": (fx.get("logos") or ["", ""])[1],
+         "v": fx["venue"], "city": fx["city"]}
+    doc["games"].append(g)
+    return g
+
+
+def drop_placeholders(doc, lg):
+    """Remove 'pairing not drawn yet' placeholders on days that now have real fixtures."""
+    real = {g["ld"] for g in doc["games"] if g["lg"] == lg and not g["id"].startswith("uefa-general")}
+    doc["games"][:] = [g for g in doc["games"] if not (g["lg"] == lg and g["id"].startswith("uefa-general") and g["ld"] in real)]
 
 
 def apply_official(g, fx, countries, label, url, stamp, ch):

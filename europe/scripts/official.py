@@ -212,7 +212,63 @@ def eredivisie(now):
     return out
 
 
+# ---------------- UEFA competitions (uefa.com match feed) ----------------
+FIFA3 = {"ENG": "England", "SCO": "Scotland", "WAL": "Wales", "NIR": "Northern Ireland", "IRL": "Ireland", "GER": "Germany",
+         "ITA": "Italy", "ESP": "Spain", "FRA": "France", "POR": "Portugal", "NED": "Netherlands", "BEL": "Belgium",
+         "AUT": "Austria", "SUI": "Switzerland", "DEN": "Denmark", "NOR": "Norway", "SWE": "Sweden", "FIN": "Finland",
+         "ISL": "Iceland", "FRO": "Faroe Islands", "EST": "Estonia", "LVA": "Latvia", "LTU": "Lithuania", "POL": "Poland",
+         "CZE": "Czechia", "SVK": "Slovakia", "HUN": "Hungary", "ROU": "Romania", "BUL": "Bulgaria", "GRE": "Greece",
+         "CYP": "Cyprus", "TUR": "Türkiye", "CRO": "Croatia", "SRB": "Serbia", "SVN": "Slovenia", "BIH": "Bosnia and Herzegovina",
+         "MNE": "Montenegro", "ALB": "Albania", "MKD": "North Macedonia", "KOS": "Kosovo", "MLT": "Malta", "GIB": "Gibraltar",
+         "AND": "Andorra", "SMR": "San Marino", "LIE": "Liechtenstein", "LUX": "Luxembourg", "MDA": "Moldova",
+         "BLR": "Belarus", "GEO": "Georgia", "ARM": "Armenia", "AZE": "Azerbaijan", "KAZ": "Kazakhstan"}
+
+
+def _uefa(now, comp_id):
+    yr = season_year(now) + 1  # UEFA names the season by the year it ends
+    out, offset = [], 0
+    while offset < 2000:
+        js = get(f"https://match.uefa.com/v5/matches?competitionId={comp_id}&seasonYear={yr}&order=ASC&offset={offset}&limit=200")
+        if not js:
+            break
+        for m in js:
+            h, a = m.get("homeTeam") or {}, m.get("awayTeam") or {}
+            if h.get("isPlaceHolder") or a.get("isPlaceHolder"):
+                continue
+            ko = m.get("kickOffTime") or {}
+            st = (m.get("status") or "").upper()
+            state = "post" if st == "FINISHED" else "live" if st == "LIVE" else \
+                "pp" if st in ("POSTPONED", "CANCELLED", "ABANDONED", "SUSPENDED") else "pre"
+            sc = ((m.get("score") or {}).get("total") or {})
+            stad = m.get("stadium") or {}
+            tr = (stad.get("translations") or {})
+            vname = ((tr.get("officialName") or tr.get("name") or {}).get("EN")) or ""
+            city = (((stad.get("city") or {}).get("translations") or {}).get("name") or {}).get("EN", "")
+            utc = datetime.fromisoformat(ko["dateTime"].replace("Z", "+00:00")) if ko.get("dateTime") else None
+            out.append(_fx(home=h.get("internationalName", ""), away=a.get("internationalName", ""),
+                           alt_home=[h.get("teamCode", "")], alt_away=[a.get("teamCode", "")],
+                           utc=utc, day=None if utc else ko.get("date"), confirmed=bool(utc), state=state,
+                           score=[sc.get("home"), sc.get("away")] if state in ("post", "live") and sc.get("home") is not None else None,
+                           venue=vname, city=city, ext_id="uefa-" + str(m.get("id")),
+                           country=FIFA3.get(stad.get("countryCode") or ""),
+                           logos=[h.get("logoUrl", ""), a.get("logoUrl", "")]))
+        if len(js) < 200:
+            break
+        offset += 200
+    return out
+
+
+def ucl(now): return _uefa(now, 1)
+def uel(now): return _uefa(now, 14)
+def uecl(now): return _uefa(now, 2019)
+def unl(now): return _uefa(now, 2014)
+
+
 SOURCES = {
+    "uefa.champions": ("UEFA", "https://www.uefa.com/uefachampionsleague/fixtures-results/", ucl),
+    "uefa.europa": ("UEFA", "https://www.uefa.com/uefaeuropaleague/fixtures-results/", uel),
+    "uefa.europa.conf": ("UEFA", "https://www.uefa.com/uefaconferenceleague/fixtures-results/", uecl),
+    "uefa.nations": ("UEFA", "https://www.uefa.com/uefanationsleague/fixtures-results/", unl),
     "eng.1": ("פרמייר ליג", "https://www.premierleague.com/en/matches", premier_league),
     "esp.1": ("LALIGA", "https://www.laliga.com/en-GB/laliga-easports/calendar", laliga),
     "ger.1": ("Bundesliga", "https://www.bundesliga.com/en/bundesliga/matchday", bundesliga),
