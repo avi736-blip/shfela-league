@@ -1,0 +1,7 @@
+URL: https://apim.laliga.com/public-service/api/v1/matches?subscriptionSlug=laliga-easports-2026&limit=400&orderField=date&orderType=asc
+FINAL: https://apim.laliga.com/public-service/api/v1/matches?subscriptionSlug=laliga-easports-2026&limit=400&orderField=date&orderType=asc
+STATUS: 500
+TYPE: application/json
+BYTES: 135
+
+{"type":"https:\/\/tools.ietf.org\/html\/rfc2616#section-10","title":"An error occurred","status":500,"detail":"Internal Server Error"}

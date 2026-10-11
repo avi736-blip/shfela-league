@@ -1,0 +1,7 @@
+403	28860	0 json	slgr	https://www.slgr.gr/en/schedule/
+403	28945	0 json	slgr_round	https://www.slgr.gr/en/schedule/25/158/262706/
+307	1598958	25 json	seriea	https://en.legaseriea.it/serie-a
+200	138843	2 json	ere	https://eredivisie.com/competition/fixtures/
+200	408368	6 json	ere_nl	https://eredivisie.nl/vriendenloterijeredivisie/
+200	912143	11 json	bl_md12	https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/12
+200	902375	10 json	bl_md7	https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/7
