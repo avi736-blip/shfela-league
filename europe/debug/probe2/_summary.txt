@@ -1,2 +1,0 @@
-200	1346080	3 json	efbetleague	https://efbetleague.com/
-200	516489	1 json	cfa	https://www.cfa.com.cy/Gr/news/53760
