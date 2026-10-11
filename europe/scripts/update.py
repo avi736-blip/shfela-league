@@ -262,7 +262,7 @@ def run_official(doc, now, ch):
             if new:
                 added += 1; used.add(new["id"]); pool.append(new)
                 apply_official(new, fx, countries, label, url, stamp, ch)
-            elif len(unmatched) < 8:
+            elif len(unmatched) < 12 and str(fx["utc"] or fx["day"])[:10] >= doc["range"][0]:
                 unmatched.append(f'{fx["home"]} - {fx["away"]} {fx["utc"] or fx["day"]}')
         ours_left = [f'{g["ld"]} {g["h"]} - {g["a"]}' for g in pool if g["id"] not in used and g["ld"] >= now.strftime("%Y-%m-%d")
                      and not g["id"].startswith("uefa-general")][:10]
