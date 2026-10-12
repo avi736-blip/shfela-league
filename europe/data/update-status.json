@@ -1,9 +1,9 @@
 {
- "ran": "2026-10-12T13:09Z",
+ "ran": "2026-10-12T23:37Z",
  "changes": {
-  "results": 0,
-  "moved": 1,
-  "timed": 10,
+  "results": 10,
+  "moved": 41,
+  "timed": 18,
   "postponed": 1,
   "live": 3
  },
@@ -199,13 +199,13 @@
   },
   "nor.1": {
    "ok": true,
-   "fixtures": 64,
+   "fixtures": 63,
    "matched": 63,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
     "2026-10-12 KFUM Oslo - Vålerenga",
-    "2026-11-21 Tromso - Viking FK"
+    "2026-10-17 Hamarkameratene - Bodo/Glimt"
    ]
   },
   "geo.1": {
@@ -242,17 +242,17 @@
    "added": 0,
    "unmatched_sample": [
     "SC Braga - Gil Vicente FC 2026-10-19 19:15:00+00:00",
-    "Gil Vicente FC - FC Alverca 2027-05-01",
-    "Marítimo M. - Estrela Amadora 2027-05-01",
+    "Estoril Praia - Sporting CP 2027-05-01",
     "Casa Pia AC - FC Arouca 2027-05-01",
-    "Académico - SC Braga 2027-05-01",
-    "FC Porto - FC Famalicão 2027-05-01",
     "Moreirense FC - CD Nacional 2027-05-01",
     "SL Benfica - Rio Ave FC 2027-05-01",
+    "Académico - SC Braga 2027-05-01",
+    "Gil Vicente FC - FC Alverca 2027-05-01",
+    "FC Porto - FC Famalicão 2027-05-01",
+    "Marítimo M. - Estrela Amadora 2027-05-01",
     "Vitória SC - Santa Clara 2027-05-01",
-    "Estoril Praia - Sporting CP 2027-05-01",
-    "FC Famalicão - Casa Pia AC 2027-05-08",
-    "FC Alverca - Estoril Praia 2027-05-08"
+    "CD Nacional - FC Porto 2027-05-08",
+    "Rio Ave FC - Vitória SC 2027-05-08"
    ],
    "ours_not_found": []
   },
@@ -307,21 +307,21 @@
   },
   "cro.1": {
    "ok": true,
-   "fixtures": 50,
-   "matched": 11,
+   "fixtures": 65,
+   "matched": 26,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
-    "2026-10-24 GNK Dinamo Zagreb - HNK Rijeka",
-    "2026-10-24 HNK Gorica - NK Lokomotiva Zagreb",
-    "2026-10-24 NK Istra 1961 - Hajduk Split",
-    "2026-10-24 NK Osijek - NK Rudes Zagreb",
-    "2026-10-24 NK Varazdin - NK Slaven Belupo",
-    "2026-10-31 HNK Rijeka - NK Varazdin",
-    "2026-10-31 Hajduk Split - HNK Gorica",
-    "2026-10-31 NK Lokomotiva Zagreb - NK Osijek",
-    "2026-10-31 NK Rudes Zagreb - GNK Dinamo Zagreb",
-    "2026-10-31 NK Slaven Belupo - NK Istra 1961"
+    "2026-11-21 GNK Dinamo Zagreb - NK Istra 1961",
+    "2026-11-21 HNK Rijeka - HNK Gorica",
+    "2026-11-21 NK Lokomotiva Zagreb - Hajduk Split",
+    "2026-11-21 NK Rudes Zagreb - NK Varazdin",
+    "2026-11-21 NK Slaven Belupo - NK Osijek",
+    "2026-11-28 HNK Gorica - GNK Dinamo Zagreb",
+    "2026-11-28 Hajduk Split - NK Rudes Zagreb",
+    "2026-11-28 NK Istra 1961 - NK Varazdin",
+    "2026-11-28 NK Lokomotiva Zagreb - NK Slaven Belupo",
+    "2026-11-28 NK Osijek - HNK Rijeka"
    ]
   },
   "aut.1": {
