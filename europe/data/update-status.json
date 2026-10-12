@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-11T20:57Z",
+ "ran": "2026-10-12T13:09Z",
  "changes": {
-  "results": 22,
-  "moved": 32,
-  "timed": 1,
+  "results": 0,
+  "moved": 1,
+  "timed": 10,
   "postponed": 1,
-  "live": 7
+  "live": 3
  },
  "official": {
   "uefa.champions": {
@@ -200,15 +200,12 @@
   "nor.1": {
    "ok": true,
    "fixtures": 64,
-   "matched": 64,
+   "matched": 63,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
-    "2026-10-11 Fredrikstad - Tromso",
-    "2026-10-11 Aalesund - Sarpsborg FK",
-    "2026-10-11 IK Start - Hamarkameratene",
-    "2026-10-11 Lillestrom - Molde",
-    "2026-10-12 KFUM Oslo - Vålerenga"
+    "2026-10-12 KFUM Oslo - Vålerenga",
+    "2026-11-21 Tromso - Viking FK"
    ]
   },
   "geo.1": {
@@ -217,10 +214,7 @@
    "matched": 40,
    "added": 0,
    "unmatched_sample": [],
-   "ours_not_found": [
-    "2026-10-11 FC Samgurali Tskaltubo - FC Gagra",
-    "2026-10-11 FC Dinamo Batumi - FC Dinamo Tbilisi"
-   ]
+   "ours_not_found": []
   },
   "fra.1": {
    "ok": true,
@@ -248,17 +242,17 @@
    "added": 0,
    "unmatched_sample": [
     "SC Braga - Gil Vicente FC 2026-10-19 19:15:00+00:00",
-    "Estoril Praia - Sporting CP 2027-05-01",
+    "Gil Vicente FC - FC Alverca 2027-05-01",
+    "Marítimo M. - Estrela Amadora 2027-05-01",
     "Casa Pia AC - FC Arouca 2027-05-01",
+    "Académico - SC Braga 2027-05-01",
+    "FC Porto - FC Famalicão 2027-05-01",
     "Moreirense FC - CD Nacional 2027-05-01",
     "SL Benfica - Rio Ave FC 2027-05-01",
-    "Académico - SC Braga 2027-05-01",
-    "Gil Vicente FC - FC Alverca 2027-05-01",
-    "FC Porto - FC Famalicão 2027-05-01",
-    "Marítimo M. - Estrela Amadora 2027-05-01",
     "Vitória SC - Santa Clara 2027-05-01",
-    "CD Nacional - FC Porto 2027-05-08",
-    "Rio Ave FC - Vitória SC 2027-05-08"
+    "Estoril Praia - Sporting CP 2027-05-01",
+    "FC Famalicão - Casa Pia AC 2027-05-08",
+    "FC Alverca - Estoril Praia 2027-05-08"
    ],
    "ours_not_found": []
   },
@@ -391,27 +385,21 @@
   },
   "hun.1": {
    "ok": true,
-   "fixtures": 122,
-   "matched": 75,
+   "fixtures": 132,
+   "matched": 85,
    "added": 0,
-   "unmatched_sample": [
-    "Vasas Fc - Kisvárda Master Good 2027-05-01",
-    "Paksi Fc - Mtk Budapest 2027-05-01",
-    "Kispest–Honvéd Fc - Újpest Fc 2027-05-01",
-    "Zte Fc - Nyíregyháza Spartacus Fc 2027-05-01",
-    "Eto Fc - Puskás Akadémia Fc 2027-05-01"
-   ],
+   "unmatched_sample": [],
    "ours_not_found": [
-    "2026-10-11 Zalaegerszeg TE - Nyiregyhaza Spartacus FC",
-    "2026-10-11 Budapest Honved FC - Ujpest FC Budapest",
-    "2026-10-11 WKW ETO FC Gyor - Puskas Akademia FC",
-    "2026-12-12 Paksi FC - Nyiregyhaza Spartacus FC",
-    "2026-12-12 WKW ETO FC Gyor - Kisvarda FC",
-    "2026-12-12 Vasas FC - Ujpest FC Budapest",
-    "2026-12-13 Zalaegerszeg TE - Budapest Honved FC",
-    "2026-12-14 Ferencvarosi Budapest - Puskas Akademia FC",
-    "2027-02-06 Kisvarda FC - Vasas FC",
-    "2027-02-06 MTK Budapest - Paksi FC"
+    "2027-02-27 Kisvarda FC - Budapest Honved FC",
+    "2027-02-27 MTK Budapest - Zalaegerszeg TE",
+    "2027-02-27 Nyiregyhaza Spartacus FC - Ujpest FC Budapest",
+    "2027-02-27 Paksi FC - Ferencvarosi Budapest",
+    "2027-02-27 Vasas FC - WKW ETO FC Gyor",
+    "2027-02-27 Debreceni VSC - Puskas Akademia FC",
+    "2027-03-06 WKW ETO FC Gyor - Nyiregyhaza Spartacus FC",
+    "2027-03-06 Budapest Honved FC - MTK Budapest",
+    "2027-03-06 Ferencvarosi Budapest - Vasas FC",
+    "2027-03-06 Puskas Akademia FC - Kisvarda FC"
    ]
   },
   "ita.2": {
@@ -438,8 +426,8 @@
  },
  "espn_events_per_league": {
   "uefa.champions": 72,
-  "uefa.europa": 54,
-  "uefa.europa.conf": 54,
+  "uefa.europa": 72,
+  "uefa.europa.conf": 72,
   "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
@@ -472,11 +460,11 @@
  "requests": 1553,
  "failed": 252,
  "errors": [
-  "uefa.champions/scoreboard?dates=20261008-20261014&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "uefa.champions/scoreboard?dates=20261008-20261014: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261007: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261009-20261015&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261009-20261015: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "bul.1/scoreboard?dates=20261008: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261009: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
+  "bul.1/scoreboard?dates=20261009: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "bul.1/scoreboard?dates=20261010: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
  ],
  "style": "day"
 }
