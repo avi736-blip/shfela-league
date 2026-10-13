@@ -1,9 +1,9 @@
 {
- "ran": "2026-10-12T23:37Z",
+ "ran": "2026-10-13T12:42Z",
  "changes": {
-  "results": 10,
-  "moved": 41,
-  "timed": 18,
+  "results": 1,
+  "moved": 4,
+  "timed": 0,
   "postponed": 1,
   "live": 3
  },
@@ -185,9 +185,7 @@
     "Korona Kielce - Piast Gliwice 2027-05-08",
     "Lech Poznań - GKS Katowice 2027-05-08"
    ],
-   "ours_not_found": [
-    "2026-10-12 GKS Katowice - Wieczysta Krakow"
-   ]
+   "ours_not_found": []
   },
   "swe.1": {
    "ok": true,
@@ -204,7 +202,6 @@
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
-    "2026-10-12 KFUM Oslo - Vålerenga",
     "2026-10-17 Hamarkameratene - Bodo/Glimt"
    ]
   },
@@ -366,21 +363,21 @@
   },
   "rou.1": {
    "ok": true,
-   "fixtures": 104,
-   "matched": 25,
+   "fixtures": 107,
+   "matched": 28,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
     "2026-10-31 ASC Otelul Galati - ACS Sepsi OSK Sfantu Gheorghe",
-    "2026-10-31 CS Corvinul 1921 Hunedoara - ACS Champions FC Arges",
     "2026-10-31 CS Universitatea Craiova - FC Botosani",
     "2026-10-31 FC Dinamo Bucuresti 1948 - FC Uta Arad",
-    "2026-10-31 FC Petrolul Ploiesti - CFR Cluj",
     "2026-10-31 FC Universitatea Cluj - Fotbal Club FCSB",
-    "2026-10-31 Rapid Bucuresti 1923 - AFK Csikszereda Miercurea Ciuc",
     "2026-10-31 SC FC Voluntari - FC Farul Constanta",
     "2026-11-07 ACS Champions FC Arges - FC Dinamo Bucuresti 1948",
-    "2026-11-07 ACS Sepsi OSK Sfantu Gheorghe - SC FC Voluntari"
+    "2026-11-07 ACS Sepsi OSK Sfantu Gheorghe - SC FC Voluntari",
+    "2026-11-07 AFK Csikszereda Miercurea Ciuc - FC Universitatea Cluj",
+    "2026-11-07 CFR Cluj - CS Universitatea Craiova",
+    "2026-11-07 FC Botosani - ASC Otelul Galati"
    ]
   },
   "hun.1": {
@@ -431,22 +428,22 @@
   "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
-  "ger.1": 54,
-  "ned.1": 54,
-  "aut.1": 36,
-  "bel.1": 45,
-  "ita.1": 70,
-  "por.1": 37,
-  "eng.1": 60,
+  "ger.1": 55,
+  "ned.1": 55,
+  "aut.1": 37,
+  "bel.1": 46,
+  "ita.1": 71,
+  "por.1": 38,
+  "eng.1": 61,
   "esp.1": 61,
-  "fra.1": 54,
+  "fra.1": 55,
   "gre.1": 42,
   "sco.1": 42,
-  "den.1": 36,
+  "den.1": 37,
   "nor.1": 48,
   "swe.1": 56,
-  "eng.2": 109,
-  "ger.2": 54,
+  "eng.2": 110,
+  "ger.2": 56,
   "ita.2": 80,
   "cyp.1": 0,
   "bul.1": 0,
@@ -460,11 +457,11 @@
  "requests": 1553,
  "failed": 252,
  "errors": [
-  "uefa.champions/scoreboard?dates=20261009-20261015&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "uefa.champions/scoreboard?dates=20261009-20261015: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261008: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261010-20261016&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261010-20261016: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "bul.1/scoreboard?dates=20261009: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261010: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
+  "bul.1/scoreboard?dates=20261010: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "bul.1/scoreboard?dates=20261011: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
  ],
  "style": "day"
 }
