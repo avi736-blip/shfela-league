@@ -1,8 +1,8 @@
 {
- "ran": "2026-10-13T12:42Z",
+ "ran": "2026-10-13T21:50Z",
  "changes": {
-  "results": 1,
-  "moved": 4,
+  "results": 17,
+  "moved": 2,
   "timed": 0,
   "postponed": 1,
   "live": 3
@@ -239,17 +239,17 @@
    "added": 0,
    "unmatched_sample": [
     "SC Braga - Gil Vicente FC 2026-10-19 19:15:00+00:00",
-    "Estoril Praia - Sporting CP 2027-05-01",
+    "Gil Vicente FC - FC Alverca 2027-05-01",
+    "Marítimo M. - Estrela Amadora 2027-05-01",
     "Casa Pia AC - FC Arouca 2027-05-01",
+    "Académico - SC Braga 2027-05-01",
+    "FC Porto - FC Famalicão 2027-05-01",
     "Moreirense FC - CD Nacional 2027-05-01",
     "SL Benfica - Rio Ave FC 2027-05-01",
-    "Académico - SC Braga 2027-05-01",
-    "Gil Vicente FC - FC Alverca 2027-05-01",
-    "FC Porto - FC Famalicão 2027-05-01",
-    "Marítimo M. - Estrela Amadora 2027-05-01",
     "Vitória SC - Santa Clara 2027-05-01",
-    "CD Nacional - FC Porto 2027-05-08",
-    "Rio Ave FC - Vitória SC 2027-05-08"
+    "Estoril Praia - Sporting CP 2027-05-01",
+    "FC Famalicão - Casa Pia AC 2027-05-08",
+    "FC Alverca - Estoril Praia 2027-05-08"
    ],
    "ours_not_found": []
   },
