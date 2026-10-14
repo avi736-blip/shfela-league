@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-14T10:11Z",
+ "ran": "2026-10-14T20:41Z",
  "changes": {
-  "results": 0,
-  "moved": 0,
+  "results": 5,
+  "moved": 1,
   "timed": 0,
   "postponed": 1,
-  "live": 1
+  "live": 17
  },
  "official": {
   "uefa.champions": {
