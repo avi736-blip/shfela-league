@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-13T21:50Z",
+ "ran": "2026-10-14T10:11Z",
  "changes": {
-  "results": 17,
-  "moved": 2,
+  "results": 0,
+  "moved": 0,
   "timed": 0,
   "postponed": 1,
-  "live": 3
+  "live": 1
  },
  "official": {
   "uefa.champions": {
@@ -239,17 +239,17 @@
    "added": 0,
    "unmatched_sample": [
     "SC Braga - Gil Vicente FC 2026-10-19 19:15:00+00:00",
-    "Gil Vicente FC - FC Alverca 2027-05-01",
-    "Marítimo M. - Estrela Amadora 2027-05-01",
+    "Estoril Praia - Sporting CP 2027-05-01",
     "Casa Pia AC - FC Arouca 2027-05-01",
-    "Académico - SC Braga 2027-05-01",
-    "FC Porto - FC Famalicão 2027-05-01",
     "Moreirense FC - CD Nacional 2027-05-01",
     "SL Benfica - Rio Ave FC 2027-05-01",
+    "Académico - SC Braga 2027-05-01",
+    "Gil Vicente FC - FC Alverca 2027-05-01",
+    "FC Porto - FC Famalicão 2027-05-01",
+    "Marítimo M. - Estrela Amadora 2027-05-01",
     "Vitória SC - Santa Clara 2027-05-01",
-    "Estoril Praia - Sporting CP 2027-05-01",
-    "FC Famalicão - Casa Pia AC 2027-05-08",
-    "FC Alverca - Estoril Praia 2027-05-08"
+    "CD Nacional - FC Porto 2027-05-08",
+    "Rio Ave FC - Vitória SC 2027-05-08"
    ],
    "ours_not_found": []
   },
@@ -428,23 +428,23 @@
   "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
-  "ger.1": 55,
-  "ned.1": 55,
-  "aut.1": 37,
-  "bel.1": 46,
-  "ita.1": 71,
-  "por.1": 38,
-  "eng.1": 61,
-  "esp.1": 61,
-  "fra.1": 55,
-  "gre.1": 42,
-  "sco.1": 42,
-  "den.1": 37,
-  "nor.1": 48,
-  "swe.1": 56,
-  "eng.2": 110,
-  "ger.2": 56,
-  "ita.2": 80,
+  "ger.1": 60,
+  "ned.1": 57,
+  "aut.1": 39,
+  "bel.1": 49,
+  "ita.1": 74,
+  "por.1": 40,
+  "eng.1": 64,
+  "esp.1": 60,
+  "fra.1": 59,
+  "gre.1": 45,
+  "sco.1": 47,
+  "den.1": 36,
+  "nor.1": 49,
+  "swe.1": 55,
+  "eng.2": 119,
+  "ger.2": 58,
+  "ita.2": 84,
   "cyp.1": 0,
   "bul.1": 0,
   "pol.1": 0,
@@ -457,11 +457,11 @@
  "requests": 1553,
  "failed": 252,
  "errors": [
-  "uefa.champions/scoreboard?dates=20261010-20261016&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "uefa.champions/scoreboard?dates=20261010-20261016: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261009: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261011-20261017&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261011-20261017: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "bul.1/scoreboard?dates=20261010: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261011: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
+  "bul.1/scoreboard?dates=20261011: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "bul.1/scoreboard?dates=20261012: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
  ],
  "style": "day"
 }
