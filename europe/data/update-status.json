@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-15T09:53Z",
+ "ran": "2026-10-15T20:20Z",
  "changes": {
-  "results": 1,
+  "results": 18,
   "moved": 0,
   "timed": 0,
   "postponed": 0,
-  "live": 1
+  "live": 37
  },
  "official": {
   "uefa.champions": {
@@ -215,8 +215,8 @@
   },
   "fra.1": {
    "ok": true,
-   "fixtures": 126,
-   "matched": 126,
+   "fixtures": 117,
+   "matched": 117,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
