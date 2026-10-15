@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-14T20:41Z",
+ "ran": "2026-10-15T09:53Z",
  "changes": {
-  "results": 5,
-  "moved": 1,
+  "results": 1,
+  "moved": 0,
   "timed": 0,
-  "postponed": 1,
-  "live": 17
+  "postponed": 0,
+  "live": 1
  },
  "official": {
   "uefa.champions": {
@@ -428,23 +428,23 @@
   "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
-  "ger.1": 60,
-  "ned.1": 57,
+  "ger.1": 56,
+  "ned.1": 58,
   "aut.1": 39,
   "bel.1": 49,
-  "ita.1": 74,
-  "por.1": 40,
+  "ita.1": 75,
+  "por.1": 39,
   "eng.1": 64,
-  "esp.1": 60,
-  "fra.1": 59,
-  "gre.1": 45,
-  "sco.1": 47,
-  "den.1": 36,
-  "nor.1": 49,
-  "swe.1": 55,
-  "eng.2": 119,
-  "ger.2": 58,
-  "ita.2": 84,
+  "esp.1": 66,
+  "fra.1": 57,
+  "gre.1": 47,
+  "sco.1": 44,
+  "den.1": 40,
+  "nor.1": 52,
+  "swe.1": 60,
+  "eng.2": 110,
+  "ger.2": 57,
+  "ita.2": 82,
   "cyp.1": 0,
   "bul.1": 0,
   "pol.1": 0,
@@ -457,11 +457,11 @@
  "requests": 1553,
  "failed": 252,
  "errors": [
-  "uefa.champions/scoreboard?dates=20261011-20261017&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "uefa.champions/scoreboard?dates=20261011-20261017: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261010: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261012-20261018&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261012-20261018: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "bul.1/scoreboard?dates=20261011: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261012: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
+  "bul.1/scoreboard?dates=20261012: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "bul.1/scoreboard?dates=20261013: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
  ],
  "style": "day"
 }
