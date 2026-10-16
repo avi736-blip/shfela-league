@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-15T20:20Z",
+ "ran": "2026-10-16T09:48Z",
  "changes": {
-  "results": 18,
+  "results": 14,
   "moved": 0,
   "timed": 0,
   "postponed": 0,
-  "live": 37
+  "live": 1
  },
  "official": {
   "uefa.champions": {
@@ -215,21 +215,21 @@
   },
   "fra.1": {
    "ok": true,
-   "fixtures": 117,
-   "matched": 117,
+   "fixtures": 126,
+   "matched": 126,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
-    "2027-02-13 AJ Auxerre - Strasbourg",
-    "2027-02-13 Brest - Stade Rennais",
-    "2027-02-13 Le Mans - Paris Saint-Germain",
-    "2027-02-13 Lille - Nice",
-    "2027-02-13 Lorient - Le Havre AC",
-    "2027-02-13 Lyon - Lens",
-    "2027-02-13 Marseille - Angers",
-    "2027-02-13 Paris FC - Troyes",
-    "2027-02-13 Toulouse - AS Monaco",
-    "2027-02-20 AS Monaco - Le Mans"
+    "2027-02-20 AS Monaco - Le Mans",
+    "2027-02-20 Angers - Paris FC",
+    "2027-02-20 Le Havre AC - Lyon",
+    "2027-02-20 Lens - Troyes",
+    "2027-02-20 Lille - Lorient",
+    "2027-02-20 Nice - AJ Auxerre",
+    "2027-02-20 Paris Saint-Germain - Brest",
+    "2027-02-20 Stade Rennais - Toulouse",
+    "2027-02-20 Strasbourg - Marseille",
+    "2027-02-27 AJ Auxerre - Lille"
    ]
   },
   "por.1": {
@@ -428,23 +428,23 @@
   "uefa.nations": 52,
   "ger.dfb_pokal": 16,
   "ita.coppa_italia": 0,
-  "ger.1": 56,
-  "ned.1": 58,
-  "aut.1": 39,
-  "bel.1": 49,
-  "ita.1": 75,
-  "por.1": 39,
-  "eng.1": 64,
-  "esp.1": 66,
-  "fra.1": 57,
-  "gre.1": 47,
-  "sco.1": 44,
-  "den.1": 40,
-  "nor.1": 52,
-  "swe.1": 60,
-  "eng.2": 110,
-  "ger.2": 57,
-  "ita.2": 82,
+  "ger.1": 54,
+  "ned.1": 54,
+  "aut.1": 36,
+  "bel.1": 45,
+  "ita.1": 72,
+  "por.1": 38,
+  "eng.1": 61,
+  "esp.1": 62,
+  "fra.1": 54,
+  "gre.1": 43,
+  "sco.1": 42,
+  "den.1": 37,
+  "nor.1": 49,
+  "swe.1": 58,
+  "eng.2": 109,
+  "ger.2": 54,
+  "ita.2": 80,
   "cyp.1": 0,
   "bul.1": 0,
   "pol.1": 0,
@@ -457,11 +457,11 @@
  "requests": 1553,
  "failed": 252,
  "errors": [
-  "uefa.champions/scoreboard?dates=20261012-20261018&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "uefa.champions/scoreboard?dates=20261012-20261018: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261011: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261013-20261019&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261013-20261019: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "bul.1/scoreboard?dates=20261012: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261013: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
+  "bul.1/scoreboard?dates=20261013: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "bul.1/scoreboard?dates=20261014: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
  ],
  "style": "day"
 }
