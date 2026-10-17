@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-16T19:57Z",
+ "ran": "2026-10-17T09:20Z",
  "changes": {
-  "results": 8,
-  "moved": 0,
-  "timed": 0,
+  "results": 5,
+  "moved": 27,
+  "timed": 2,
   "postponed": 0,
-  "live": 14
+  "live": 2
  },
  "official": {
   "uefa.champions": {
@@ -427,21 +427,21 @@
   "uefa.europa.conf": 72,
   "uefa.nations": 52,
   "ger.dfb_pokal": 16,
-  "ita.coppa_italia": 0,
+  "ita.coppa_italia": 1,
   "ger.1": 54,
   "ned.1": 54,
   "aut.1": 36,
   "bel.1": 45,
-  "ita.1": 72,
-  "por.1": 38,
-  "eng.1": 61,
-  "esp.1": 62,
+  "ita.1": 70,
+  "por.1": 37,
+  "eng.1": 60,
+  "esp.1": 61,
   "fra.1": 54,
-  "gre.1": 43,
+  "gre.1": 42,
   "sco.1": 42,
-  "den.1": 37,
-  "nor.1": 49,
-  "swe.1": 58,
+  "den.1": 36,
+  "nor.1": 48,
+  "swe.1": 56,
   "eng.2": 109,
   "ger.2": 54,
   "ita.2": 80,
@@ -457,11 +457,11 @@
  "requests": 1553,
  "failed": 252,
  "errors": [
-  "uefa.champions/scoreboard?dates=20261013-20261019&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "uefa.champions/scoreboard?dates=20261013-20261019: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261012: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261014-20261020&limit=300: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "uefa.champions/scoreboard?dates=20261014-20261020: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
   "bul.1/scoreboard?dates=20261013: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
-  "bul.1/scoreboard?dates=20261014: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
+  "bul.1/scoreboard?dates=20261014: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000",
+  "bul.1/scoreboard?dates=20261015: HTTP 400 \u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000��VJ�OIU�210�Q�M-.NL\u0007��\u00123sRS\u0014J�\u0015�SK\u0014R�R�J�\u0015R�R\n�3�J��j\u0001\u0000\u0000\u0000��\u0003\u0000�,\u0003�7\u0000\u0000\u0000"
  ],
  "style": "day"
 }
