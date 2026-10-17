@@ -1,11 +1,11 @@
 {
- "ran": "2026-10-17T09:20Z",
+ "ran": "2026-10-17T19:23Z",
  "changes": {
-  "results": 5,
-  "moved": 27,
-  "timed": 2,
-  "postponed": 0,
-  "live": 2
+  "results": 52,
+  "moved": 0,
+  "timed": 0,
+  "postponed": 1,
+  "live": 18
  },
  "official": {
   "uefa.champions": {
@@ -197,21 +197,28 @@
   },
   "nor.1": {
    "ok": true,
-   "fixtures": 63,
-   "matched": 63,
+   "fixtures": 60,
+   "matched": 59,
    "added": 0,
    "unmatched_sample": [],
    "ours_not_found": [
-    "2026-10-17 Hamarkameratene - Bodo/Glimt"
+    "2026-10-17 Hamarkameratene - Bodo/Glimt",
+    "2026-10-17 Kristiansund BK - Aalesund",
+    "2026-10-17 Viking FK - Fredrikstad",
+    "2026-10-18 Sarpsborg FK - Rosenborg",
+    "2026-11-29 Sandefjord - Tromso"
    ]
   },
   "geo.1": {
    "ok": true,
-   "fixtures": 40,
-   "matched": 40,
+   "fixtures": 38,
+   "matched": 38,
    "added": 0,
    "unmatched_sample": [],
-   "ours_not_found": []
+   "ours_not_found": [
+    "2026-10-17 FC Samgurali Tskaltubo - FC Meshakhte Tkibuli",
+    "2026-10-17 FC Gagra - FC Dinamo Batumi"
+   ]
   },
   "fra.1": {
    "ok": true,
